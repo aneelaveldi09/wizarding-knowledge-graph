@@ -1,10 +1,6 @@
 <div align="center">
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Wizarding_World_of_Harry_Potter_Castle.jpg" width="100%" style="border-radius:12px" alt="Wizarding World of Harry Potter"/>
-
-<br>
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Harry_Potter_wordmark.svg" width="340" alt="Harry Potter"/>
+<img src="static/social_preview.png" width="100%" style="border-radius:12px" alt="Wizarding Knowledge Graph"/>
 
 # Wizarding Knowledge Graph
 
@@ -94,12 +90,6 @@ Running REBEL on real Wikipedia text, some of the triplets it extracts:
 - Severus Snape → member → Order of the Phoenix
 
 These come purely from model inference on raw text, not from any lookup table.
-
-<div align="center">
-<img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Diagon_Alley%2C_The_making_of_Harry_Potter_%28Ank_Kumar%2C_Infosys%29_02.jpg" width="680" alt="Diagon Alley, Warner Bros Studio Tour"/>
-<br>
-<sub>Diagon Alley, Warner Bros. Studio Tour, The Making of Harry Potter</sub>
-</div>
 
 ## Project structure
 
