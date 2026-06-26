@@ -2,6 +2,10 @@
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Wizarding_World_of_Harry_Potter_Castle.jpg" width="100%" style="border-radius:12px" alt="Wizarding World of Harry Potter"/>
 
+<br>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Harry_Potter_wordmark.svg" width="340" alt="Harry Potter"/>
+
 # Wizarding Knowledge Graph
 
 **What if you could map the entire wizarding world using machine learning?**
@@ -117,7 +121,5 @@ wizarding-knowledge-graph/
     ├── re_cache.json         # cached REBEL triplets
     └── graph_cache.json      # pre-built knowledge graph
 ```
-
----
 
 **Built by [Aneela Veldi](https://github.com/aneelaveldi09)**
