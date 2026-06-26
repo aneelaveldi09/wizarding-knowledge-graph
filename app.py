@@ -166,15 +166,25 @@ hr { border-color: rgba(201,162,39,0.2) !important; }
 </style>
 """, unsafe_allow_html=True)
 
+HP_CASTLE   = "https://upload.wikimedia.org/wikipedia/commons/c/c4/Wizarding_World_of_Harry_Potter_Castle.jpg"
+HP_STUDIO   = "https://upload.wikimedia.org/wikipedia/commons/b/b5/Entrance_to_the_Making_of_Harry_Potter_studio_tour.jpg"
+HP_PANORAMA = "https://upload.wikimedia.org/wikipedia/commons/2/25/The_Wizarding_World_of_Harry_Potter_-_panoramio_%281%29.jpg"
+HP_WORDMARK = "https://upload.wikimedia.org/wikipedia/commons/6/6e/Harry_Potter_wordmark.svg"
+
 with st.sidebar:
+    st.markdown(
+        f"<img src='{HP_STUDIO}' style='width:100%;border-radius:10px;"
+        f"border:1px solid rgba(201,162,39,0.3);margin-bottom:12px;"
+        f"box-shadow:0 0 20px rgba(201,162,39,0.15)' />",
+        unsafe_allow_html=True,
+    )
     st.markdown("""
-    <div style='text-align:center;padding:22px 0 18px'>
-      <div style='font-size:2.2rem;line-height:1'>⚡</div>
-      <div style='font-family:Cinzel,serif;font-size:1.1rem;color:#c9a227;
-                  text-shadow:0 0 20px rgba(201,162,39,0.6);letter-spacing:3px;margin-top:8px'>
+    <div style='text-align:center; padding: 4px 0 16px'>
+      <div style='font-family:Cinzel,serif; font-size:1.15rem; color:#c9a227;
+                  text-shadow: 0 0 20px rgba(201,162,39,0.6); letter-spacing:3px;'>
         Wizarding Knowledge Graph
       </div>
-      <div style='color:#555;font-size:0.7rem;margin-top:5px;letter-spacing:1px'>
+      <div style='color:#666; font-size:0.72rem; margin-top:4px; letter-spacing:1px;'>
         BERT · REBEL · NetworkX
       </div>
     </div>
@@ -206,32 +216,27 @@ with st.sidebar:
 
 # ── Header ────────────────────────────────────────────────────────────────────
 
-st.markdown("""
-<div style='border-radius:16px;margin-bottom:28px;padding:56px 40px;text-align:center;
-            background:radial-gradient(ellipse at 50% 0%,#1a1430 0%,#0a0a1e 45%,#05050f 100%);
-            border:1px solid rgba(201,162,39,0.2);
-            box-shadow:0 0 80px rgba(201,162,39,0.12),inset 0 1px 0 rgba(201,162,39,0.08);
-            position:relative;overflow:hidden'>
-  <div style='position:absolute;inset:0;pointer-events:none;overflow:hidden'>
-    <div style='position:absolute;width:340px;height:340px;border-radius:50%;
-                background:radial-gradient(circle,rgba(201,162,39,0.08) 0%,transparent 70%);
-                top:-80px;left:50%;transform:translateX(-50%)'></div>
-  </div>
-  <div style='font-size:2.8rem;line-height:1;margin-bottom:14px;
-              filter:drop-shadow(0 0 18px rgba(201,162,39,0.7))'>⚡</div>
-  <div style='font-family:Cinzel,serif;font-size:2.6rem;font-weight:700;color:#c9a227;
-              text-shadow:0 0 50px rgba(201,162,39,0.5);letter-spacing:4px;line-height:1.15'>
-    Harry Potter
-  </div>
-  <div style='font-family:Cinzel,serif;font-size:1.05rem;color:rgba(255,255,255,0.55);
-              letter-spacing:8px;text-transform:uppercase;margin-top:6px'>
-    Knowledge Graph
-  </div>
-  <div style='color:rgba(255,255,255,0.3);font-size:0.78rem;margin-top:14px;letter-spacing:1.5px'>
-    BERT NER &nbsp;·&nbsp; REBEL Relation Extraction &nbsp;·&nbsp; NetworkX &nbsp;·&nbsp; 50 Wikipedia articles
-  </div>
-</div>
-""", unsafe_allow_html=True)
+st.markdown(
+    f"""
+    <div style='position:relative;border-radius:16px;overflow:hidden;margin-bottom:28px;
+                box-shadow:0 0 60px rgba(201,162,39,0.25)'>
+      <img src='{HP_CASTLE}' style='width:100%;height:280px;object-fit:cover;
+           object-position:center 55%;display:block;filter:brightness(0.45)'/>
+      <div style='position:absolute;inset:0;display:flex;flex-direction:column;
+                  align-items:center;justify-content:center;
+                  background:linear-gradient(to bottom,rgba(5,5,15,0.1),rgba(5,5,15,0.7))'>
+        <img src='{HP_WORDMARK}' style='height:64px;filter:brightness(0) invert(1)
+             sepia(1) saturate(4) hue-rotate(8deg) brightness(1.1);margin-bottom:10px'/>
+        <div style='font-family:Cinzel,serif;font-size:1.1rem;color:rgba(255,255,255,0.7);
+                    letter-spacing:4px;text-transform:uppercase'>Knowledge Graph</div>
+        <div style='color:rgba(255,255,255,0.45);font-size:0.8rem;margin-top:8px;letter-spacing:1px'>
+          BERT NER · REBEL Relation Extraction · NetworkX · 50 Wikipedia articles
+        </div>
+      </div>
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
 
 # ── Pipeline runner ───────────────────────────────────────────────────────────
 
@@ -457,25 +462,31 @@ with tabs[1]:
 # ══ Tab 3 — REBEL Triplets ════════════════════════════════════════════════════
 
 with tabs[2]:
-    st.markdown("""
-    <div style='background:rgba(13,13,43,0.6);border:1px solid rgba(201,162,39,0.2);
-         border-radius:12px;padding:20px 24px;margin-bottom:20px;display:flex;gap:24px;align-items:flex-start'>
-      <div style='font-size:2.4rem;line-height:1;flex-shrink:0'>🔗</div>
-      <div>
-        <div style='font-size:1.05rem;font-weight:600;color:#c9a227;margin-bottom:6px'>
-          REBEL Relation Extraction
+    col_img, col_info = st.columns([1, 2])
+    with col_img:
+        st.markdown(
+            f"<img src='{HP_PANORAMA}' style='width:100%;border-radius:10px;"
+            f"border:1px solid rgba(201,162,39,0.3);box-shadow:0 0 20px rgba(201,162,39,0.1)'/>",
+            unsafe_allow_html=True,
+        )
+        st.caption("The Wizarding World of Harry Potter")
+    with col_info:
+        st.markdown("""
+        <div style='background:rgba(13,13,43,0.6);border:1px solid rgba(201,162,39,0.2);
+             border-radius:12px;padding:16px 20px;height:100%'>
+          <div style='font-size:1.05rem;font-weight:600;color:#c9a227;margin-bottom:8px'>
+            REBEL Relation Extraction
+          </div>
+          <code style='color:#4ecdc4'>Babelscape/rebel-large</code>
+          <div style='color:#aaa;font-size:0.88rem;margin-top:10px;line-height:1.7'>
+            BART-based seq2seq transformer. Reads raw text and generates structured
+            <b style='color:#ffe66d'>(head, relation, tail)</b> triplets directly,
+            no separate NER or classification step needed.<br><br>
+            <b style='color:#c9a227'>Every edge in this graph</b> was extracted by this model
+            from real Wikipedia text about Harry Potter.
+          </div>
         </div>
-        <code style='color:#4ecdc4'>Babelscape/rebel-large</code>
-        <div style='color:#aaa;font-size:0.88rem;margin-top:10px;line-height:1.7'>
-          BART-based seq2seq transformer. Reads raw text and generates structured
-          <b style='color:#ffe66d'>(head, relation, tail)</b> triplets directly,
-          no separate NER or classification step needed.<br><br>
-          <b style='color:#c9a227'>Every edge in this graph</b> was extracted by this model
-          from real Wikipedia text about Harry Potter.
-        </div>
-      </div>
-    </div>
-    """, unsafe_allow_html=True)
+        """, unsafe_allow_html=True)
 
     re_demo = st.text_area(
         "Test REBEL live",
