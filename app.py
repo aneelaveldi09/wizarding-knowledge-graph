@@ -163,6 +163,7 @@ hr { border-color: rgba(201,162,39,0.2) !important; }
 HP_CASTLE   = "https://upload.wikimedia.org/wikipedia/commons/c/c4/Wizarding_World_of_Harry_Potter_Castle.jpg"
 HP_DIAGON   = "https://upload.wikimedia.org/wikipedia/commons/e/e1/Diagon_Alley%2C_The_making_of_Harry_Potter_%28Ank_Kumar%2C_Infosys%29_02.jpg"
 HP_STUDIO   = "https://upload.wikimedia.org/wikipedia/commons/b/b5/Entrance_to_the_Making_of_Harry_Potter_studio_tour.jpg"
+HP_PANORAMA = "https://upload.wikimedia.org/wikipedia/commons/2/25/The_Wizarding_World_of_Harry_Potter_-_panoramio_%281%29.jpg"
 HP_WORDMARK = "https://upload.wikimedia.org/wikipedia/commons/6/6e/Harry_Potter_wordmark.svg"
 
 # ── Sidebar ───────────────────────────────────────────────────────────────────
@@ -170,7 +171,7 @@ HP_WORDMARK = "https://upload.wikimedia.org/wikipedia/commons/6/6e/Harry_Potter_
 with st.sidebar:
     # Hogwarts castle in sidebar
     st.markdown(
-        f"<img src='{HP_CASTLE}' style='width:100%;border-radius:10px;"
+        f"<img src='{HP_STUDIO}' style='width:100%;border-radius:10px;"
         f"border:1px solid rgba(201,162,39,0.3);margin-bottom:12px;"
         f"box-shadow:0 0 20px rgba(201,162,39,0.15)' />",
         unsafe_allow_html=True,
@@ -444,11 +445,11 @@ with tabs[2]:
     col_img, col_info = st.columns([1, 2])
     with col_img:
         st.markdown(
-            f"<img src='{HP_DIAGON}' style='width:100%;border-radius:10px;"
+            f"<img src='{HP_PANORAMA}' style='width:100%;border-radius:10px;"
             f"border:1px solid rgba(201,162,39,0.3);box-shadow:0 0 20px rgba(201,162,39,0.1)'/>",
             unsafe_allow_html=True,
         )
-        st.caption("Diagon Alley — Warner Bros. Studio Tour")
+        st.caption("The Wizarding World of Harry Potter")
     with col_info:
         st.markdown("""
         <div style='background:rgba(13,13,43,0.6);border:1px solid rgba(201,162,39,0.2);
