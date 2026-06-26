@@ -1,0 +1,195 @@
+"""
+Curated Harry Potter knowledge base — entities and relationships.
+"""
+
+CHARACTERS = [
+    {"id": "harry_potter", "label": "Harry Potter", "type": "Character", "house": "Gryffindor", "role": "Protagonist"},
+    {"id": "hermione_granger", "label": "Hermione Granger", "type": "Character", "house": "Gryffindor", "role": "Protagonist"},
+    {"id": "ron_weasley", "label": "Ron Weasley", "type": "Character", "house": "Gryffindor", "role": "Protagonist"},
+    {"id": "albus_dumbledore", "label": "Albus Dumbledore", "type": "Character", "house": "Gryffindor", "role": "Mentor"},
+    {"id": "severus_snape", "label": "Severus Snape", "type": "Character", "house": "Slytherin", "role": "Teacher"},
+    {"id": "voldemort", "label": "Lord Voldemort", "type": "Character", "house": "Slytherin", "role": "Antagonist"},
+    {"id": "draco_malfoy", "label": "Draco Malfoy", "type": "Character", "house": "Slytherin", "role": "Rival"},
+    {"id": "neville_longbottom", "label": "Neville Longbottom", "type": "Character", "house": "Gryffindor", "role": "Ally"},
+    {"id": "luna_lovegood", "label": "Luna Lovegood", "type": "Character", "house": "Ravenclaw", "role": "Ally"},
+    {"id": "ginny_weasley", "label": "Ginny Weasley", "type": "Character", "house": "Gryffindor", "role": "Ally"},
+    {"id": "sirius_black", "label": "Sirius Black", "type": "Character", "house": "Gryffindor", "role": "Mentor"},
+    {"id": "remus_lupin", "label": "Remus Lupin", "type": "Character", "house": "Gryffindor", "role": "Teacher"},
+    {"id": "bellatrix_lestrange", "label": "Bellatrix Lestrange", "type": "Character", "house": "Slytherin", "role": "Death Eater"},
+    {"id": "minerva_mcgonagall", "label": "Minerva McGonagall", "type": "Character", "house": "Gryffindor", "role": "Teacher"},
+    {"id": "rubeus_hagrid", "label": "Rubeus Hagrid", "type": "Character", "house": "Gryffindor", "role": "Gamekeeper"},
+    {"id": "cedric_diggory", "label": "Cedric Diggory", "type": "Character", "house": "Hufflepuff", "role": "Student"},
+    {"id": "peter_pettigrew", "label": "Peter Pettigrew", "type": "Character", "house": "Gryffindor", "role": "Traitor"},
+    {"id": "dobby", "label": "Dobby", "type": "Character", "house": None, "role": "House Elf"},
+]
+
+SPELLS = [
+    {"id": "expelliarmus", "label": "Expelliarmus", "type": "Spell", "category": "Defensive", "effect": "Disarms opponent"},
+    {"id": "avada_kedavra", "label": "Avada Kedavra", "type": "Spell", "category": "Unforgivable", "effect": "Kills instantly"},
+    {"id": "expecto_patronum", "label": "Expecto Patronum", "type": "Spell", "category": "Defensive", "effect": "Repels Dementors"},
+    {"id": "lumos", "label": "Lumos", "type": "Spell", "category": "Utility", "effect": "Creates light"},
+    {"id": "wingardium_leviosa", "label": "Wingardium Leviosa", "type": "Spell", "category": "Charm", "effect": "Levitates objects"},
+    {"id": "alohomora", "label": "Alohomora", "type": "Spell", "category": "Utility", "effect": "Unlocks doors"},
+    {"id": "crucio", "label": "Crucio", "type": "Spell", "category": "Unforgivable", "effect": "Causes excruciating pain"},
+    {"id": "imperio", "label": "Imperio", "type": "Spell", "category": "Unforgivable", "effect": "Controls victim's mind"},
+    {"id": "riddikulus", "label": "Riddikulus", "type": "Spell", "category": "Defensive", "effect": "Repels Boggarts"},
+    {"id": "accio", "label": "Accio", "type": "Spell", "category": "Charm", "effect": "Summons objects"},
+    {"id": "sectumsempra", "label": "Sectumsempra", "type": "Spell", "category": "Dark", "effect": "Slashes like an invisible sword"},
+    {"id": "legilimens", "label": "Legilimens", "type": "Spell", "category": "Mental", "effect": "Reads minds"},
+    {"id": "occlumency", "label": "Occlumency", "type": "Spell", "category": "Mental", "effect": "Protects mind from Legilimency"},
+    {"id": "petrificus_totalus", "label": "Petrificus Totalus", "type": "Spell", "category": "Binding", "effect": "Full body bind"},
+    {"id": "stupefy", "label": "Stupefy", "type": "Spell", "category": "Defensive", "effect": "Stuns opponent"},
+]
+
+LOCATIONS = [
+    {"id": "hogwarts", "label": "Hogwarts", "type": "Location", "category": "School"},
+    {"id": "diagon_alley", "label": "Diagon Alley", "type": "Location", "category": "Shopping District"},
+    {"id": "hogsmeade", "label": "Hogsmeade", "type": "Location", "category": "Village"},
+    {"id": "azkaban", "label": "Azkaban", "type": "Location", "category": "Prison"},
+    {"id": "ministry_of_magic", "label": "Ministry of Magic", "type": "Location", "category": "Government"},
+    {"id": "forbidden_forest", "label": "Forbidden Forest", "type": "Location", "category": "Forest"},
+    {"id": "chamber_of_secrets", "label": "Chamber of Secrets", "type": "Location", "category": "Hidden Room"},
+    {"id": "department_of_mysteries", "label": "Department of Mysteries", "type": "Location", "category": "Government"},
+    {"id": "grimmauld_place", "label": "12 Grimmauld Place", "type": "Location", "category": "House"},
+    {"id": "godrics_hollow", "label": "Godric's Hollow", "type": "Location", "category": "Village"},
+    {"id": "malfoy_manor", "label": "Malfoy Manor", "type": "Location", "category": "House"},
+    {"id": "platform_9_34", "label": "Platform 9¾", "type": "Location", "category": "Transport"},
+    {"id": "gringotts", "label": "Gringotts Bank", "type": "Location", "category": "Bank"},
+    {"id": "room_of_requirement", "label": "Room of Requirement", "type": "Location", "category": "Hidden Room"},
+]
+
+EVENTS = [
+    {"id": "battle_of_hogwarts", "label": "Battle of Hogwarts", "type": "Event", "book": 7},
+    {"id": "triwizard_tournament", "label": "Triwizard Tournament", "type": "Event", "book": 4},
+    {"id": "chamber_opening", "label": "Opening of the Chamber of Secrets", "type": "Event", "book": 2},
+    {"id": "voldemort_return", "label": "Return of Voldemort", "type": "Event", "book": 4},
+    {"id": "harry_birth", "label": "Harry's Survival of Killing Curse", "type": "Event", "book": 1},
+    {"id": "dumbledore_death", "label": "Death of Dumbledore", "type": "Event", "book": 6},
+    {"id": "horcrux_hunt", "label": "Horcrux Hunt", "type": "Event", "book": 7},
+    {"id": "sirius_escape", "label": "Sirius's Escape from Azkaban", "type": "Event", "book": 3},
+    {"id": "quidditch_world_cup", "label": "Quidditch World Cup", "type": "Event", "book": 4},
+    {"id": "order_of_phoenix_formation", "label": "Formation of Order of the Phoenix", "type": "Event", "book": 5},
+]
+
+OBJECTS = [
+    {"id": "elder_wand", "label": "Elder Wand", "type": "Object", "category": "Deathly Hallow"},
+    {"id": "invisibility_cloak", "label": "Invisibility Cloak", "type": "Object", "category": "Deathly Hallow"},
+    {"id": "resurrection_stone", "label": "Resurrection Stone", "type": "Object", "category": "Deathly Hallow"},
+    {"id": "time_turner", "label": "Time Turner", "type": "Object", "category": "Magical Artifact"},
+    {"id": "marauders_map", "label": "Marauder's Map", "type": "Object", "category": "Magical Artifact"},
+    {"id": "sorting_hat", "label": "Sorting Hat", "type": "Object", "category": "Magical Artifact"},
+    {"id": "philosophers_stone", "label": "Philosopher's Stone", "type": "Object", "category": "Magical Artifact"},
+    {"id": "triwizard_cup", "label": "Triwizard Cup", "type": "Object", "category": "Portkey"},
+]
+
+RELATIONSHIPS = [
+    # Character → Spell
+    ("harry_potter", "used", "expelliarmus"),
+    ("harry_potter", "used", "expecto_patronum"),
+    ("harry_potter", "used", "accio"),
+    ("harry_potter", "used", "stupefy"),
+    ("hermione_granger", "used", "wingardium_leviosa"),
+    ("hermione_granger", "used", "alohomora"),
+    ("hermione_granger", "used", "stupefy"),
+    ("hermione_granger", "used", "accio"),
+    ("ron_weasley", "used", "wingardium_leviosa"),
+    ("voldemort", "used", "avada_kedavra"),
+    ("voldemort", "used", "crucio"),
+    ("voldemort", "used", "legilimens"),
+    ("snape", "used", "sectumsempra"),
+    ("snape", "used", "legilimens"),
+    ("snape", "used", "occlumency"),
+    ("bellatrix_lestrange", "used", "crucio"),
+    ("bellatrix_lestrange", "used", "avada_kedavra"),
+    ("neville_longbottom", "used", "riddikulus"),
+    ("neville_longbottom", "used", "stupefy"),
+    ("remus_lupin", "used", "riddikulus"),
+    ("remus_lupin", "used", "expecto_patronum"),
+
+    # Character → Location
+    ("harry_potter", "studied_at", "hogwarts"),
+    ("hermione_granger", "studied_at", "hogwarts"),
+    ("ron_weasley", "studied_at", "hogwarts"),
+    ("voldemort", "studied_at", "hogwarts"),
+    ("draco_malfoy", "studied_at", "hogwarts"),
+    ("albus_dumbledore", "led", "hogwarts"),
+    ("sirius_black", "imprisoned_in", "azkaban"),
+    ("sirius_black", "lived_at", "grimmauld_place"),
+    ("harry_potter", "born_in", "godrics_hollow"),
+    ("draco_malfoy", "lived_at", "malfoy_manor"),
+    ("harry_potter", "visited", "ministry_of_magic"),
+    ("harry_potter", "visited", "department_of_mysteries"),
+    ("harry_potter", "visited", "forbidden_forest"),
+    ("hagrid", "lives_near", "forbidden_forest"),
+    ("voldemort", "created", "chamber_of_secrets"),
+
+    # Character → Event
+    ("harry_potter", "fought_in", "battle_of_hogwarts"),
+    ("hermione_granger", "fought_in", "battle_of_hogwarts"),
+    ("ron_weasley", "fought_in", "battle_of_hogwarts"),
+    ("voldemort", "died_in", "battle_of_hogwarts"),
+    ("neville_longbottom", "fought_in", "battle_of_hogwarts"),
+    ("harry_potter", "competed_in", "triwizard_tournament"),
+    ("cedric_diggory", "competed_in", "triwizard_tournament"),
+    ("cedric_diggory", "died_in", "triwizard_tournament"),
+    ("voldemort", "returned_in", "voldemort_return"),
+    ("harry_potter", "survived", "harry_birth"),
+    ("voldemort", "caused", "harry_birth"),
+    ("albus_dumbledore", "died_in", "dumbledore_death"),
+    ("snape", "caused", "dumbledore_death"),
+    ("sirius_black", "escaped_in", "sirius_escape"),
+    ("harry_potter", "led", "horcrux_hunt"),
+    ("hermione_granger", "participated_in", "horcrux_hunt"),
+    ("ron_weasley", "participated_in", "horcrux_hunt"),
+
+    # Character → Object
+    ("harry_potter", "owns", "invisibility_cloak"),
+    ("harry_potter", "wielded", "elder_wand"),
+    ("albus_dumbledore", "wielded", "elder_wand"),
+    ("voldemort", "sought", "elder_wand"),
+    ("hermione_granger", "used", "time_turner"),
+    ("harry_potter", "owned", "marauders_map"),
+    ("harry_potter", "sought", "philosophers_stone"),
+
+    # Character → Character
+    ("harry_potter", "fought", "voldemort"),
+    ("harry_potter", "befriended", "hermione_granger"),
+    ("harry_potter", "befriended", "ron_weasley"),
+    ("harry_potter", "mentored_by", "albus_dumbledore"),
+    ("harry_potter", "mentored_by", "sirius_black"),
+    ("snape", "teaches", "harry_potter"),
+    ("snape", "teaches", "hermione_granger"),
+    ("snape", "teaches", "draco_malfoy"),
+    ("mcgonagall", "teaches", "harry_potter"),
+    ("remus_lupin", "teaches", "harry_potter"),
+    ("remus_lupin", "teaches", "neville_longbottom"),
+    ("voldemort", "created", "bellatrix_lestrange"),
+    ("sirius_black", "betrayed_by", "peter_pettigrew"),
+    ("harry_potter", "married", "ginny_weasley"),
+    ("ron_weasley", "married", "hermione_granger"),
+    ("harry_potter", "saved_by", "dobby"),
+    ("draco_malfoy", "rivals", "harry_potter"),
+    ("bellatrix_lestrange", "serves", "voldemort"),
+    ("peter_pettigrew", "serves", "voldemort"),
+
+    # Location → Event
+    ("hogwarts", "hosted", "battle_of_hogwarts"),
+    ("hogwarts", "hosted", "chamber_opening"),
+    ("ministry_of_magic", "involved_in", "order_of_phoenix_formation"),
+    ("department_of_mysteries", "scene_of", "battle_of_hogwarts"),
+]
+
+ENTITY_COLORS = {
+    "Character": "#FF6B6B",
+    "Spell": "#4ECDC4",
+    "Location": "#45B7D1",
+    "Event": "#FFA07A",
+    "Object": "#98D8C8",
+}
+
+HOUSE_COLORS = {
+    "Gryffindor": "#740001",
+    "Slytherin": "#1A472A",
+    "Ravenclaw": "#0E1A40",
+    "Hufflepuff": "#EEE117",
+}
