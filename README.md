@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Harry_Potter_wordmark.svg" width="380" alt="Harry Potter"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Wizarding_World_of_Harry_Potter_Castle.jpg" width="100%" style="border-radius:12px" alt="Wizarding World of Harry Potter"/>
 
 # Wizarding Knowledge Graph
 
@@ -94,9 +94,9 @@ Running REBEL on real Wikipedia text, some of the triplets it extracts:
 These come purely from model inference on raw text, not from any lookup table.
 
 <div align="center">
-<img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Hogwarts_Bridge%2C_London_Warner_Bros_Harry_Potter_Studios_01.jpg" width="680" alt="Hogwarts Bridge at Warner Bros Studios"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Diagon_Alley%2C_The_making_of_Harry_Potter_%28Ank_Kumar%2C_Infosys%29_02.jpg" width="680" alt="Diagon Alley — Warner Bros Studio Tour"/>
 <br>
-<sub>Warner Bros. Studio Tour London — The Making of Harry Potter</sub>
+<sub>Diagon Alley — Warner Bros. Studio Tour, The Making of Harry Potter</sub>
 </div>
 
 ## Project structure
