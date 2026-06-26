@@ -312,6 +312,33 @@ tabs = st.tabs(["🕸️  Knowledge Graph", "🤖  BERT NER", "🔗  REBEL Tripl
 # ══ Tab 1 — Knowledge Graph ═══════════════════════════════════════════════════
 
 with tabs[0]:
+    # ── Usage guide ───────────────────────────────────────────────────────────
+    st.markdown("""
+    <div style='background:rgba(8,8,22,0.7);border:1px solid rgba(201,162,39,0.18);
+         border-radius:12px;padding:14px 20px;margin-bottom:14px;
+         font-family:Inter,"Segoe UI",sans-serif;'>
+      <div style='color:#c9a227;font-weight:700;font-size:0.82rem;
+                  text-transform:uppercase;letter-spacing:1.2px;margin-bottom:10px'>
+        How to use this graph
+      </div>
+      <div style='display:flex;flex-wrap:wrap;gap:8px 20px;color:#aaa;font-size:0.82rem;line-height:1.6'>
+        <span><b style='color:#e8e8e8'>🖱 Hover</b> a dot — see the name &amp; type</span>
+        <span><b style='color:#e8e8e8'>🖱 Click</b> a dot — light up its connections</span>
+        <span><b style='color:#e8e8e8'>🖱 Click canvas</b> — reset all highlights</span>
+        <span><b style='color:#e8e8e8'>🖱 Scroll</b> — zoom in / out</span>
+        <span><b style='color:#e8e8e8'>🖱 Drag</b> — pan around</span>
+        <span><b style='color:#e8e8e8'>Fit button</b> — zoom to fit everything</span>
+        <span><b style='color:#e8e8e8'>Sidebar → Filter</b> — show / hide entity types</span>
+        <span><b style='color:#e8e8e8'>Sidebar → Focus on Node</b> — type e.g. <code style='color:#4ecdc4;background:rgba(78,205,196,0.1);padding:1px 5px;border-radius:3px'>harry_potter</code> to zoom into one character</span>
+        <span><b style='color:#e8e8e8'>Depth slider</b> — expand how many hops you see around a focused node</span>
+      </div>
+      <div style='margin-top:10px;color:#666;font-size:0.76rem'>
+        Node size = number of connections. Bigger dot = more central character/place.
+        Edges were extracted by REBEL (BART transformer) from 50 real Wikipedia articles — no hardcoded data.
+      </div>
+    </div>
+    """, unsafe_allow_html=True)
+
     if G.number_of_nodes() == 0:
         st.warning("No nodes match current filters.")
     else:
@@ -319,12 +346,12 @@ with tabs[0]:
 
     # Relationship labels for top edges
     if G.number_of_edges() > 0:
-        top_edges = sorted(G.edges(data=True), key=lambda e: -e[2].get("weight", 1))[:6]
+        top_edges = sorted(G.edges(data=True), key=lambda e: -e[2].get("weight", 1))[:8]
         st.markdown(
-            "<div style='display:flex;flex-wrap:wrap;gap:8px;margin-top:12px'>"
+            "<div style='display:flex;flex-wrap:wrap;gap:7px;margin-top:12px'>"
             + "".join(
-                f"<span style='background:rgba(201,162,39,0.12);border:1px solid rgba(201,162,39,0.3);"
-                f"border-radius:20px;padding:3px 12px;font-size:0.78rem;color:#c9a227'>"
+                f"<span style='background:rgba(201,162,39,0.08);border:1px solid rgba(201,162,39,0.22);"
+                f"border-radius:20px;padding:3px 12px;font-size:0.76rem;color:#c9a227'>"
                 f"{G.nodes[u].get('label',u)} → {d.get('relation','?').replace('_',' ')} → {G.nodes[v].get('label',v)}"
                 f"</span>"
                 for u, v, d in top_edges

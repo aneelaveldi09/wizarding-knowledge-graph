@@ -1,10 +1,10 @@
 """
-Graph visualisation.
-Primary: cytoscape_html() — Cytoscape.js embedded via HTML component.
-  - Force-directed layout (cose)
-  - Shaped nodes by entity type
-  - Glow shadows, click-to-highlight, edge labels, dark theme
-  - Used by serious knowledge graph tools (bioinformatics, research)
+Graph visualisation — Obsidian-style Cytoscape.js.
+  - fcose physics layout: nodes float and settle like Obsidian
+  - Tiny glowing dots sized by degree
+  - Labels hidden by default, fade in on hover / click
+  - Edges: near-invisible hairlines, glow on selection
+  - Click a node to illuminate its neighbourhood; click canvas to reset
 """
 
 from __future__ import annotations
@@ -12,50 +12,36 @@ import json
 import networkx as nx
 
 ENTITY_COLORS = {
-    "Character":    "#ff6b6b",
-    "Location":     "#4ecdc4",
-    "Spell":        "#ffe66d",
-    "Object":       "#a8e6cf",
-    "Event":        "#ff8b94",
-    "Organization": "#c39bd3",
-    "House":        "#f9ca24",
-    "Other":        "#666888",
-}
-
-ENTITY_SHAPES = {
-    "Character":    "ellipse",
-    "Location":     "round-rectangle",
-    "Spell":        "diamond",
-    "Object":       "pentagon",
-    "Event":        "star",
-    "Organization": "hexagon",
-    "House":        "barrel",
-    "Other":        "ellipse",
+    "Character":    "#e05c5c",
+    "Location":     "#3ec9c0",
+    "Spell":        "#f0d060",
+    "Object":       "#72c4a0",
+    "Event":        "#e07878",
+    "Organization": "#a87ec8",
+    "House":        "#f0b830",
+    "Other":        "#556688",
 }
 
 
 def cytoscape_html(G: nx.DiGraph, height: int = 740) -> str:
-    """
-    Render the knowledge graph using Cytoscape.js (via CDN).
-    Returns a self-contained HTML string for st.components.html().
-    """
     if G.number_of_nodes() == 0:
-        return "<div style='color:#888;text-align:center;padding:40px'>No data to display.</div>"
+        return "<div style='color:#555;text-align:center;padding:60px;font-family:Inter,sans-serif'>No data.</div>"
 
     elements = []
     for node_id, data in G.nodes(data=True):
         etype  = data.get("entity_type", "Other")
-        color  = ENTITY_COLORS.get(etype, "#666888")
+        color  = ENTITY_COLORS.get(etype, "#556688")
         degree = G.degree(node_id)
-        size   = max(28, min(72, 28 + degree * 4))
+        # Obsidian: tiny dots, slightly bigger for high-degree hubs
+        size   = max(10, min(38, 10 + degree * 2.2))
         elements.append({
             "group": "nodes",
             "data": {
-                "id": node_id,
-                "label": data.get("label", node_id),
-                "type": etype,
-                "color": color,
-                "size": size,
+                "id":     node_id,
+                "label":  data.get("label", node_id),
+                "type":   etype,
+                "color":  color,
+                "size":   size,
                 "degree": degree,
             },
         })
@@ -66,18 +52,18 @@ def cytoscape_html(G: nx.DiGraph, height: int = 740) -> str:
         elements.append({
             "group": "edges",
             "data": {
-                "id": f"{u}__{v}",
+                "id":     f"{u}__{v}",
                 "source": u,
                 "target": v,
-                "label": rel,
-                "weight": max(1.0, min(float(weight), 5.0)),
+                "label":  rel,
+                "weight": max(0.5, min(float(weight), 3.0)),
             },
         })
 
-    # Build per-type style rules for shape
-    shape_rules = "\n".join(
-        f"""        {{ selector: 'node[type="{etype}"]', style: {{ 'shape': '{shape}' }} }},"""
-        for etype, shape in ENTITY_SHAPES.items()
+    legend_html = "".join(
+        f'<div class="li"><div class="ld" style="background:{c};box-shadow:0 0 5px {c}99"></div>'
+        f'<span>{t}</span></div>'
+        for t, c in ENTITY_COLORS.items() if t != "Other"
     )
 
     elements_json = json.dumps(elements)
@@ -87,272 +73,268 @@ def cytoscape_html(G: nx.DiGraph, height: int = 740) -> str:
 <head>
 <meta charset="utf-8"/>
 <script src="https://unpkg.com/cytoscape@3.28.1/dist/cytoscape.min.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose@2.2.0/cytoscape-fcose.js"></script>
 <style>
-  * {{ box-sizing: border-box; margin: 0; padding: 0; }}
-  html, body {{ width: 100%; height: {height}px; background: transparent; overflow: hidden; }}
-  #cy {{
-    width: 100%;
-    height: {height}px;
-    background: radial-gradient(ellipse at 30% 35%, #0d1433 0%, #07071a 55%, #05050f 100%);
-    border-radius: 12px;
-    border: 1px solid rgba(201,162,39,0.2);
-  }}
-  #legend {{
-    position: absolute;
-    top: 14px;
-    left: 14px;
-    background: rgba(7,7,26,0.88);
-    border: 1px solid rgba(201,162,39,0.25);
-    border-radius: 10px;
-    padding: 10px 14px;
-    font-family: 'Segoe UI', Inter, Arial, sans-serif;
-    font-size: 11px;
-    color: #ccc;
-    z-index: 10;
-    backdrop-filter: blur(6px);
-  }}
-  #legend .title {{
-    color: #c9a227;
-    font-weight: 700;
-    font-size: 11px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    margin-bottom: 7px;
-  }}
-  .legend-item {{ display: flex; align-items: center; gap: 7px; margin: 4px 0; }}
-  .legend-dot {{ width: 11px; height: 11px; border-radius: 50%; flex-shrink: 0; }}
-  #tooltip {{
-    position: absolute;
-    pointer-events: none;
-    background: #0d0d2b;
-    border-radius: 9px;
-    padding: 10px 14px;
-    font-family: 'Segoe UI', Inter, Arial, sans-serif;
-    font-size: 12px;
-    color: #e8e8e8;
-    display: none;
-    z-index: 20;
-    max-width: 220px;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.6);
-  }}
-  #controls {{
-    position: absolute;
-    bottom: 14px;
-    right: 14px;
-    display: flex;
-    gap: 6px;
-    z-index: 10;
-  }}
-  .ctrl-btn {{
-    background: rgba(13,13,43,0.85);
-    border: 1px solid rgba(201,162,39,0.3);
-    color: #c9a227;
-    border-radius: 7px;
-    padding: 5px 11px;
-    font-size: 12px;
-    cursor: pointer;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    transition: all 0.15s;
-  }}
-  .ctrl-btn:hover {{ background: rgba(201,162,39,0.15); }}
+*{{box-sizing:border-box;margin:0;padding:0}}
+html,body{{width:100%;height:{height}px;overflow:hidden;background:transparent}}
+#cy{{
+  width:100%;height:{height}px;
+  background:radial-gradient(ellipse at 40% 40%,#0c0c18 0%,#070710 50%,#04040c 100%);
+  border-radius:12px;
+  border:1px solid rgba(201,162,39,0.12);
+}}
+#wrap{{position:relative;width:100%;height:{height}px}}
+#legend{{
+  position:absolute;top:12px;left:12px;
+  background:rgba(4,4,12,0.82);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:10px;padding:10px 13px;
+  font-family:Inter,'Segoe UI',sans-serif;font-size:10.5px;color:#aaa;
+  z-index:10;backdrop-filter:blur(8px);
+  max-width:130px;
+}}
+#legend .title{{color:rgba(201,162,39,0.85);font-size:10px;font-weight:700;
+  letter-spacing:1.2px;text-transform:uppercase;margin-bottom:7px}}
+.li{{display:flex;align-items:center;gap:7px;margin:3px 0}}
+.ld{{width:8px;height:8px;border-radius:50%;flex-shrink:0}}
+#tip{{
+  position:absolute;pointer-events:none;
+  background:rgba(8,8,22,0.95);
+  border-radius:10px;padding:10px 14px;
+  font-family:Inter,'Segoe UI',sans-serif;font-size:12px;color:#ddd;
+  display:none;z-index:20;max-width:210px;
+  box-shadow:0 6px 30px rgba(0,0,0,0.7);
+  border:1px solid rgba(255,255,255,0.07);
+}}
+#ctrls{{
+  position:absolute;bottom:12px;right:12px;
+  display:flex;gap:5px;z-index:10;
+}}
+.btn{{
+  background:rgba(8,8,22,0.82);
+  border:1px solid rgba(255,255,255,0.1);
+  color:rgba(201,162,39,0.8);
+  border-radius:7px;padding:5px 12px;
+  font-size:11px;cursor:pointer;
+  font-family:Inter,sans-serif;
+  transition:all 0.15s;
+  backdrop-filter:blur(6px);
+}}
+.btn:hover{{background:rgba(201,162,39,0.12);border-color:rgba(201,162,39,0.35)}}
+#nodecount{{
+  position:absolute;bottom:12px;left:12px;
+  color:rgba(255,255,255,0.2);font-size:10px;
+  font-family:Inter,sans-serif;z-index:10;
+}}
 </style>
 </head>
 <body>
-<div style="position:relative;width:100%;height:{height}px">
+<div id="wrap">
   <div id="cy"></div>
-
-  <div id="legend">
-    <div class="title">Entity Types</div>
-    {"".join(
-        f'<div class="legend-item"><div class="legend-dot" style="background:{c};box-shadow:0 0 6px {c}99"></div><span>{t}</span></div>'
-        for t, c in ENTITY_COLORS.items() if t != "Other"
-    )}
-  </div>
-
-  <div id="tooltip"></div>
-
-  <div id="controls">
-    <button class="ctrl-btn" onclick="cy.fit()">Fit</button>
-    <button class="ctrl-btn" onclick="resetHighlight()">Reset</button>
+  <div id="legend"><div class="title">Types</div>{legend_html}</div>
+  <div id="tip"></div>
+  <div id="nodecount">{G.number_of_nodes()} nodes · {G.number_of_edges()} edges</div>
+  <div id="ctrls">
+    <button class="btn" onclick="cy.fit(undefined,60)">Fit</button>
+    <button class="btn" onclick="reset()">Reset</button>
   </div>
 </div>
-
 <script>
-var elements = {elements_json};
+cytoscape.use(cytoscapeFcose);
 
-var cy = cytoscape({{
-  container: document.getElementById('cy'),
-  elements: elements,
-  style: [
+var elements={elements_json};
+
+var cy=cytoscape({{
+  container:document.getElementById('cy'),
+  elements:elements,
+  style:[
     {{
-      selector: 'node',
-      style: {{
-        'background-color': 'data(color)',
-        'label': 'data(label)',
-        'width': 'data(size)',
-        'height': 'data(size)',
-        'font-size': 10,
-        'font-family': 'Segoe UI, Inter, Arial, sans-serif',
-        'color': '#ffffff',
-        'text-outline-color': '#000000',
-        'text-outline-width': 1.5,
-        'text-valign': 'bottom',
-        'text-halign': 'center',
-        'text-margin-y': 5,
-        'border-width': 2,
-        'border-color': 'rgba(255,255,255,0.25)',
-        'shadow-blur': 18,
-        'shadow-color': 'data(color)',
-        'shadow-opacity': 0.65,
-        'shadow-offset-x': 0,
-        'shadow-offset-y': 0,
-        'z-index': 10,
-        'transition-property': 'border-color, border-width, shadow-opacity, opacity',
-        'transition-duration': '0.15s',
-      }}
-    }},
-    {shape_rules}
-    {{
-      selector: 'node:selected',
-      style: {{
-        'border-width': 4,
-        'border-color': '#c9a227',
-        'shadow-opacity': 1,
-        'shadow-blur': 30,
-        'z-index': 999,
+      selector:'node',
+      style:{{
+        'background-color':'data(color)',
+        'width':'data(size)','height':'data(size)',
+        'label':'',
+        'border-width':0,
+        'shadow-blur':14,
+        'shadow-color':'data(color)',
+        'shadow-opacity':0.55,
+        'shadow-offset-x':0,'shadow-offset-y':0,
+        'transition-property':'shadow-opacity,width,height,border-width,border-color,opacity',
+        'transition-duration':'0.18s',
+        'z-index':5,
       }}
     }},
     {{
-      selector: 'node.highlighted',
-      style: {{
-        'border-width': 3,
-        'border-color': '#c9a227',
-        'shadow-opacity': 0.9,
-        'z-index': 50,
+      selector:'node.hover',
+      style:{{
+        'label':'data(label)',
+        'font-size':11,
+        'font-family':'Inter, Segoe UI, Arial, sans-serif',
+        'color':'#ffffff',
+        'text-outline-color':'#000',
+        'text-outline-width':1.2,
+        'text-valign':'bottom','text-halign':'center',
+        'text-margin-y':5,
+        'shadow-opacity':0.9,'shadow-blur':22,
+        'z-index':50,
       }}
     }},
     {{
-      selector: 'node.dimmed',
-      style: {{ 'opacity': 0.12 }}
-    }},
-    {{
-      selector: 'edge',
-      style: {{
-        'width': 'data(weight)',
-        'line-color': 'rgba(201,162,39,0.28)',
-        'target-arrow-color': 'rgba(201,162,39,0.55)',
-        'target-arrow-shape': 'triangle',
-        'arrow-scale': 0.8,
-        'curve-style': 'bezier',
-        'label': 'data(label)',
-        'font-size': 9,
-        'font-family': 'Segoe UI, Inter, Arial, sans-serif',
-        'color': 'rgba(180,180,180,0.55)',
-        'text-background-color': '#07071a',
-        'text-background-opacity': 0.75,
-        'text-background-padding': '2px',
-        'text-border-opacity': 0,
-        'edge-text-rotation': 'autorotate',
-        'z-index': 1,
-        'transition-property': 'opacity, line-color',
-        'transition-duration': '0.15s',
+      selector:'node.selected',
+      style:{{
+        'label':'data(label)',
+        'font-size':12,
+        'font-family':'Inter, Segoe UI, Arial, sans-serif',
+        'color':'#ffffff',
+        'text-outline-color':'#000',
+        'text-outline-width':1.5,
+        'text-valign':'bottom','text-halign':'center',
+        'text-margin-y':5,
+        'border-width':2,'border-color':'data(color)',
+        'shadow-opacity':1,'shadow-blur':30,
+        'z-index':100,
       }}
     }},
     {{
-      selector: 'edge.highlighted',
-      style: {{
-        'line-color': 'rgba(201,162,39,0.8)',
-        'target-arrow-color': '#c9a227',
-        'z-index': 20,
-        'width': 2.5,
+      selector:'node.neighbour',
+      style:{{
+        'label':'data(label)',
+        'font-size':10,
+        'font-family':'Inter, Segoe UI, Arial, sans-serif',
+        'color':'rgba(255,255,255,0.75)',
+        'text-outline-color':'#000',
+        'text-outline-width':1,
+        'text-valign':'bottom','text-halign':'center',
+        'text-margin-y':4,
+        'shadow-opacity':0.7,
+        'z-index':30,
       }}
     }},
     {{
-      selector: 'edge.dimmed',
-      style: {{ 'opacity': 0.04 }}
+      selector:'node.dimmed',
+      style:{{'opacity':0.08}}
+    }},
+    {{
+      selector:'edge',
+      style:{{
+        'width':0.7,
+        'line-color':'rgba(120,130,180,0.15)',
+        'target-arrow-color':'rgba(120,130,180,0.2)',
+        'target-arrow-shape':'triangle',
+        'arrow-scale':0.5,
+        'curve-style':'bezier',
+        'label':'',
+        'z-index':1,
+        'transition-property':'opacity,line-color,width',
+        'transition-duration':'0.18s',
+      }}
+    }},
+    {{
+      selector:'edge.lit',
+      style:{{
+        'line-color':'data(color)',
+        'target-arrow-color':'data(color)',
+        'label':'data(label)',
+        'font-size':9,'font-family':'Inter,sans-serif',
+        'color':'rgba(200,200,200,0.6)',
+        'text-background-color':'rgba(4,4,12,0.8)',
+        'text-background-opacity':1,
+        'text-background-padding':'2px',
+        'edge-text-rotation':'autorotate',
+        'width':1.5,
+        'z-index':20,
+      }}
+    }},
+    {{
+      selector:'edge.dimmed',
+      style:{{'opacity':0.02}}
     }},
   ],
-  layout: {{
-    name: 'cose',
-    idealEdgeLength: 160,
-    nodeOverlap: 24,
-    refresh: 20,
-    fit: true,
-    padding: 40,
-    randomize: true,
-    componentSpacing: 80,
-    nodeRepulsion: function() {{ return 520000; }},
-    edgeElasticity: function() {{ return 100; }},
-    nestingFactor: 5,
-    gravity: 70,
-    numIter: 1200,
-    initialTemp: 250,
-    coolingFactor: 0.95,
-    minTemp: 1.0,
-    animationDuration: 800,
+  layout:{{
+    name:'fcose',
+    quality:'default',
+    animate:true,
+    animationDuration:900,
+    animationEasing:'ease-out',
+    fit:true,
+    padding:60,
+    randomize:true,
+    nodeSeparation:160,
+    idealEdgeLength:120,
+    edgeElasticity:0.45,
+    nestingFactor:0.1,
+    gravity:0.3,
+    gravityRange:3.8,
+    gravityCompound:1.0,
+    gravityRangeCompound:1.5,
+    numIter:2500,
+    tile:true,
+    tilingPaddingVertical:10,
+    tilingPaddingHorizontal:10,
+    initialEnergyOnIncremental:0.3,
   }},
-  wheelSensitivity: 0.25,
-  minZoom: 0.1,
-  maxZoom: 4,
+  wheelSensitivity:0.2,
+  minZoom:0.05,
+  maxZoom:5,
 }});
 
-// ── Click to highlight neighbours ────────────────────────────────────────────
-cy.on('tap', 'node', function(evt) {{
-  var node = evt.target;
-  cy.elements().addClass('dimmed').removeClass('highlighted');
-  node.removeClass('dimmed').addClass('highlighted');
-  node.neighborhood().removeClass('dimmed').addClass('highlighted');
-  node.connectedEdges().removeClass('dimmed').addClass('highlighted');
+// ── Edge color inherits from source node ─────────────────────────────────────
+cy.edges().forEach(function(e){{
+  var sc=cy.$('#'+e.data('source')).data('color')||'rgba(150,150,200,0.4)';
+  e.data('color',sc);
 }});
 
-cy.on('tap', function(evt) {{
-  if (evt.target === cy) resetHighlight();
+// ── Hover: show label + glow ──────────────────────────────────────────────────
+var tip=document.getElementById('tip');
+cy.on('mouseover','node',function(evt){{
+  var n=evt.target;
+  if(!n.hasClass('selected'))n.addClass('hover');
+  var d=n.data(),pos=evt.renderedPosition;
+  tip.style.display='block';
+  tip.style.left=(pos.x+18)+'px';
+  tip.style.top=(pos.y-12)+'px';
+  tip.innerHTML=
+    '<div style="color:'+d.color+';font-weight:700;font-size:13px;margin-bottom:3px">'+d.label+'</div>'+
+    '<div style="color:#666;font-size:9.5px;text-transform:uppercase;letter-spacing:1px">'+d.type+'</div>'+
+    '<div style="margin-top:5px;color:#888;font-size:11px">'+d.degree+' connection'+(d.degree!==1?'s':'')+'</div>';
+  tip.style.borderLeft='2px solid '+d.color;
 }});
+cy.on('mouseout','node',function(evt){{
+  evt.target.removeClass('hover');tip.style.display='none';
+}});
+cy.on('mousemove','node',function(evt){{
+  var p=evt.renderedPosition;
+  tip.style.left=(p.x+18)+'px';tip.style.top=(p.y-12)+'px';
+}});
+cy.on('mouseover','edge',function(evt){{
+  var d=evt.target.data(),p=evt.renderedPosition;
+  if(!d.label)return;
+  tip.style.display='block';
+  tip.style.left=(p.x+12)+'px';tip.style.top=(p.y-10)+'px';
+  tip.innerHTML='<span style="color:rgba(201,162,39,0.9);font-style:italic">'+d.label+'</span>';
+  tip.style.borderLeft='2px solid rgba(201,162,39,0.6)';
+}});
+cy.on('mouseout','edge',function(){{tip.style.display='none';}});
 
-function resetHighlight() {{
-  cy.elements().removeClass('dimmed highlighted');
+// ── Click: illuminate neighbourhood ──────────────────────────────────────────
+cy.on('tap','node',function(evt){{
+  var n=evt.target;
+  cy.elements().removeClass('selected neighbour hover dimmed');
+  cy.edges().removeClass('lit');
+  var nb=n.neighborhood();
+  cy.elements().not(n).not(nb).addClass('dimmed');
+  n.addClass('selected');
+  nb.nodes().addClass('neighbour');
+  nb.edges().addClass('lit');
+  cy.edges().not(nb.edges()).addClass('dimmed');
+}});
+cy.on('tap',function(evt){{if(evt.target===cy)reset();}});
+
+function reset(){{
+  cy.elements().removeClass('selected neighbour hover dimmed');
+  cy.edges().removeClass('lit');
+  tip.style.display='none';
 }}
-
-// ── Tooltip ──────────────────────────────────────────────────────────────────
-var tooltip = document.getElementById('tooltip');
-
-cy.on('mouseover', 'node', function(evt) {{
-  var d = evt.target.data();
-  var pos = evt.renderedPosition;
-  tooltip.style.display = 'block';
-  tooltip.style.left = (pos.x + 16) + 'px';
-  tooltip.style.top  = (pos.y - 10) + 'px';
-  tooltip.innerHTML =
-    '<div style="color:' + d.color + ';font-weight:700;font-size:13px;margin-bottom:4px">' + d.label + '</div>' +
-    '<div style="color:#999;font-size:10px;text-transform:uppercase;letter-spacing:1px">' + d.type + '</div>' +
-    '<div style="margin-top:5px">Connections: <b style="color:#c9a227">' + d.degree + '</b></div>';
-  tooltip.style.borderLeft = '3px solid ' + d.color;
-}});
-
-cy.on('mouseout', 'node', function() {{
-  tooltip.style.display = 'none';
-}});
-
-cy.on('mousemove', 'node', function(evt) {{
-  var pos = evt.renderedPosition;
-  tooltip.style.left = (pos.x + 16) + 'px';
-  tooltip.style.top  = (pos.y - 10) + 'px';
-}});
-
-cy.on('mouseover', 'edge', function(evt) {{
-  var d = evt.target.data();
-  var pos = evt.renderedPosition;
-  if (!d.label) return;
-  tooltip.style.display = 'block';
-  tooltip.style.left = (pos.x + 12) + 'px';
-  tooltip.style.top  = (pos.y - 10) + 'px';
-  tooltip.innerHTML = '<span style="color:#c9a227;font-style:italic">' + d.label + '</span>';
-  tooltip.style.borderLeft = '3px solid rgba(201,162,39,0.6)';
-}});
-
-cy.on('mouseout', 'edge', function() {{
-  tooltip.style.display = 'none';
-}});
 </script>
 </body>
 </html>"""
