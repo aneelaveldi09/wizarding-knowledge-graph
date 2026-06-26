@@ -56,7 +56,7 @@ def build_from_triplets(raw_triplets: list[dict]) -> nx.DiGraph:
 
 
 def save_graph(G: nx.DiGraph, path: str = GRAPH_CACHE) -> None:
-    data = nx.node_link_data(G)
+    data = nx.node_link_data(G, edges="edges")
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w") as f:
         json.dump(data, f, indent=2)
@@ -67,7 +67,10 @@ def load_graph(path: str = GRAPH_CACHE) -> nx.DiGraph | None:
         return None
     with open(path) as f:
         data = json.load(f)
-    return nx.node_link_graph(data, directed=True)
+    # Support both old ("links") and new ("edges") NetworkX serialization formats
+    if "links" in data and "edges" not in data:
+        data["edges"] = data.pop("links")
+    return nx.node_link_graph(data, directed=True, edges="edges")
 
 
 def graph_stats(G: nx.DiGraph) -> dict:
