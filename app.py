@@ -1,6 +1,6 @@
 """Harry Potter Knowledge Graph — Streamlit Dashboard"""
 
-import json, os, sys, re, tempfile
+import json, os, sys, re
 import networkx as nx
 import pandas as pd
 import plotly.express as px
@@ -13,7 +13,7 @@ from src.data_loader    import load_corpus, corpus_to_sentences
 from src.ner_pipeline   import batch_extract, extract_entities
 from src.relation_extractor import extract_triplets_rebel, extract_from_corpus
 from src.graph_builder  import build_from_triplets, save_graph, load_graph, graph_stats, get_subgraph, GRAPH_CACHE
-from src.visualizer     import plotly_network, build_pyvis, ENTITY_COLORS
+from src.visualizer     import cytoscape_html, ENTITY_COLORS
 from data.entity_aliases import ENTITY_COLORS as _EC
 
 NER_CACHE = os.path.join("data", "ner_cache.json")
@@ -154,9 +154,6 @@ hr { border-color: rgba(201,162,39,0.2) !important; }
 /* ── Checkbox ── */
 .stCheckbox label span { color: #e8e8e8 !important; }
 
-/* ── Plotly toolbar ── */
-.modebar { background: rgba(13,13,43,0.8) !important; border-radius: 8px; }
-.modebar-btn path { fill: #c9a227 !important; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -199,8 +196,7 @@ with st.sidebar:
     focus_node  = st.text_input("", placeholder="e.g. harry_potter", label_visibility="collapsed")
     focus_depth = st.slider("Depth", 1, 3, 1)
 
-    st.markdown("**Graph Mode**")
-    graph_mode = st.radio("", ["Plotly (beautiful)", "Pyvis (physics)"], label_visibility="collapsed")
+    show_labels = st.checkbox("Show edge labels", value=True)
 
     st.divider()
     # Entity type legend
@@ -311,16 +307,8 @@ tabs = st.tabs(["🕸️  Knowledge Graph", "🤖  BERT NER", "🔗  REBEL Tripl
 with tabs[0]:
     if G.number_of_nodes() == 0:
         st.warning("No nodes match current filters.")
-    elif "Plotly" in graph_mode:
-        fig = plotly_network(G)
-        st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": True, "modeBarButtonsToRemove": ["lasso2d", "select2d"]})
     else:
-        html = build_pyvis(G, height="720px")
-        with tempfile.NamedTemporaryFile(suffix=".html", delete=False, mode="w") as f:
-            f.write(html); tmp = f.name
-        with open(tmp) as f: html_out = f.read()
-        os.unlink(tmp)
-        components.html(html_out, height=730, scrolling=False)
+        components.html(cytoscape_html(G, height=740), height=750, scrolling=False)
 
     # Relationship labels for top edges
     if G.number_of_edges() > 0:
