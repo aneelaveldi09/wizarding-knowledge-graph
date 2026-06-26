@@ -10,7 +10,7 @@
 
 **What if you could map the entire wizarding world using machine learning?**
 
-I built this because I've been obsessed with Harry Potter since I was a kid, and now that I'm deep into ML, I wanted to combine both. This project pulls real text from Wikipedia about HP characters, spells, locations, and events — then runs it through a BERT NER model and a REBEL seq2seq transformer to extract every relationship and render it as a live, interactive knowledge graph.
+I built this because I've been obsessed with Harry Potter since I was a kid, and now that I'm deep into ML, I wanted to combine both. This project pulls real text from Wikipedia about HP characters, spells, locations, and events, then runs it through a BERT NER model and a REBEL seq2seq transformer to extract every relationship and render it as a live, interactive knowledge graph.
 
 No hardcoded data. Everything you see in the graph was extracted by the models.
 
@@ -24,7 +24,7 @@ No hardcoded data. Everything you see in the graph was extracted by the models.
 
 ## What this actually does
 
-Most "knowledge graph" projects I found online just hardcode a JSON file of relationships and call it a graph. That's not ML — that's a dictionary. I wanted to build one where the machine figures out the relationships on its own.
+Most "knowledge graph" projects I found online just hardcode a JSON file of relationships and call it a graph. That's not ML, that's a dictionary. I wanted to build one where the machine figures out the relationships on its own.
 
 The pipeline works like this:
 
@@ -43,7 +43,7 @@ Wikipedia / HP Fandom Wiki
         ↓
   NetworkX Knowledge Graph
         ↓
-  Interactive Pyvis dashboard
+  Cytoscape.js interactive graph (Obsidian-style)
 ```
 
 ## Tech stack
@@ -52,7 +52,7 @@ Wikipedia / HP Fandom Wiki
 |---|---|---|
 | NER | `dslim/bert-base-NER` | BERT fine-tuned on CoNLL-2003, strong on people + places |
 | Relation extraction | `Babelscape/rebel-large` | End-to-end seq2seq: text in, triplets out |
-| Graph | NetworkX + Pyvis | Lightweight, interactive, runs in browser |
+| Graph | NetworkX + Cytoscape.js | Force-directed physics, Obsidian-style dark canvas |
 | Dashboard | Streamlit | Fast to iterate, good for ML demos |
 | Acceleration | Apple MPS / CUDA | Auto-detected, falls back to CPU |
 
@@ -74,7 +74,7 @@ The pre-built caches (Wikipedia text, NER results, graph) are committed to the r
 
 ## Dashboard tabs
 
-**Knowledge Graph** — interactive Pyvis graph. Click any node, filter by entity type, focus on a character to see their connections.
+**Knowledge Graph** — Obsidian-style Cytoscape.js graph. Hover a node to see its name, click to illuminate its connections, filter by entity type, or focus on a single character.
 
 **BERT NER** — paste any Harry Potter text, watch the model extract characters and locations in real time with confidence scores.
 
@@ -96,9 +96,9 @@ Running REBEL on real Wikipedia text, some of the triplets it extracts:
 These come purely from model inference on raw text, not from any lookup table.
 
 <div align="center">
-<img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Diagon_Alley%2C_The_making_of_Harry_Potter_%28Ank_Kumar%2C_Infosys%29_02.jpg" width="680" alt="Diagon Alley — Warner Bros Studio Tour"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Diagon_Alley%2C_The_making_of_Harry_Potter_%28Ank_Kumar%2C_Infosys%29_02.jpg" width="680" alt="Diagon Alley, Warner Bros Studio Tour"/>
 <br>
-<sub>Diagon Alley — Warner Bros. Studio Tour, The Making of Harry Potter</sub>
+<sub>Diagon Alley, Warner Bros. Studio Tour, The Making of Harry Potter</sub>
 </div>
 
 ## Project structure
@@ -107,13 +107,15 @@ These come purely from model inference on raw text, not from any lookup table.
 wizarding-knowledge-graph/
 ├── app.py                    # Streamlit dashboard
 ├── pipeline.py               # CLI pipeline runner
+├── static/
+│   └── favicon.png           # HP lightning bolt favicon
 ├── src/
 │   ├── data_loader.py        # Wikipedia + HP Fandom Wiki fetcher
 │   ├── ner_pipeline.py       # BERT NER inference
 │   ├── relation_extractor.py # REBEL + spaCy SVO fallback
 │   ├── entity_normalizer.py  # surface form → canonical ID
 │   ├── graph_builder.py      # NetworkX graph construction
-│   └── visualizer.py         # Pyvis rendering
+│   └── visualizer.py         # Cytoscape.js graph rendering
 └── data/
     ├── entity_aliases.py     # HP entity alias map (used for normalization only)
     ├── wiki_cache.json       # cached Wikipedia text
