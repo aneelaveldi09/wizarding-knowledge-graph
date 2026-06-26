@@ -6,6 +6,7 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 import streamlit.components.v1 as components
+from PIL import Image
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
@@ -24,9 +25,12 @@ except Exception:
 NER_CACHE = os.path.join("data", "ner_cache.json")
 RE_CACHE  = os.path.join("data", "re_cache.json")
 
+_favicon_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "static", "favicon.png")
+_favicon = Image.open(_favicon_path) if os.path.exists(_favicon_path) else "⚡"
+
 st.set_page_config(
     page_title="HP Knowledge Graph",
-    page_icon="⚡",
+    page_icon=_favicon,
     layout="wide",
     initial_sidebar_state="expanded",
 )
@@ -203,9 +207,7 @@ with st.sidebar:
 
     show_labels = st.checkbox("Show edge labels", value=True)
 
-    st.divider()
-    # Entity type legend
-    st.markdown("**Legend**")
+    st.markdown("<div style='margin:10px 0 6px;color:#c9a227;font-size:0.8rem;font-weight:700;letter-spacing:1px;text-transform:uppercase'>Legend</div>", unsafe_allow_html=True)
     for etype, color in ENTITY_COLORS.items():
         if etype == "Other": continue
         st.markdown(
@@ -245,23 +247,23 @@ st.markdown(
 with st.expander("⚙️  Run / Refresh ML Pipeline", expanded=not os.path.exists(GRAPH_CACHE)):
     col_l, col_r = st.columns([3, 1])
     with col_l:
-        use_rebel   = st.checkbox("Use REBEL for relation extraction (recommended — ~1.5 GB first download)", value=True)
+        use_rebel   = st.checkbox("Use REBEL for relation extraction (recommended, ~1.5 GB first download)", value=True)
         force_fresh = st.checkbox("Force full re-run (ignore cache)")
     with col_r:
         run_btn = st.button("🚀 Run Pipeline", type="primary", use_container_width=True)
 
     if not ML_AVAILABLE:
-        st.info("ML models not available in this environment — graph loads from pre-built cache below.")
+        st.info("ML models not available in this environment. Graph loads from the pre-built cache below.")
     if (run_btn or not os.path.exists(GRAPH_CACHE)) and ML_AVAILABLE:
         if force_fresh:
             for p in [NER_CACHE, RE_CACHE, GRAPH_CACHE, os.path.join("data","wiki_cache.json")]:
                 if os.path.exists(p): os.remove(p)
             st.cache_resource.clear()
 
-        prog = st.progress(0, "Step 1 / 4 — Fetching HP Wikipedia articles…")
+        prog = st.progress(0, "Step 1 / 4: Fetching HP Wikipedia articles...")
         corpus    = load_corpus(use_cache=not force_fresh)
         sentences = corpus_to_sentences(corpus)
-        prog.progress(25, f"Step 2 / 4 — BERT NER on {len(sentences)} sentences…")
+        prog.progress(25, f"Step 2 / 4: BERT NER on {len(sentences)} sentences...")
 
         if os.path.exists(NER_CACHE):
             with open(NER_CACHE) as f: enriched = json.load(f)
@@ -269,7 +271,7 @@ with st.expander("⚙️  Run / Refresh ML Pipeline", expanded=not os.path.exist
             enriched = batch_extract(sentences, batch_size=16)
             with open(NER_CACHE,"w") as f: json.dump(enriched, f)
 
-        prog.progress(50, f"Step 3 / 4 — {'REBEL' if use_rebel else 'spaCy SVO'} relation extraction…")
+        prog.progress(50, f"Step 3 / 4: {'REBEL' if use_rebel else 'spaCy SVO'} relation extraction...")
 
         if os.path.exists(RE_CACHE):
             with open(RE_CACHE) as f: triplets = json.load(f)
@@ -277,18 +279,18 @@ with st.expander("⚙️  Run / Refresh ML Pipeline", expanded=not os.path.exist
             triplets = extract_from_corpus(sentences, use_rebel=use_rebel)
             with open(RE_CACHE,"w") as f: json.dump(triplets, f)
 
-        prog.progress(75, f"Step 4 / 4 — Building graph from {len(triplets)} triplets…")
+        prog.progress(75, f"Step 4 / 4: Building graph from {len(triplets)} triplets...")
         G_built = build_from_triplets(triplets)
         save_graph(G_built)
         st.cache_resource.clear()
         prog.progress(100, "Done!")
-        st.success(f"Pipeline complete — **{G_built.number_of_nodes()} nodes**, **{G_built.number_of_edges()} edges** extracted by ML.")
+        st.success(f"Pipeline complete. **{G_built.number_of_nodes()} nodes** and **{G_built.number_of_edges()} edges** extracted by ML.")
 
 # ── Load graph ────────────────────────────────────────────────────────────────
 
 G_full = load_graph()
 if G_full is None or G_full.number_of_nodes() == 0:
-    st.info("No graph found — expand the pipeline above and click **Run Pipeline**.")
+    st.info("No graph found. Expand the pipeline above and click Run Pipeline.")
     st.stop()
 
 # Filters
@@ -386,7 +388,7 @@ with tabs[1]:
     )
 
     if not ML_AVAILABLE:
-        st.info("Live NER demo requires torch — not available in this deployment. Browse the corpus-wide results below.")
+        st.info("Live NER demo requires torch, not available in this deployment. Browse the corpus-wide results below.")
     if st.button("Extract Entities", key="ner_btn", disabled=not ML_AVAILABLE):
         with st.spinner("Running BERT NER…"):
             ents = extract_entities(demo_text)
@@ -434,10 +436,8 @@ with tabs[1]:
         else:
             st.info("No entities found.")
 
-    # Corpus stats
     if os.path.exists(NER_CACHE):
-        st.divider()
-        st.markdown("**Corpus-wide NER results**")
+        st.markdown("<div style='margin:18px 0 10px;color:#c9a227;font-size:0.85rem;font-weight:700;letter-spacing:1px;text-transform:uppercase'>Corpus-wide NER results</div>", unsafe_allow_html=True)
         with open(NER_CACHE) as f: ner_data = json.load(f)
         all_ents = [e for s in ner_data for e in s["entities"]]
         if all_ents:
@@ -503,9 +503,9 @@ with tabs[2]:
         key="re_area",
     )
     if not ML_AVAILABLE:
-        st.info("Live REBEL demo requires torch — not available in this deployment. Browse the pre-extracted triplets below.")
+        st.info("Live REBEL demo requires torch, not available in this deployment. Browse the pre-extracted triplets below.")
     if st.button("Extract Triplets", key="re_btn", disabled=not ML_AVAILABLE):
-        with st.spinner("Running REBEL — downloads ~1.5 GB on first run…"):
+        with st.spinner("Running REBEL (downloads ~1.5 GB on first run)..."):
             try:
                 triplets = extract_triplets_rebel(re_demo)
                 if triplets:
@@ -538,8 +538,7 @@ with tabs[2]:
                 st.error(f"REBEL error: {e}")
 
     if os.path.exists(RE_CACHE):
-        st.divider()
-        st.markdown("**All triplets extracted from corpus**")
+        st.markdown("<div style='margin:18px 0 10px;color:#c9a227;font-size:0.85rem;font-weight:700;letter-spacing:1px;text-transform:uppercase'>All triplets extracted from corpus</div>", unsafe_allow_html=True)
         with open(RE_CACHE) as f: all_re = json.load(f)
         df_re = pd.DataFrame(all_re)
         if not df_re.empty and "relation" in df_re.columns:
@@ -585,7 +584,7 @@ with tabs[3]:
             font=dict(color="#c9a227"),yaxis=dict(categoryorder="total ascending"))
         st.plotly_chart(fig_deg, use_container_width=True)
 
-    st.markdown("**PageRank Centrality** — most important nodes by link structure")
+    st.markdown("<div style='margin:10px 0 6px;color:#c9a227;font-size:0.85rem;font-weight:700;letter-spacing:1px;text-transform:uppercase'>PageRank Centrality</div><div style='color:#888;font-size:0.8rem;margin-bottom:8px'>Most important nodes by link structure</div>", unsafe_allow_html=True)
     pr = nx.pagerank(G, alpha=0.85)
     df_pr = pd.DataFrame([
         {"Entity":G.nodes[n].get("label",n),"Type":G.nodes[n].get("entity_type","?"),"PageRank":round(v,5)}

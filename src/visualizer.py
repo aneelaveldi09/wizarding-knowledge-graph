@@ -1,10 +1,10 @@
 """
 Graph visualisation — Obsidian-style Cytoscape.js.
-  - fcose physics layout: nodes float and settle like Obsidian
+  - cose physics layout (built-in, no CDN plugin needed)
   - Tiny glowing dots sized by degree
   - Labels hidden by default, fade in on hover / click
   - Edges: near-invisible hairlines, glow on selection
-  - Click a node to illuminate its neighbourhood; click canvas to reset
+  - Click a node to illuminate neighbourhood; click canvas to reset
 """
 
 from __future__ import annotations
@@ -32,8 +32,7 @@ def cytoscape_html(G: nx.DiGraph, height: int = 740) -> str:
         etype  = data.get("entity_type", "Other")
         color  = ENTITY_COLORS.get(etype, "#556688")
         degree = G.degree(node_id)
-        # Obsidian: tiny dots, slightly bigger for high-degree hubs
-        size   = max(10, min(38, 10 + degree * 2.2))
+        size   = max(10, min(40, 10 + degree * 2.2))
         elements.append({
             "group": "nodes",
             "data": {
@@ -49,6 +48,9 @@ def cytoscape_html(G: nx.DiGraph, height: int = 740) -> str:
     for u, v, data in G.edges(data=True):
         rel    = data.get("relation", "").replace("_", " ")
         weight = data.get("weight", 1)
+        src_color = ENTITY_COLORS.get(
+            G.nodes[u].get("entity_type", "Other"), "#556688"
+        )
         elements.append({
             "group": "edges",
             "data": {
@@ -57,6 +59,7 @@ def cytoscape_html(G: nx.DiGraph, height: int = 740) -> str:
                 "target": v,
                 "label":  rel,
                 "weight": max(0.5, min(float(weight), 3.0)),
+                "color":  src_color,
             },
         })
 
@@ -73,7 +76,6 @@ def cytoscape_html(G: nx.DiGraph, height: int = 740) -> str:
 <head>
 <meta charset="utf-8"/>
 <script src="https://unpkg.com/cytoscape@3.28.1/dist/cytoscape.min.js"></script>
-<script src="https://unpkg.com/cytoscape-fcose@2.2.0/cytoscape-fcose.js"></script>
 <style>
 *{{box-sizing:border-box;margin:0;padding:0}}
 html,body{{width:100%;height:{height}px;overflow:hidden;background:transparent}}
@@ -90,8 +92,7 @@ html,body{{width:100%;height:{height}px;overflow:hidden;background:transparent}}
   border:1px solid rgba(255,255,255,0.08);
   border-radius:10px;padding:10px 13px;
   font-family:Inter,'Segoe UI',sans-serif;font-size:10.5px;color:#aaa;
-  z-index:10;backdrop-filter:blur(8px);
-  max-width:130px;
+  z-index:10;backdrop-filter:blur(8px);max-width:130px;
 }}
 #legend .title{{color:rgba(201,162,39,0.85);font-size:10px;font-weight:700;
   letter-spacing:1.2px;text-transform:uppercase;margin-bottom:7px}}
@@ -106,19 +107,13 @@ html,body{{width:100%;height:{height}px;overflow:hidden;background:transparent}}
   box-shadow:0 6px 30px rgba(0,0,0,0.7);
   border:1px solid rgba(255,255,255,0.07);
 }}
-#ctrls{{
-  position:absolute;bottom:12px;right:12px;
-  display:flex;gap:5px;z-index:10;
-}}
+#ctrls{{position:absolute;bottom:12px;right:12px;display:flex;gap:5px;z-index:10}}
 .btn{{
   background:rgba(8,8,22,0.82);
   border:1px solid rgba(255,255,255,0.1);
   color:rgba(201,162,39,0.8);
-  border-radius:7px;padding:5px 12px;
-  font-size:11px;cursor:pointer;
-  font-family:Inter,sans-serif;
-  transition:all 0.15s;
-  backdrop-filter:blur(6px);
+  border-radius:7px;padding:5px 12px;font-size:11px;cursor:pointer;
+  font-family:Inter,sans-serif;transition:all 0.15s;backdrop-filter:blur(6px);
 }}
 .btn:hover{{background:rgba(201,162,39,0.12);border-color:rgba(201,162,39,0.35)}}
 #nodecount{{
@@ -133,15 +128,13 @@ html,body{{width:100%;height:{height}px;overflow:hidden;background:transparent}}
   <div id="cy"></div>
   <div id="legend"><div class="title">Types</div>{legend_html}</div>
   <div id="tip"></div>
-  <div id="nodecount">{G.number_of_nodes()} nodes · {G.number_of_edges()} edges</div>
+  <div id="nodecount">{G.number_of_nodes()} nodes &middot; {G.number_of_edges()} edges</div>
   <div id="ctrls">
     <button class="btn" onclick="cy.fit(undefined,60)">Fit</button>
     <button class="btn" onclick="reset()">Reset</button>
   </div>
 </div>
 <script>
-cytoscape.use(cytoscapeFcose);
-
 var elements={elements_json};
 
 var cy=cytoscape({{
@@ -155,12 +148,12 @@ var cy=cytoscape({{
         'width':'data(size)','height':'data(size)',
         'label':'',
         'border-width':0,
-        'shadow-blur':14,
+        'shadow-blur':12,
         'shadow-color':'data(color)',
-        'shadow-opacity':0.55,
+        'shadow-opacity':0.5,
         'shadow-offset-x':0,'shadow-offset-y':0,
-        'transition-property':'shadow-opacity,width,height,border-width,border-color,opacity',
-        'transition-duration':'0.18s',
+        'transition-property':'shadow-opacity,width,height,border-width,opacity',
+        'transition-duration':'0.2s',
         'z-index':5,
       }}
     }},
@@ -169,12 +162,11 @@ var cy=cytoscape({{
       style:{{
         'label':'data(label)',
         'font-size':11,
-        'font-family':'Inter, Segoe UI, Arial, sans-serif',
+        'font-family':'Inter,"Segoe UI",Arial,sans-serif',
         'color':'#ffffff',
         'text-outline-color':'#000',
         'text-outline-width':1.2,
-        'text-valign':'bottom','text-halign':'center',
-        'text-margin-y':5,
+        'text-valign':'bottom','text-halign':'center','text-margin-y':5,
         'shadow-opacity':0.9,'shadow-blur':22,
         'z-index':50,
       }}
@@ -184,12 +176,11 @@ var cy=cytoscape({{
       style:{{
         'label':'data(label)',
         'font-size':12,
-        'font-family':'Inter, Segoe UI, Arial, sans-serif',
+        'font-family':'Inter,"Segoe UI",Arial,sans-serif',
         'color':'#ffffff',
         'text-outline-color':'#000',
         'text-outline-width':1.5,
-        'text-valign':'bottom','text-halign':'center',
-        'text-margin-y':5,
+        'text-valign':'bottom','text-halign':'center','text-margin-y':5,
         'border-width':2,'border-color':'data(color)',
         'shadow-opacity':1,'shadow-blur':30,
         'z-index':100,
@@ -200,33 +191,29 @@ var cy=cytoscape({{
       style:{{
         'label':'data(label)',
         'font-size':10,
-        'font-family':'Inter, Segoe UI, Arial, sans-serif',
+        'font-family':'Inter,"Segoe UI",Arial,sans-serif',
         'color':'rgba(255,255,255,0.75)',
         'text-outline-color':'#000',
         'text-outline-width':1,
-        'text-valign':'bottom','text-halign':'center',
-        'text-margin-y':4,
+        'text-valign':'bottom','text-halign':'center','text-margin-y':4,
         'shadow-opacity':0.7,
         'z-index':30,
       }}
     }},
-    {{
-      selector:'node.dimmed',
-      style:{{'opacity':0.08}}
-    }},
+    {{selector:'node.dimmed',style:{{'opacity':0.07}}}},
     {{
       selector:'edge',
       style:{{
         'width':0.7,
-        'line-color':'rgba(120,130,180,0.15)',
-        'target-arrow-color':'rgba(120,130,180,0.2)',
+        'line-color':'rgba(100,110,170,0.18)',
+        'target-arrow-color':'rgba(100,110,170,0.22)',
         'target-arrow-shape':'triangle',
         'arrow-scale':0.5,
         'curve-style':'bezier',
         'label':'',
         'z-index':1,
         'transition-property':'opacity,line-color,width',
-        'transition-duration':'0.18s',
+        'transition-duration':'0.2s',
       }}
     }},
     {{
@@ -237,55 +224,42 @@ var cy=cytoscape({{
         'label':'data(label)',
         'font-size':9,'font-family':'Inter,sans-serif',
         'color':'rgba(200,200,200,0.6)',
-        'text-background-color':'rgba(4,4,12,0.8)',
+        'text-background-color':'rgba(4,4,12,0.85)',
         'text-background-opacity':1,
         'text-background-padding':'2px',
         'edge-text-rotation':'autorotate',
-        'width':1.5,
-        'z-index':20,
+        'width':1.5,'z-index':20,
       }}
     }},
-    {{
-      selector:'edge.dimmed',
-      style:{{'opacity':0.02}}
-    }},
+    {{selector:'edge.dimmed',style:{{'opacity':0.02}}}},
   ],
   layout:{{
-    name:'fcose',
-    quality:'default',
-    animate:true,
-    animationDuration:900,
-    animationEasing:'ease-out',
+    name:'cose',
+    idealEdgeLength:130,
+    nodeOverlap:20,
+    refresh:20,
     fit:true,
-    padding:60,
+    padding:50,
     randomize:true,
-    nodeSeparation:160,
-    idealEdgeLength:120,
-    edgeElasticity:0.45,
-    nestingFactor:0.1,
-    gravity:0.3,
-    gravityRange:3.8,
-    gravityCompound:1.0,
-    gravityRangeCompound:1.5,
-    numIter:2500,
-    tile:true,
-    tilingPaddingVertical:10,
-    tilingPaddingHorizontal:10,
-    initialEnergyOnIncremental:0.3,
+    componentSpacing:60,
+    nodeRepulsion:function(){{return 600000;}},
+    edgeElasticity:function(){{return 90;}},
+    nestingFactor:5,
+    gravity:60,
+    numIter:1400,
+    initialTemp:200,
+    coolingFactor:0.95,
+    minTemp:1.0,
+    animationDuration:900,
+    animateFilter:function(){{return true;}},
   }},
   wheelSensitivity:0.2,
   minZoom:0.05,
   maxZoom:5,
 }});
 
-// ── Edge color inherits from source node ─────────────────────────────────────
-cy.edges().forEach(function(e){{
-  var sc=cy.$('#'+e.data('source')).data('color')||'rgba(150,150,200,0.4)';
-  e.data('color',sc);
-}});
-
-// ── Hover: show label + glow ──────────────────────────────────────────────────
 var tip=document.getElementById('tip');
+
 cy.on('mouseover','node',function(evt){{
   var n=evt.target;
   if(!n.hasClass('selected'))n.addClass('hover');
@@ -316,7 +290,6 @@ cy.on('mouseover','edge',function(evt){{
 }});
 cy.on('mouseout','edge',function(){{tip.style.display='none';}});
 
-// ── Click: illuminate neighbourhood ──────────────────────────────────────────
 cy.on('tap','node',function(evt){{
   var n=evt.target;
   cy.elements().removeClass('selected neighbour hover dimmed');
