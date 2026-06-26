@@ -1,57 +1,95 @@
-"""Builds the Harry Potter knowledge graph using NetworkX."""
+"""
+Builds NetworkX knowledge graph entirely from ML-extracted triplets.
+No hardcoded relationships.
+"""
 
-import networkx as nx
-import sys
+from __future__ import annotations
+import json
 import os
+import networkx as nx
 
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from data.hp_knowledge import (
-    CHARACTERS, SPELLS, LOCATIONS, EVENTS, OBJECTS, RELATIONSHIPS, ENTITY_COLORS
-)
+from src.entity_normalizer import normalize_triplet, get_entity_type, get_entity_color
+
+GRAPH_CACHE = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data", "graph_cache.json")
 
 
-def build_graph() -> nx.DiGraph:
+def build_from_triplets(raw_triplets: list[dict]) -> nx.DiGraph:
+    """Normalize triplets and construct the knowledge graph."""
     G = nx.DiGraph()
 
-    all_entities = CHARACTERS + SPELLS + LOCATIONS + EVENTS + OBJECTS
-    for entity in all_entities:
-        G.add_node(
-            entity["id"],
-            label=entity["label"],
-            entity_type=entity["type"],
-            color=ENTITY_COLORS.get(entity["type"], "#CCCCCC"),
-            **{k: v for k, v in entity.items() if k not in ("id", "label", "type")},
-        )
+    for raw in raw_triplets:
+        triplet = normalize_triplet(raw)
+        if triplet is None:
+            continue
 
-    for source, relation, target in RELATIONSHIPS:
-        if G.has_node(source) and G.has_node(target):
-            G.add_edge(source, target, relation=relation)
+        for node_id, label in [(triplet["head"], triplet["head_label"]),
+                                (triplet["tail"], triplet["tail_label"])]:
+            if not G.has_node(node_id):
+                etype = get_entity_type(node_id)
+                G.add_node(
+                    node_id,
+                    label=label.title() if node_id == triplet["head"] else triplet["tail_label"].title(),
+                    entity_type=etype,
+                    color=get_entity_color(node_id),
+                )
+
+        # Accumulate sources for duplicate edges
+        relation = triplet["relation"]
+        source = triplet["source"]
+        if G.has_edge(triplet["head"], triplet["tail"]):
+            G[triplet["head"]][triplet["tail"]]["weight"] += 1
+            G[triplet["head"]][triplet["tail"]]["sources"].add(source)
+        else:
+            G.add_edge(
+                triplet["head"],
+                triplet["tail"],
+                relation=relation,
+                weight=1,
+                sources={source},
+            )
+
+    # Convert sets to lists for JSON-serializability
+    for u, v, d in G.edges(data=True):
+        d["sources"] = list(d.get("sources", []))
 
     return G
 
 
-def get_subgraph(G: nx.DiGraph, node_id: str, depth: int = 1) -> nx.DiGraph:
-    """Return an ego-graph around a node up to `depth` hops."""
-    nodes = set()
-    frontier = {node_id}
-    for _ in range(depth):
-        next_frontier = set()
-        for n in frontier:
-            next_frontier.update(G.successors(n))
-            next_frontier.update(G.predecessors(n))
-        nodes.update(frontier)
-        frontier = next_frontier - nodes
-    nodes.update(frontier)
-    return G.subgraph(nodes).copy()
+def save_graph(G: nx.DiGraph, path: str = GRAPH_CACHE) -> None:
+    data = nx.node_link_data(G)
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "w") as f:
+        json.dump(data, f, indent=2)
+
+
+def load_graph(path: str = GRAPH_CACHE) -> nx.DiGraph | None:
+    if not os.path.exists(path):
+        return None
+    with open(path) as f:
+        data = json.load(f)
+    return nx.node_link_graph(data, directed=True)
 
 
 def graph_stats(G: nx.DiGraph) -> dict:
+    type_counts: dict[str, int] = {}
+    for _, d in G.nodes(data=True):
+        t = d.get("entity_type", "Other")
+        type_counts[t] = type_counts.get(t, 0) + 1
     return {
         "nodes": G.number_of_nodes(),
         "edges": G.number_of_edges(),
-        "characters": sum(1 for _, d in G.nodes(data=True) if d.get("entity_type") == "Character"),
-        "spells": sum(1 for _, d in G.nodes(data=True) if d.get("entity_type") == "Spell"),
-        "locations": sum(1 for _, d in G.nodes(data=True) if d.get("entity_type") == "Location"),
-        "events": sum(1 for _, d in G.nodes(data=True) if d.get("entity_type") == "Event"),
-        "objects": sum(1 for _, d in G.nodes(data=True) if d.get("entity_type") == "Object"),
+        **type_counts,
     }
+
+
+def get_subgraph(G: nx.DiGraph, node_id: str, depth: int = 1) -> nx.DiGraph:
+    nodes, frontier = set(), {node_id}
+    for _ in range(depth):
+        next_f = set()
+        for n in frontier:
+            next_f.update(G.successors(n))
+            next_f.update(G.predecessors(n))
+        nodes.update(frontier)
+        frontier = next_f - nodes
+    nodes.update(frontier)
+    return G.subgraph(nodes).copy()

@@ -4,3 +4,16 @@ __pycache__/
 *.egg-info/
 .env
 graph_output.html
+
+# Large model weights — downloaded at runtime
+*.bin
+*.safetensors
+*.pt
+*.pth
+model_weights/
+
+# Keep data caches (pre-built artifacts committed for fast deployment)
+# data/wiki_cache.json   <- keep
+# data/ner_cache.json    <- keep
+# data/graph_cache.json  <- keep
+# data/re_cache.json     <- keep (updated after REBEL run)

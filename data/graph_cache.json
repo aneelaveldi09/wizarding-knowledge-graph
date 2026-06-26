@@ -1,0 +1,7592 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "Series",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "series"
+    },
+    {
+      "label": "In",
+      "entity_type": "Character",
+      "color": "#FF6B6B",
+      "id": "ginny_weasley"
+    },
+    {
+      "label": "Books",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "books"
+    },
+    {
+      "label": "On",
+      "entity_type": "Character",
+      "color": "#FF6B6B",
+      "id": "hermione_granger"
+    },
+    {
+      "label": "As",
+      "entity_type": "Character",
+      "color": "#FF6B6B",
+      "id": "ron_weasley"
+    },
+    {
+      "label": "Value",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "value"
+    },
+    {
+      "label": "At",
+      "entity_type": "Character",
+      "color": "#FF6B6B",
+      "id": "bellatrix_lestrange"
+    },
+    {
+      "label": "Attractions",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "attractions"
+    },
+    {
+      "label": "Potter",
+      "entity_type": "Character",
+      "color": "#FF6B6B",
+      "id": "harry_potter"
+    },
+    {
+      "label": "Giant",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "giant"
+    },
+    {
+      "label": "Student",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "student"
+    },
+    {
+      "label": "Friendship",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "friendship"
+    },
+    {
+      "label": "Headmaster",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "headmaster"
+    },
+    {
+      "label": "Year",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "year"
+    },
+    {
+      "label": "Ability",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "ability"
+    },
+    {
+      "label": "Secrets",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "secrets"
+    },
+    {
+      "label": "Chamber",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "chamber"
+    },
+    {
+      "label": "With",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "with"
+    },
+    {
+      "label": "Basilisk",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "basilisk"
+    },
+    {
+      "label": "To",
+      "entity_type": "Character",
+      "color": "#FF6B6B",
+      "id": "voldemort"
+    },
+    {
+      "label": "Into",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "into"
+    },
+    {
+      "label": "She",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "she"
+    },
+    {
+      "label": "Wit",
+      "entity_type": "Location",
+      "color": "#45B7D1",
+      "id": "hogwarts"
+    },
+    {
+      "label": "Rowling",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "rowling"
+    },
+    {
+      "label": "Lovegood",
+      "entity_type": "Character",
+      "color": "#FF6B6B",
+      "id": "luna_lovegood"
+    },
+    {
+      "label": "From",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "from"
+    },
+    {
+      "label": "Novels",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "novels"
+    },
+    {
+      "label": "By",
+      "entity_type": "Character",
+      "color": "#FF6B6B",
+      "id": "dobby"
+    },
+    {
+      "label": "Students",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "students"
+    },
+    {
+      "label": "Puzzle",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "puzzle"
+    },
+    {
+      "label": "Liking",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "liking"
+    },
+    {
+      "label": "Potion",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "potion"
+    },
+    {
+      "label": "Through",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "through"
+    },
+    {
+      "label": "Cat",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "cat"
+    },
+    {
+      "label": "Mcgonagall",
+      "entity_type": "Character",
+      "color": "#FF6B6B",
+      "id": "minerva_mcgonagall"
+    },
+    {
+      "label": "Before",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "before"
+    },
+    {
+      "label": "Turner",
+      "entity_type": "Object",
+      "color": "#98D8C8",
+      "id": "time_turner"
+    },
+    {
+      "label": "During",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "during"
+    },
+    {
+      "label": "Insight",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "insight"
+    },
+    {
+      "label": "Aboard",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "aboard"
+    },
+    {
+      "label": "Skill",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "skill"
+    },
+    {
+      "label": "Answer",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "answer"
+    },
+    {
+      "label": "Howler",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "howler"
+    },
+    {
+      "label": "Him",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "him"
+    },
+    {
+      "label": "Tunnel",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "tunnel"
+    },
+    {
+      "label": "Pettigrew",
+      "entity_type": "Character",
+      "color": "#FF6B6B",
+      "id": "peter_pettigrew"
+    },
+    {
+      "label": "Unconscious",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "unconscious"
+    },
+    {
+      "label": "Ball",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "ball"
+    },
+    {
+      "label": "Policy",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "policy"
+    },
+    {
+      "label": "Army",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "army"
+    },
+    {
+      "label": "Team",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "team"
+    },
+    {
+      "label": "Near",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "near"
+    },
+    {
+      "label": "Eaters",
+      "entity_type": "Organization",
+      "color": "#C39BD3",
+      "id": "death_eaters"
+    },
+    {
+      "label": "After",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "after"
+    },
+    {
+      "label": "Brown",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "brown"
+    },
+    {
+      "label": "Dumbledore",
+      "entity_type": "Character",
+      "color": "#FF6B6B",
+      "id": "albus_dumbledore"
+    },
+    {
+      "label": "Gambon",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "gambon"
+    },
+    {
+      "label": "Law",
+      "entity_type": "House",
+      "color": "#F9E79F",
+      "id": "ravenclaw"
+    },
+    {
+      "label": "Version",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "version"
+    },
+    {
+      "label": "Character",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "character"
+    },
+    {
+      "label": "Hair",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "hair"
+    },
+    {
+      "label": "Spectacles",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "spectacles"
+    },
+    {
+      "label": "According",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "according"
+    },
+    {
+      "label": "Demeanour",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "demeanour"
+    },
+    {
+      "label": "For",
+      "entity_type": "Location",
+      "color": "#45B7D1",
+      "id": "forbidden_forest"
+    },
+    {
+      "label": "Eyes",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "eyes"
+    },
+    {
+      "label": "Look",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "look"
+    },
+    {
+      "label": "Lot",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "lot"
+    },
+    {
+      "label": "Number",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "number"
+    },
+    {
+      "label": "Desire",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "desire"
+    },
+    {
+      "label": "Appearances",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "appearances"
+    },
+    {
+      "label": "Under",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "under"
+    },
+    {
+      "label": "About",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "about"
+    },
+    {
+      "label": "Parents",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "parents"
+    },
+    {
+      "label": "Curse",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "curse"
+    },
+    {
+      "label": "Death",
+      "entity_type": "Object",
+      "color": "#98D8C8",
+      "id": "deathly_hallows"
+    },
+    {
+      "label": "Itself",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "itself"
+    },
+    {
+      "label": "Characters",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "characters"
+    },
+    {
+      "label": "Spell",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "spell"
+    },
+    {
+      "label": "Followers",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "followers"
+    },
+    {
+      "label": "Aid",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "aid"
+    },
+    {
+      "label": "Identity",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "identity"
+    },
+    {
+      "label": "Defence",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "defence"
+    },
+    {
+      "label": "Against",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "against"
+    },
+    {
+      "label": "Snape",
+      "entity_type": "Character",
+      "color": "#FF6B6B",
+      "id": "severus_snape"
+    },
+    {
+      "label": "Despite",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "despite"
+    },
+    {
+      "label": "Agent",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "agent"
+    },
+    {
+      "label": "Rickman",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "rickman"
+    },
+    {
+      "label": "Essiedu",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "essiedu"
+    },
+    {
+      "label": "Development",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "development"
+    },
+    {
+      "label": "Rumour",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "rumour"
+    },
+    {
+      "label": "Antagonist",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "antagonist"
+    },
+    {
+      "label": "Feelings",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "feelings"
+    },
+    {
+      "label": "Role",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "role"
+    },
+    {
+      "label": "Draco",
+      "entity_type": "Character",
+      "color": "#FF6B6B",
+      "id": "draco_malfoy"
+    },
+    {
+      "label": "Bigotry",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "bigotry"
+    },
+    {
+      "label": "Spungen",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "spungen"
+    },
+    {
+      "label": "Nilsen",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "nilsen"
+    },
+    {
+      "label": "Offer",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "offer"
+    },
+    {
+      "label": "Effort",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "effort"
+    },
+    {
+      "label": "Seeker",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "seeker"
+    },
+    {
+      "label": "Attacks",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "attacks"
+    },
+    {
+      "label": "Extent",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "extent"
+    },
+    {
+      "label": "Revenge",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "revenge"
+    },
+    {
+      "label": "Down",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "down"
+    },
+    {
+      "label": "Badge",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "badge"
+    },
+    {
+      "label": "Information",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "information"
+    },
+    {
+      "label": "Rita",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "rita"
+    },
+    {
+      "label": "Neville",
+      "entity_type": "Character",
+      "color": "#FF6B6B",
+      "id": "neville_longbottom"
+    },
+    {
+      "label": "Throughout",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "throughout"
+    },
+    {
+      "label": "Leader",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "leader"
+    },
+    {
+      "label": "Evolution",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "evolution"
+    },
+    {
+      "label": "Little",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "little"
+    },
+    {
+      "label": "Years",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "years"
+    },
+    {
+      "label": "Off",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "off"
+    },
+    {
+      "label": "Over",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "over"
+    },
+    {
+      "label": "Struggle",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "struggle"
+    },
+    {
+      "label": "Backs",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "backs"
+    },
+    {
+      "label": "Act",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "act"
+    },
+    {
+      "label": "Abbott",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "abbott"
+    },
+    {
+      "label": "Loyalty",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "loyalty"
+    },
+    {
+      "label": "Part",
+      "entity_type": "Location",
+      "color": "#45B7D1",
+      "id": "department_of_mysteries"
+    },
+    {
+      "label": "That",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "that"
+    },
+    {
+      "label": "Career",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "career"
+    },
+    {
+      "label": "Sons",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "sons"
+    },
+    {
+      "label": "Herself",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "herself"
+    },
+    {
+      "label": "Spellcasting",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "spellcasting"
+    },
+    {
+      "label": "Party",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "party"
+    },
+    {
+      "label": "Adaptations",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "adaptations"
+    },
+    {
+      "label": "Lynch",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "lynch"
+    },
+    {
+      "label": "Earrings",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "earrings"
+    },
+    {
+      "label": "Aura",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "aura"
+    },
+    {
+      "label": "Magazine",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "magazine"
+    },
+    {
+      "label": "Sirius",
+      "entity_type": "Character",
+      "color": "#FF6B6B",
+      "id": "sirius_black"
+    },
+    {
+      "label": "Brother",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "brother"
+    },
+    {
+      "label": "Elitism",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "elitism"
+    },
+    {
+      "label": "Life",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "life"
+    },
+    {
+      "label": "James",
+      "entity_type": "Character",
+      "color": "#FF6B6B",
+      "id": "james_potter"
+    },
+    {
+      "label": "Out",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "out"
+    },
+    {
+      "label": "Mother",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "mother"
+    },
+    {
+      "label": "Friends",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "friends"
+    },
+    {
+      "label": "Lily",
+      "entity_type": "Character",
+      "color": "#FF6B6B",
+      "id": "lily_potter"
+    },
+    {
+      "label": "Them",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "them"
+    },
+    {
+      "label": "Potters",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "potters"
+    },
+    {
+      "label": "Explosion",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "explosion"
+    },
+    {
+      "label": "Picture",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "picture"
+    },
+    {
+      "label": "Rat",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "rat"
+    },
+    {
+      "label": "This",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "this"
+    },
+    {
+      "label": "Power",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "power"
+    },
+    {
+      "label": "Refuge",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "refuge"
+    },
+    {
+      "label": "Intent",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "intent"
+    },
+    {
+      "label": "Lupin",
+      "entity_type": "Character",
+      "color": "#FF6B6B",
+      "id": "remus_lupin"
+    },
+    {
+      "label": "Following",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "following"
+    },
+    {
+      "label": "Provided",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "provided"
+    },
+    {
+      "label": "House",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "house"
+    },
+    {
+      "label": "They",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "they"
+    },
+    {
+      "label": "Prank",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "prank"
+    },
+    {
+      "label": "Form",
+      "entity_type": "Location",
+      "color": "#45B7D1",
+      "id": "platform_9_34"
+    },
+    {
+      "label": "Lessons",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "lessons"
+    },
+    {
+      "label": "Until",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "until"
+    },
+    {
+      "label": "Truth",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "truth"
+    },
+    {
+      "label": "Obsession",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "obsession"
+    },
+    {
+      "label": "Like",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "like"
+    },
+    {
+      "label": "Sisters",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "sisters"
+    },
+    {
+      "label": "Conversation",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "conversation"
+    },
+    {
+      "label": "Chance",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "chance"
+    },
+    {
+      "label": "Cup",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "cup"
+    },
+    {
+      "label": "Boyfriend",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "boyfriend"
+    },
+    {
+      "label": "Slughorn",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "slughorn"
+    },
+    {
+      "label": "Member",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "member"
+    },
+    {
+      "label": "Relationship",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "relationship"
+    },
+    {
+      "label": "Wright",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "wright"
+    },
+    {
+      "label": "Adaptions",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "adaptions"
+    },
+    {
+      "label": "Miller",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "miller"
+    },
+    {
+      "label": "Games",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "games"
+    },
+    {
+      "label": "Hagrid",
+      "entity_type": "Character",
+      "color": "#FF6B6B",
+      "id": "rubeus_hagrid"
+    },
+    {
+      "label": "Stone",
+      "entity_type": "Object",
+      "color": "#98D8C8",
+      "id": "resurrection_stone"
+    },
+    {
+      "label": "Task",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "task"
+    },
+    {
+      "label": "Person",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "person"
+    },
+    {
+      "label": "Care",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "care"
+    },
+    {
+      "label": "Buckbeak",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "buckbeak"
+    },
+    {
+      "label": "Sentences",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "sentences"
+    },
+    {
+      "label": "Broomstick",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "broomstick"
+    },
+    {
+      "label": "Headmistress",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "headmistress"
+    },
+    {
+      "label": "Firebolt",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "firebolt"
+    },
+    {
+      "label": "Order",
+      "entity_type": "Organization",
+      "color": "#C39BD3",
+      "id": "order_of_phoenix"
+    },
+    {
+      "label": "Alongside",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "alongside"
+    },
+    {
+      "label": "Treatment",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "treatment"
+    },
+    {
+      "label": "Adaptation",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "adaptation"
+    },
+    {
+      "label": "Traits",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "traits"
+    },
+    {
+      "label": "Many",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "many"
+    },
+    {
+      "label": "Hannah",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "hannah"
+    },
+    {
+      "label": "Gambling",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "gambling"
+    },
+    {
+      "label": "Bagshot",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "bagshot"
+    },
+    {
+      "label": "Katie",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "katie"
+    },
+    {
+      "label": "Susan",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "susan"
+    },
+    {
+      "label": "Lavender",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "lavender"
+    },
+    {
+      "label": "Bryce",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "bryce"
+    },
+    {
+      "label": "Romance",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "romance"
+    },
+    {
+      "label": "Crabbe",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "crabbe"
+    },
+    {
+      "label": "Colin",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "colin"
+    },
+    {
+      "label": "Word",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "word"
+    },
+    {
+      "label": "Castle",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "castle"
+    },
+    {
+      "label": "Wizards",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "wizards"
+    },
+    {
+      "label": "Area",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "area"
+    },
+    {
+      "label": "Room",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "room"
+    },
+    {
+      "label": "Meetings",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "meetings"
+    },
+    {
+      "label": "Houses",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "houses"
+    },
+    {
+      "label": "Hat",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "hat"
+    },
+    {
+      "label": "Mind",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "mind"
+    },
+    {
+      "label": "Gryffindor",
+      "entity_type": "House",
+      "color": "#F9E79F",
+      "id": "gryffindor"
+    },
+    {
+      "label": "Hufflepuff",
+      "entity_type": "House",
+      "color": "#F9E79F",
+      "id": "hufflepuff"
+    },
+    {
+      "label": "Work",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "work"
+    },
+    {
+      "label": "Slytherin",
+      "entity_type": "House",
+      "color": "#F9E79F",
+      "id": "slytherin"
+    },
+    {
+      "label": "Ambition",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "ambition"
+    },
+    {
+      "label": "Express",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "express"
+    },
+    {
+      "label": "Parlour",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "parlour"
+    },
+    {
+      "label": "Shop",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "shop"
+    },
+    {
+      "label": "Items",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "items"
+    },
+    {
+      "label": "Business",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "business"
+    },
+    {
+      "label": "Alley",
+      "entity_type": "Location",
+      "color": "#45B7D1",
+      "id": "diagon_alley"
+    },
+    {
+      "label": "Variety",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "variety"
+    },
+    {
+      "label": "Group",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "group"
+    },
+    {
+      "label": "Game",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "game"
+    },
+    {
+      "label": "Studios",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "studios"
+    },
+    {
+      "label": "Show",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "show"
+    },
+    {
+      "label": "Fallon",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "fallon"
+    },
+    {
+      "label": "Creation",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "creation"
+    },
+    {
+      "label": "Reintgen",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "reintgen"
+    },
+    {
+      "label": "Lyne",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "lyne"
+    },
+    {
+      "label": "Dragon",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "dragon"
+    },
+    {
+      "label": "Residences",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "residences"
+    },
+    {
+      "label": "Outside",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "outside"
+    },
+    {
+      "label": "Burrow",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "burrow"
+    },
+    {
+      "label": "Graveyard",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "graveyard"
+    },
+    {
+      "label": "Manor",
+      "entity_type": "Location",
+      "color": "#45B7D1",
+      "id": "malfoy_manor"
+    },
+    {
+      "label": "Some",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "some"
+    },
+    {
+      "label": "Scenes",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "scenes"
+    },
+    {
+      "label": "Filming",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "filming"
+    },
+    {
+      "label": "Place",
+      "entity_type": "Location",
+      "color": "#45B7D1",
+      "id": "grimmauld_place"
+    },
+    {
+      "label": "Beach",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "beach"
+    },
+    {
+      "label": "Cottage",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "cottage"
+    },
+    {
+      "label": "Town",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "town"
+    },
+    {
+      "label": "Beauxbatons",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "beauxbatons"
+    },
+    {
+      "label": "Preponderance",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "preponderance"
+    },
+    {
+      "label": "Depiction",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "depiction"
+    },
+    {
+      "label": "Umbridge",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "umbridge"
+    },
+    {
+      "label": "Zenith",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "zenith"
+    },
+    {
+      "label": "Shacklebolt",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "shacklebolt"
+    },
+    {
+      "label": "Minister",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "minister"
+    },
+    {
+      "label": "Employment",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "employment"
+    },
+    {
+      "label": "Courts",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "courts"
+    },
+    {
+      "label": "Trials",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "trials"
+    },
+    {
+      "label": "Ministry",
+      "entity_type": "Location",
+      "color": "#45B7D1",
+      "id": "ministry_of_magic"
+    },
+    {
+      "label": "Fudge",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "fudge"
+    },
+    {
+      "label": "Campaign",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "campaign"
+    },
+    {
+      "label": "Crouch",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "crouch"
+    },
+    {
+      "label": "Head",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "head"
+    },
+    {
+      "label": "Term",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "term"
+    },
+    {
+      "label": "World",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "world"
+    },
+    {
+      "label": "Evidence",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "evidence"
+    },
+    {
+      "label": "Persecution",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "persecution"
+    },
+    {
+      "label": "Laws",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "laws"
+    },
+    {
+      "label": "Film",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "film"
+    },
+    {
+      "label": "Aspects",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "aspects"
+    },
+    {
+      "label": "Candles",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "candles"
+    },
+    {
+      "label": "Effects",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "effects"
+    },
+    {
+      "label": "Language",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "language"
+    },
+    {
+      "label": "Homes",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "homes"
+    },
+    {
+      "label": "Objects",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "objects"
+    },
+    {
+      "label": "Tale",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "tale"
+    },
+    {
+      "label": "Wand",
+      "entity_type": "Object",
+      "color": "#98D8C8",
+      "id": "elder_wand"
+    },
+    {
+      "label": "Ring",
+      "entity_type": "Location",
+      "color": "#45B7D1",
+      "id": "gringotts"
+    },
+    {
+      "label": "Encounter",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "encounter"
+    },
+    {
+      "label": "Cloaks",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "cloaks"
+    },
+    {
+      "label": "Invisibility",
+      "entity_type": "Object",
+      "color": "#98D8C8",
+      "id": "invisibility_cloak"
+    },
+    {
+      "label": "Unlike",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "unlike"
+    },
+    {
+      "label": "Eyeball",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "eyeball"
+    },
+    {
+      "label": "Type",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "type"
+    },
+    {
+      "label": "Efforts",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "efforts"
+    },
+    {
+      "label": "Roots",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "roots"
+    },
+    {
+      "label": "Vaughan",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "vaughan"
+    },
+    {
+      "label": "Alchemist",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "alchemist"
+    },
+    {
+      "label": "Jabir",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "jabir"
+    },
+    {
+      "label": "Renaissance",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "renaissance"
+    },
+    {
+      "label": "Philosopher",
+      "entity_type": "Object",
+      "color": "#98D8C8",
+      "id": "philosophers_stone"
+    },
+    {
+      "label": "Aspect",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "aspect"
+    },
+    {
+      "label": "Chintamani",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "chintamani"
+    },
+    {
+      "label": "Tradition",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "tradition"
+    },
+    {
+      "label": "Records",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "records"
+    },
+    {
+      "label": "Upon",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "upon"
+    },
+    {
+      "label": "Record",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "record"
+    },
+    {
+      "label": "Hollow",
+      "entity_type": "Location",
+      "color": "#45B7D1",
+      "id": "godrics_hollow"
+    },
+    {
+      "label": "Returns",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "returns"
+    },
+    {
+      "label": "Horcrux",
+      "entity_type": "Object",
+      "color": "#98D8C8",
+      "id": "horcrux"
+    },
+    {
+      "label": "Xenophilius",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "xenophilius"
+    },
+    {
+      "label": "Visions",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "visions"
+    },
+    {
+      "label": "Nagini",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "nagini"
+    },
+    {
+      "label": "Memories",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "memories"
+    },
+    {
+      "label": "Consciousness",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "consciousness"
+    },
+    {
+      "label": "Sword",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "sword"
+    },
+    {
+      "label": "Children",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "children"
+    },
+    {
+      "label": "Daughter",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "daughter"
+    },
+    {
+      "label": "Title",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "title"
+    },
+    {
+      "label": "Book",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "book"
+    },
+    {
+      "label": "Novel",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "novel"
+    },
+    {
+      "label": "Assailants",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "assailants"
+    },
+    {
+      "label": "Moody",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "moody"
+    },
+    {
+      "label": "Girl",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "girl"
+    },
+    {
+      "label": "Gillyweed",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "gillyweed"
+    },
+    {
+      "label": "Points",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "points"
+    },
+    {
+      "label": "Rite",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "rite"
+    },
+    {
+      "label": "Second",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "second"
+    },
+    {
+      "label": "Third",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "third"
+    },
+    {
+      "label": "Publisher",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "publisher"
+    },
+    {
+      "label": "Doomspell",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "doomspell"
+    },
+    {
+      "label": "Between",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "between"
+    },
+    {
+      "label": "Goblet",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "goblet"
+    },
+    {
+      "label": "Symbol",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "symbol"
+    },
+    {
+      "label": "Mark",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "mark"
+    },
+    {
+      "label": "Robes",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "robes"
+    },
+    {
+      "label": "Activities",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "activities"
+    },
+    {
+      "label": "Members",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "members"
+    },
+    {
+      "label": "Strength",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "strength"
+    },
+    {
+      "label": "Advantage",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "advantage"
+    },
+    {
+      "label": "Spells",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "spells"
+    },
+    {
+      "label": "Bloods",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "bloods"
+    },
+    {
+      "label": "Quidditch",
+      "entity_type": "Sport",
+      "color": "#82E0AA",
+      "id": "quidditch"
+    },
+    {
+      "label": "Matches",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "matches"
+    },
+    {
+      "label": "Scene",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "scene"
+    },
+    {
+      "label": "Nimbus",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "nimbus"
+    },
+    {
+      "label": "Full",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "full"
+    },
+    {
+      "label": "Most",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "most"
+    },
+    {
+      "label": "Writing",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "writing"
+    },
+    {
+      "label": "Dislike",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "dislike"
+    },
+    {
+      "label": "Dog",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "dog"
+    },
+    {
+      "label": "Boys",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "boys"
+    },
+    {
+      "label": "Gift",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "gift"
+    },
+    {
+      "label": "Mirror",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "mirror"
+    },
+    {
+      "label": "Centaur",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "centaur"
+    },
+    {
+      "label": "Drop",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "drop"
+    },
+    {
+      "label": "Events",
+      "entity_type": "Other",
+      "color": "#CCCCCC",
+      "id": "events"
+    }
+  ],
+  "links": [
+    {
+      "relation": "publish",
+      "weight": 5,
+      "sources": [
+        "Harry Potter",
+        "Harry Potter and the Deathly Hallows"
+      ],
+      "source": "series",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "use",
+      "weight": 1,
+      "sources": [
+        "Harry Potter and the Philosopher's Stone"
+      ],
+      "source": "series",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "open",
+      "weight": 1,
+      "sources": [
+        "Harry Potter"
+      ],
+      "source": "ginny_weasley",
+      "target": "hermione_granger"
+    },
+    {
+      "relation": "open",
+      "weight": 1,
+      "sources": [
+        "Harry Potter"
+      ],
+      "source": "ginny_weasley",
+      "target": "chamber"
+    },
+    {
+      "relation": "write",
+      "weight": 8,
+      "sources": [
+        "Ginny Weasley",
+        "Voldemort"
+      ],
+      "source": "ginny_weasley",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "write",
+      "weight": 2,
+      "sources": [
+        "Ginny Weasley",
+        "Voldemort"
+      ],
+      "source": "ginny_weasley",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "begin",
+      "weight": 2,
+      "sources": [
+        "Ginny Weasley"
+      ],
+      "source": "ginny_weasley",
+      "target": "bellatrix_lestrange"
+    },
+    {
+      "relation": "attend",
+      "weight": 1,
+      "sources": [
+        "Ginny Weasley"
+      ],
+      "source": "ginny_weasley",
+      "target": "cup"
+    },
+    {
+      "relation": "attend",
+      "weight": 1,
+      "sources": [
+        "Ginny Weasley"
+      ],
+      "source": "ginny_weasley",
+      "target": "with"
+    },
+    {
+      "relation": "have",
+      "weight": 1,
+      "sources": [
+        "Ginny Weasley"
+      ],
+      "source": "ginny_weasley",
+      "target": "boyfriend"
+    },
+    {
+      "relation": "replace",
+      "weight": 1,
+      "sources": [
+        "Ginny Weasley"
+      ],
+      "source": "ginny_weasley",
+      "target": "him"
+    },
+    {
+      "relation": "become",
+      "weight": 1,
+      "sources": [
+        "Ginny Weasley"
+      ],
+      "source": "ginny_weasley",
+      "target": "member"
+    },
+    {
+      "relation": "start",
+      "weight": 1,
+      "sources": [
+        "Ginny Weasley"
+      ],
+      "source": "ginny_weasley",
+      "target": "relationship"
+    },
+    {
+      "relation": "discover",
+      "weight": 1,
+      "sources": [
+        "Ginny Weasley"
+      ],
+      "source": "ginny_weasley",
+      "target": "near"
+    },
+    {
+      "relation": "begin",
+      "weight": 1,
+      "sources": [
+        "Ginny Weasley"
+      ],
+      "source": "ginny_weasley",
+      "target": "year"
+    },
+    {
+      "relation": "find",
+      "weight": 1,
+      "sources": [
+        "Harry Potter"
+      ],
+      "source": "books",
+      "target": "hermione_granger"
+    },
+    {
+      "relation": "sell",
+      "weight": 2,
+      "sources": [
+        "Harry Potter"
+      ],
+      "source": "books",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "use",
+      "weight": 2,
+      "sources": [
+        "Hermione Granger"
+      ],
+      "source": "hermione_granger",
+      "target": "hogwarts"
+    },
+    {
+      "relation": "portray",
+      "weight": 2,
+      "sources": [
+        "Hermione Granger"
+      ],
+      "source": "hermione_granger",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "describe",
+      "weight": 1,
+      "sources": [
+        "Hermione Granger"
+      ],
+      "source": "hermione_granger",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "annoy",
+      "weight": 1,
+      "sources": [
+        "Hermione Granger"
+      ],
+      "source": "hermione_granger",
+      "target": "bellatrix_lestrange"
+    },
+    {
+      "relation": "annoy",
+      "weight": 1,
+      "sources": [
+        "Hermione Granger"
+      ],
+      "source": "hermione_granger",
+      "target": "students"
+    },
+    {
+      "relation": "solve",
+      "weight": 1,
+      "sources": [
+        "Hermione Granger"
+      ],
+      "source": "hermione_granger",
+      "target": "hermione_granger"
+    },
+    {
+      "relation": "solve",
+      "weight": 1,
+      "sources": [
+        "Hermione Granger"
+      ],
+      "source": "hermione_granger",
+      "target": "puzzle"
+    },
+    {
+      "relation": "develop",
+      "weight": 1,
+      "sources": [
+        "Hermione Granger"
+      ],
+      "source": "hermione_granger",
+      "target": "liking"
+    },
+    {
+      "relation": "concoct",
+      "weight": 1,
+      "sources": [
+        "Hermione Granger"
+      ],
+      "source": "hermione_granger",
+      "target": "potion"
+    },
+    {
+      "relation": "identify",
+      "weight": 1,
+      "sources": [
+        "Hermione Granger"
+      ],
+      "source": "hermione_granger",
+      "target": "through"
+    },
+    {
+      "relation": "buy",
+      "weight": 1,
+      "sources": [
+        "Hermione Granger"
+      ],
+      "source": "hermione_granger",
+      "target": "cat"
+    },
+    {
+      "relation": "meet",
+      "weight": 1,
+      "sources": [
+        "Ron Weasley"
+      ],
+      "source": "hermione_granger",
+      "target": "aboard"
+    },
+    {
+      "relation": "punch",
+      "weight": 1,
+      "sources": [
+        "Draco Malfoy"
+      ],
+      "source": "hermione_granger",
+      "target": "draco_malfoy"
+    },
+    {
+      "relation": "drag",
+      "weight": 1,
+      "sources": [
+        "Harry Potter"
+      ],
+      "source": "ron_weasley",
+      "target": "hermione_granger"
+    },
+    {
+      "relation": "drag",
+      "weight": 1,
+      "sources": [
+        "Harry Potter"
+      ],
+      "source": "ron_weasley",
+      "target": "into"
+    },
+    {
+      "relation": "befriend",
+      "weight": 5,
+      "sources": [
+        "Ron Weasley",
+        "Harry Potter and the Philosopher's Stone"
+      ],
+      "source": "ron_weasley",
+      "target": "during"
+    },
+    {
+      "relation": "befriend",
+      "weight": 4,
+      "sources": [
+        "Ron Weasley",
+        "Harry Potter and the Deathly Hallows"
+      ],
+      "source": "ron_weasley",
+      "target": "harry_potter"
+    },
+    {
+      "relation": "portray",
+      "weight": 2,
+      "sources": [
+        "Ron Weasley"
+      ],
+      "source": "ron_weasley",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "meet",
+      "weight": 1,
+      "sources": [
+        "Ron Weasley"
+      ],
+      "source": "ron_weasley",
+      "target": "aboard"
+    },
+    {
+      "relation": "use",
+      "weight": 1,
+      "sources": [
+        "Ron Weasley"
+      ],
+      "source": "ron_weasley",
+      "target": "skill"
+    },
+    {
+      "relation": "write",
+      "weight": 6,
+      "sources": [
+        "Ron Weasley",
+        "Harry Potter and the Deathly Hallows"
+      ],
+      "source": "ron_weasley",
+      "target": "voldemort"
+    },
+    {
+      "relation": "receive",
+      "weight": 1,
+      "sources": [
+        "Ron Weasley"
+      ],
+      "source": "ron_weasley",
+      "target": "howler"
+    },
+    {
+      "relation": "receive",
+      "weight": 4,
+      "sources": [
+        "Ron Weasley",
+        "Harry Potter and the Deathly Hallows"
+      ],
+      "source": "ron_weasley",
+      "target": "from"
+    },
+    {
+      "relation": "use",
+      "weight": 1,
+      "sources": [
+        "Ron Weasley"
+      ],
+      "source": "ron_weasley",
+      "target": "potion"
+    },
+    {
+      "relation": "enter",
+      "weight": 1,
+      "sources": [
+        "Ron Weasley"
+      ],
+      "source": "ron_weasley",
+      "target": "chamber"
+    },
+    {
+      "relation": "discover",
+      "weight": 2,
+      "sources": [
+        "Ron Weasley"
+      ],
+      "source": "ron_weasley",
+      "target": "him"
+    },
+    {
+      "relation": "follow",
+      "weight": 1,
+      "sources": [
+        "Ron Weasley"
+      ],
+      "source": "ron_weasley",
+      "target": "tunnel"
+    },
+    {
+      "relation": "attend",
+      "weight": 2,
+      "sources": [
+        "Ron Weasley",
+        "Ginny Weasley"
+      ],
+      "source": "ron_weasley",
+      "target": "bellatrix_lestrange"
+    },
+    {
+      "relation": "attend",
+      "weight": 1,
+      "sources": [
+        "Ron Weasley"
+      ],
+      "source": "ron_weasley",
+      "target": "ball"
+    },
+    {
+      "relation": "attend",
+      "weight": 1,
+      "sources": [
+        "Ron Weasley"
+      ],
+      "source": "ron_weasley",
+      "target": "with"
+    },
+    {
+      "relation": "support",
+      "weight": 1,
+      "sources": [
+        "Ron Weasley"
+      ],
+      "source": "ron_weasley",
+      "target": "policy"
+    },
+    {
+      "relation": "join",
+      "weight": 1,
+      "sources": [
+        "Ron Weasley"
+      ],
+      "source": "ron_weasley",
+      "target": "team"
+    },
+    {
+      "relation": "join",
+      "weight": 1,
+      "sources": [
+        "Ron Weasley"
+      ],
+      "source": "ron_weasley",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "battle",
+      "weight": 1,
+      "sources": [
+        "Ron Weasley"
+      ],
+      "source": "ron_weasley",
+      "target": "near"
+    },
+    {
+      "relation": "battle",
+      "weight": 1,
+      "sources": [
+        "Ron Weasley"
+      ],
+      "source": "ron_weasley",
+      "target": "death_eaters"
+    },
+    {
+      "relation": "kiss",
+      "weight": 1,
+      "sources": [
+        "Ron Weasley"
+      ],
+      "source": "ron_weasley",
+      "target": "brown"
+    },
+    {
+      "relation": "outrage",
+      "weight": 1,
+      "sources": [
+        "Ginny Weasley"
+      ],
+      "source": "ron_weasley",
+      "target": "after"
+    },
+    {
+      "relation": "destroy",
+      "weight": 3,
+      "sources": [
+        "Harry Potter and the Deathly Hallows"
+      ],
+      "source": "ron_weasley",
+      "target": "horcrux"
+    },
+    {
+      "relation": "have",
+      "weight": 3,
+      "sources": [
+        "Harry Potter and the Deathly Hallows"
+      ],
+      "source": "ron_weasley",
+      "target": "daughter"
+    },
+    {
+      "relation": "estimate",
+      "weight": 1,
+      "sources": [
+        "Harry Potter"
+      ],
+      "source": "value",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "estimate",
+      "weight": 1,
+      "sources": [
+        "Harry Potter"
+      ],
+      "source": "value",
+      "target": "bellatrix_lestrange"
+    },
+    {
+      "relation": "have",
+      "weight": 1,
+      "sources": [
+        "Bellatrix Lestrange"
+      ],
+      "source": "bellatrix_lestrange",
+      "target": "obsession"
+    },
+    {
+      "relation": "name",
+      "weight": 1,
+      "sources": [
+        "Bellatrix Lestrange"
+      ],
+      "source": "bellatrix_lestrange",
+      "target": "like"
+    },
+    {
+      "relation": "name",
+      "weight": 1,
+      "sources": [
+        "Bellatrix Lestrange"
+      ],
+      "source": "bellatrix_lestrange",
+      "target": "after"
+    },
+    {
+      "relation": "have",
+      "weight": 1,
+      "sources": [
+        "Bellatrix Lestrange"
+      ],
+      "source": "bellatrix_lestrange",
+      "target": "sisters"
+    },
+    {
+      "relation": "sentence",
+      "weight": 1,
+      "sources": [
+        "Bellatrix Lestrange"
+      ],
+      "source": "bellatrix_lestrange",
+      "target": "forbidden_forest"
+    },
+    {
+      "relation": "sentence",
+      "weight": 1,
+      "sources": [
+        "Bellatrix Lestrange"
+      ],
+      "source": "bellatrix_lestrange",
+      "target": "voldemort"
+    },
+    {
+      "relation": "proclaim",
+      "weight": 2,
+      "sources": [
+        "Bellatrix Lestrange"
+      ],
+      "source": "bellatrix_lestrange",
+      "target": "bellatrix_lestrange"
+    },
+    {
+      "relation": "build",
+      "weight": 1,
+      "sources": [
+        "Harry Potter"
+      ],
+      "source": "attractions",
+      "target": "bellatrix_lestrange"
+    },
+    {
+      "relation": "live",
+      "weight": 56,
+      "sources": [
+        "Rubeus Hagrid",
+        "Remus Lupin",
+        "Hogwarts",
+        "Ginny Weasley",
+        "Harry Potter and the Philosopher's Stone",
+        "Magical objects in Harry Potter",
+        "Harry Potter",
+        "Quidditch",
+        "Severus Snape",
+        "Draco Malfoy",
+        "Places in Harry Potter",
+        "Ron Weasley",
+        "Sirius Black",
+        "Neville Longbottom",
+        "Harry Potter and the Goblet of Fire",
+        "Albus Dumbledore",
+        "Voldemort",
+        "Diagon Alley"
+      ],
+      "source": "harry_potter",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "discover",
+      "weight": 10,
+      "sources": [
+        "Bellatrix Lestrange",
+        "Harry Potter",
+        "Places in Harry Potter",
+        "Ron Weasley",
+        "Harry Potter and the Goblet of Fire",
+        "Voldemort"
+      ],
+      "source": "harry_potter",
+      "target": "bellatrix_lestrange"
+    },
+    {
+      "relation": "meet",
+      "weight": 1,
+      "sources": [
+        "Harry Potter"
+      ],
+      "source": "harry_potter",
+      "target": "giant"
+    },
+    {
+      "relation": "become",
+      "weight": 1,
+      "sources": [
+        "Harry Potter"
+      ],
+      "source": "harry_potter",
+      "target": "student"
+    },
+    {
+      "relation": "gain",
+      "weight": 1,
+      "sources": [
+        "Harry Potter"
+      ],
+      "source": "harry_potter",
+      "target": "friendship"
+    },
+    {
+      "relation": "encounter",
+      "weight": 1,
+      "sources": [
+        "Harry Potter"
+      ],
+      "source": "harry_potter",
+      "target": "headmaster"
+    },
+    {
+      "relation": "describe",
+      "weight": 1,
+      "sources": [
+        "Harry Potter"
+      ],
+      "source": "harry_potter",
+      "target": "year"
+    },
+    {
+      "relation": "discover",
+      "weight": 1,
+      "sources": [
+        "Harry Potter"
+      ],
+      "source": "harry_potter",
+      "target": "ability"
+    },
+    {
+      "relation": "uncover",
+      "weight": 1,
+      "sources": [
+        "Harry Potter"
+      ],
+      "source": "harry_potter",
+      "target": "secrets"
+    },
+    {
+      "relation": "slay",
+      "weight": 8,
+      "sources": [
+        "Harry Potter and the Deathly Hallows",
+        "Harry Potter and the Philosopher's Stone",
+        "Harry Potter",
+        "Harry Potter and the Goblet of Fire",
+        "Albus Dumbledore",
+        "Voldemort"
+      ],
+      "source": "harry_potter",
+      "target": "with"
+    },
+    {
+      "relation": "slay",
+      "weight": 1,
+      "sources": [
+        "Harry Potter"
+      ],
+      "source": "harry_potter",
+      "target": "basilisk"
+    },
+    {
+      "relation": "reach",
+      "weight": 19,
+      "sources": [
+        "Rubeus Hagrid",
+        "Harry Potter and the Deathly Hallows",
+        "Harry Potter and the Philosopher's Stone",
+        "Magical objects in Harry Potter",
+        "Harry Potter",
+        "James Potter",
+        "Ron Weasley",
+        "Sirius Black",
+        "Neville Longbottom",
+        "Harry Potter and the Goblet of Fire",
+        "Albus Dumbledore"
+      ],
+      "source": "harry_potter",
+      "target": "voldemort"
+    },
+    {
+      "relation": "develop",
+      "weight": 1,
+      "sources": [
+        "Hermione Granger"
+      ],
+      "source": "harry_potter",
+      "target": "liking"
+    },
+    {
+      "relation": "buy",
+      "weight": 1,
+      "sources": [
+        "Hermione Granger"
+      ],
+      "source": "harry_potter",
+      "target": "cat"
+    },
+    {
+      "relation": "introduce",
+      "weight": 10,
+      "sources": [
+        "Rubeus Hagrid",
+        "Remus Lupin",
+        "Quidditch",
+        "Draco Malfoy",
+        "Ron Weasley",
+        "Neville Longbottom",
+        "Voldemort"
+      ],
+      "source": "harry_potter",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "provide",
+      "weight": 1,
+      "sources": [
+        "Ron Weasley"
+      ],
+      "source": "harry_potter",
+      "target": "insight"
+    },
+    {
+      "relation": "provide",
+      "weight": 4,
+      "sources": [
+        "Ron Weasley",
+        "Harry Potter and the Deathly Hallows"
+      ],
+      "source": "harry_potter",
+      "target": "into"
+    },
+    {
+      "relation": "encounter",
+      "weight": 4,
+      "sources": [
+        "Ron Weasley",
+        "Albus Dumbledore"
+      ],
+      "source": "harry_potter",
+      "target": "harry_potter"
+    },
+    {
+      "relation": "receive",
+      "weight": 1,
+      "sources": [
+        "Ron Weasley"
+      ],
+      "source": "harry_potter",
+      "target": "answer"
+    },
+    {
+      "relation": "rescue",
+      "weight": 7,
+      "sources": [
+        "Ron Weasley",
+        "Rubeus Hagrid",
+        "Places in Harry Potter",
+        "Voldemort"
+      ],
+      "source": "harry_potter",
+      "target": "from"
+    },
+    {
+      "relation": "form",
+      "weight": 1,
+      "sources": [
+        "Ron Weasley"
+      ],
+      "source": "harry_potter",
+      "target": "army"
+    },
+    {
+      "relation": "injure",
+      "weight": 7,
+      "sources": [
+        "Rubeus Hagrid",
+        "Remus Lupin",
+        "Harry Potter and the Philosopher's Stone",
+        "Ron Weasley",
+        "Neville Longbottom",
+        "Albus Dumbledore"
+      ],
+      "source": "harry_potter",
+      "target": "during"
+    },
+    {
+      "relation": "perform",
+      "weight": 9,
+      "sources": [
+        "Rubeus Hagrid",
+        "Magical objects in Harry Potter",
+        "Draco Malfoy",
+        "Ron Weasley",
+        "Voldemort"
+      ],
+      "source": "harry_potter",
+      "target": "after"
+    },
+    {
+      "relation": "play",
+      "weight": 1,
+      "sources": [
+        "Albus Dumbledore"
+      ],
+      "source": "harry_potter",
+      "target": "albus_dumbledore"
+    },
+    {
+      "relation": "wear",
+      "weight": 1,
+      "sources": [
+        "Albus Dumbledore"
+      ],
+      "source": "harry_potter",
+      "target": "spectacles"
+    },
+    {
+      "relation": "know",
+      "weight": 5,
+      "sources": [
+        "Neville Longbottom",
+        "Harry Potter and the Goblet of Fire",
+        "Albus Dumbledore",
+        "Harry Potter and the Philosopher's Stone"
+      ],
+      "source": "harry_potter",
+      "target": "forbidden_forest"
+    },
+    {
+      "relation": "pull",
+      "weight": 2,
+      "sources": [
+        "Albus Dumbledore",
+        "Remus Lupin"
+      ],
+      "source": "harry_potter",
+      "target": "lot"
+    },
+    {
+      "relation": "bring",
+      "weight": 1,
+      "sources": [
+        "Albus Dumbledore"
+      ],
+      "source": "harry_potter",
+      "target": "under"
+    },
+    {
+      "relation": "leave",
+      "weight": 13,
+      "sources": [
+        "Remus Lupin",
+        "Harry Potter and the Deathly Hallows",
+        "Harry Potter and the Philosopher's Stone",
+        "Harry Potter and the Goblet of Fire",
+        "Albus Dumbledore",
+        "Voldemort"
+      ],
+      "source": "harry_potter",
+      "target": "hermione_granger"
+    },
+    {
+      "relation": "kill",
+      "weight": 2,
+      "sources": [
+        "Harry Potter and the Philosopher's Stone",
+        "Voldemort"
+      ],
+      "source": "harry_potter",
+      "target": "parents"
+    },
+    {
+      "relation": "regard",
+      "weight": 1,
+      "sources": [
+        "Voldemort"
+      ],
+      "source": "harry_potter",
+      "target": "deathly_hallows"
+    },
+    {
+      "relation": "regard",
+      "weight": 1,
+      "sources": [
+        "Voldemort"
+      ],
+      "source": "harry_potter",
+      "target": "itself"
+    },
+    {
+      "relation": "introduce",
+      "weight": 1,
+      "sources": [
+        "Voldemort"
+      ],
+      "source": "harry_potter",
+      "target": "identity"
+    },
+    {
+      "relation": "teach",
+      "weight": 1,
+      "sources": [
+        "Severus Snape"
+      ],
+      "source": "harry_potter",
+      "target": "defence"
+    },
+    {
+      "relation": "teach",
+      "weight": 1,
+      "sources": [
+        "Severus Snape"
+      ],
+      "source": "harry_potter",
+      "target": "against"
+    },
+    {
+      "relation": "become",
+      "weight": 1,
+      "sources": [
+        "Severus Snape"
+      ],
+      "source": "harry_potter",
+      "target": "agent"
+    },
+    {
+      "relation": "forgive",
+      "weight": 6,
+      "sources": [
+        "Severus Snape",
+        "Draco Malfoy",
+        "Places in Harry Potter"
+      ],
+      "source": "harry_potter",
+      "target": "him"
+    },
+    {
+      "relation": "see",
+      "weight": 1,
+      "sources": [
+        "Severus Snape"
+      ],
+      "source": "harry_potter",
+      "target": "luna_lovegood"
+    },
+    {
+      "relation": "become",
+      "weight": 1,
+      "sources": [
+        "Severus Snape"
+      ],
+      "source": "harry_potter",
+      "target": "antagonist"
+    },
+    {
+      "relation": "retain",
+      "weight": 1,
+      "sources": [
+        "Severus Snape"
+      ],
+      "source": "harry_potter",
+      "target": "feelings"
+    },
+    {
+      "relation": "have",
+      "weight": 2,
+      "sources": [
+        "Neville Longbottom",
+        "Severus Snape"
+      ],
+      "source": "harry_potter",
+      "target": "role"
+    },
+    {
+      "relation": "encounter",
+      "weight": 1,
+      "sources": [
+        "Draco Malfoy"
+      ],
+      "source": "harry_potter",
+      "target": "bigotry"
+    },
+    {
+      "relation": "reject",
+      "weight": 1,
+      "sources": [
+        "Draco Malfoy"
+      ],
+      "source": "harry_potter",
+      "target": "offer"
+    },
+    {
+      "relation": "want",
+      "weight": 2,
+      "sources": [
+        "Draco Malfoy"
+      ],
+      "source": "harry_potter",
+      "target": "draco_malfoy"
+    },
+    {
+      "relation": "buckbeak",
+      "weight": 1,
+      "sources": [
+        "Draco Malfoy"
+      ],
+      "source": "harry_potter",
+      "target": "attacks"
+    },
+    {
+      "relation": "exaggerate",
+      "weight": 1,
+      "sources": [
+        "Draco Malfoy"
+      ],
+      "source": "harry_potter",
+      "target": "extent"
+    },
+    {
+      "relation": "want",
+      "weight": 1,
+      "sources": [
+        "Draco Malfoy"
+      ],
+      "source": "harry_potter",
+      "target": "revenge"
+    },
+    {
+      "relation": "hunt",
+      "weight": 1,
+      "sources": [
+        "Draco Malfoy"
+      ],
+      "source": "harry_potter",
+      "target": "down"
+    },
+    {
+      "relation": "fall",
+      "weight": 1,
+      "sources": [
+        "Neville Longbottom"
+      ],
+      "source": "harry_potter",
+      "target": "off"
+    },
+    {
+      "relation": "marry",
+      "weight": 1,
+      "sources": [
+        "Neville Longbottom"
+      ],
+      "source": "harry_potter",
+      "target": "abbott"
+    },
+    {
+      "relation": "demonstrate",
+      "weight": 1,
+      "sources": [
+        "Neville Longbottom"
+      ],
+      "source": "harry_potter",
+      "target": "despite"
+    },
+    {
+      "relation": "demonstrate",
+      "weight": 1,
+      "sources": [
+        "Neville Longbottom"
+      ],
+      "source": "harry_potter",
+      "target": "loyalty"
+    },
+    {
+      "relation": "feel",
+      "weight": 1,
+      "sources": [
+        "Neville Longbottom"
+      ],
+      "source": "harry_potter",
+      "target": "that"
+    },
+    {
+      "relation": "reject",
+      "weight": 1,
+      "sources": [
+        "Sirius Black"
+      ],
+      "source": "harry_potter",
+      "target": "elitism"
+    },
+    {
+      "relation": "remain",
+      "weight": 1,
+      "sources": [
+        "Sirius Black"
+      ],
+      "source": "harry_potter",
+      "target": "friends"
+    },
+    {
+      "relation": "convince",
+      "weight": 2,
+      "sources": [
+        "Sirius Black"
+      ],
+      "source": "harry_potter",
+      "target": "potters"
+    },
+    {
+      "relation": "create",
+      "weight": 1,
+      "sources": [
+        "Sirius Black"
+      ],
+      "source": "harry_potter",
+      "target": "explosion"
+    },
+    {
+      "relation": "spend",
+      "weight": 1,
+      "sources": [
+        "Sirius Black"
+      ],
+      "source": "harry_potter",
+      "target": "years"
+    },
+    {
+      "relation": "notice",
+      "weight": 1,
+      "sources": [
+        "Sirius Black"
+      ],
+      "source": "harry_potter",
+      "target": "rat"
+    },
+    {
+      "relation": "stop",
+      "weight": 4,
+      "sources": [
+        "Rubeus Hagrid",
+        "List of Harry Potter characters",
+        "Remus Lupin"
+      ],
+      "source": "harry_potter",
+      "target": "severus_snape"
+    },
+    {
+      "relation": "give",
+      "weight": 1,
+      "sources": [
+        "Remus Lupin"
+      ],
+      "source": "harry_potter",
+      "target": "lessons"
+    },
+    {
+      "relation": "discover",
+      "weight": 1,
+      "sources": [
+        "Remus Lupin"
+      ],
+      "source": "harry_potter",
+      "target": "truth"
+    },
+    {
+      "relation": "help",
+      "weight": 1,
+      "sources": [
+        "Remus Lupin"
+      ],
+      "source": "harry_potter",
+      "target": "sirius_black"
+    },
+    {
+      "relation": "become",
+      "weight": 1,
+      "sources": [
+        "Rubeus Hagrid"
+      ],
+      "source": "harry_potter",
+      "target": "care"
+    },
+    {
+      "relation": "introduce",
+      "weight": 1,
+      "sources": [
+        "Rubeus Hagrid"
+      ],
+      "source": "harry_potter",
+      "target": "buckbeak"
+    },
+    {
+      "relation": "meet",
+      "weight": 1,
+      "sources": [
+        "Minerva McGonagall"
+      ],
+      "source": "harry_potter",
+      "target": "minerva_mcgonagall"
+    },
+    {
+      "relation": "send",
+      "weight": 1,
+      "sources": [
+        "Minerva McGonagall"
+      ],
+      "source": "harry_potter",
+      "target": "firebolt"
+    },
+    {
+      "relation": "love",
+      "weight": 2,
+      "sources": [
+        "List of Harry Potter characters"
+      ],
+      "source": "harry_potter",
+      "target": "gambling"
+    },
+    {
+      "relation": "begin",
+      "weight": 2,
+      "sources": [
+        "List of Harry Potter characters"
+      ],
+      "source": "harry_potter",
+      "target": "romance"
+    },
+    {
+      "relation": "hold",
+      "weight": 4,
+      "sources": [
+        "Hogwarts"
+      ],
+      "source": "harry_potter",
+      "target": "meetings"
+    },
+    {
+      "relation": "manage",
+      "weight": 2,
+      "sources": [
+        "Diagon Alley"
+      ],
+      "source": "harry_potter",
+      "target": "business"
+    },
+    {
+      "relation": "become",
+      "weight": 1,
+      "sources": [
+        "Ministry of Magic"
+      ],
+      "source": "harry_potter",
+      "target": "dobby"
+    },
+    {
+      "relation": "become",
+      "weight": 1,
+      "sources": [
+        "Ministry of Magic"
+      ],
+      "source": "harry_potter",
+      "target": "head"
+    },
+    {
+      "relation": "join",
+      "weight": 1,
+      "sources": [
+        "Ministry of Magic"
+      ],
+      "source": "harry_potter",
+      "target": "department_of_mysteries"
+    },
+    {
+      "relation": "use",
+      "weight": 9,
+      "sources": [
+        "Magical objects in Harry Potter",
+        "Harry Potter and the Philosopher's Stone"
+      ],
+      "source": "harry_potter",
+      "target": "elder_wand"
+    },
+    {
+      "relation": "use",
+      "weight": 4,
+      "sources": [
+        "Magical objects in Harry Potter"
+      ],
+      "source": "harry_potter",
+      "target": "gringotts"
+    },
+    {
+      "relation": "use",
+      "weight": 4,
+      "sources": [
+        "Magical objects in Harry Potter"
+      ],
+      "source": "harry_potter",
+      "target": "resurrection_stone"
+    },
+    {
+      "relation": "survive",
+      "weight": 4,
+      "sources": [
+        "Magical objects in Harry Potter"
+      ],
+      "source": "harry_potter",
+      "target": "encounter"
+    },
+    {
+      "relation": "own",
+      "weight": 4,
+      "sources": [
+        "Magical objects in Harry Potter"
+      ],
+      "source": "harry_potter",
+      "target": "invisibility_cloak"
+    },
+    {
+      "relation": "steal",
+      "weight": 4,
+      "sources": [
+        "Magical objects in Harry Potter"
+      ],
+      "source": "harry_potter",
+      "target": "eyeball"
+    },
+    {
+      "relation": "infiltrate",
+      "weight": 3,
+      "sources": [
+        "Harry Potter and the Deathly Hallows"
+      ],
+      "source": "harry_potter",
+      "target": "ministry_of_magic"
+    },
+    {
+      "relation": "have",
+      "weight": 3,
+      "sources": [
+        "Harry Potter and the Deathly Hallows"
+      ],
+      "source": "harry_potter",
+      "target": "visions"
+    },
+    {
+      "relation": "instruct",
+      "weight": 3,
+      "sources": [
+        "Harry Potter and the Deathly Hallows"
+      ],
+      "source": "harry_potter",
+      "target": "neville_longbottom"
+    },
+    {
+      "relation": "regain",
+      "weight": 3,
+      "sources": [
+        "Harry Potter and the Deathly Hallows"
+      ],
+      "source": "harry_potter",
+      "target": "consciousness"
+    },
+    {
+      "relation": "see",
+      "weight": 3,
+      "sources": [
+        "Harry Potter and the Deathly Hallows"
+      ],
+      "source": "harry_potter",
+      "target": "children"
+    },
+    {
+      "relation": "use",
+      "weight": 1,
+      "sources": [
+        "Harry Potter and the Goblet of Fire"
+      ],
+      "source": "harry_potter",
+      "target": "broomstick"
+    },
+    {
+      "relation": "ask",
+      "weight": 1,
+      "sources": [
+        "Harry Potter and the Goblet of Fire"
+      ],
+      "source": "harry_potter",
+      "target": "girl"
+    },
+    {
+      "relation": "award",
+      "weight": 1,
+      "sources": [
+        "Harry Potter and the Goblet of Fire"
+      ],
+      "source": "harry_potter",
+      "target": "points"
+    },
+    {
+      "relation": "reach",
+      "weight": 1,
+      "sources": [
+        "Harry Potter and the Goblet of Fire"
+      ],
+      "source": "harry_potter",
+      "target": "cup"
+    },
+    {
+      "relation": "perform",
+      "weight": 1,
+      "sources": [
+        "Harry Potter and the Goblet of Fire"
+      ],
+      "source": "harry_potter",
+      "target": "rite"
+    },
+    {
+      "relation": "give",
+      "weight": 1,
+      "sources": [
+        "Harry Potter and the Goblet of Fire"
+      ],
+      "source": "harry_potter",
+      "target": "hogwarts"
+    },
+    {
+      "relation": "change",
+      "weight": 1,
+      "sources": [
+        "Harry Potter and the Goblet of Fire"
+      ],
+      "source": "harry_potter",
+      "target": "mind"
+    },
+    {
+      "relation": "change",
+      "weight": 1,
+      "sources": [
+        "Harry Potter and the Goblet of Fire"
+      ],
+      "source": "harry_potter",
+      "target": "doomspell"
+    },
+    {
+      "relation": "teeter",
+      "weight": 1,
+      "sources": [
+        "Harry Potter and the Goblet of Fire"
+      ],
+      "source": "harry_potter",
+      "target": "between"
+    },
+    {
+      "relation": "prefer",
+      "weight": 1,
+      "sources": [
+        "Harry Potter and the Goblet of Fire"
+      ],
+      "source": "harry_potter",
+      "target": "goblet"
+    },
+    {
+      "relation": "exist",
+      "weight": 1,
+      "sources": [
+        "Death Eater"
+      ],
+      "source": "harry_potter",
+      "target": "before"
+    },
+    {
+      "relation": "receive",
+      "weight": 1,
+      "sources": [
+        "Quidditch"
+      ],
+      "source": "harry_potter",
+      "target": "nimbus"
+    },
+    {
+      "relation": "take",
+      "weight": 1,
+      "sources": [
+        "Harry Potter and the Philosopher's Stone"
+      ],
+      "source": "harry_potter",
+      "target": "express"
+    },
+    {
+      "relation": "develop",
+      "weight": 1,
+      "sources": [
+        "Harry Potter and the Philosopher's Stone"
+      ],
+      "source": "harry_potter",
+      "target": "dislike"
+    },
+    {
+      "relation": "discover",
+      "weight": 1,
+      "sources": [
+        "Harry Potter and the Philosopher's Stone"
+      ],
+      "source": "harry_potter",
+      "target": "dog"
+    },
+    {
+      "relation": "receive",
+      "weight": 1,
+      "sources": [
+        "Harry Potter and the Philosopher's Stone"
+      ],
+      "source": "harry_potter",
+      "target": "gift"
+    },
+    {
+      "relation": "discover",
+      "weight": 1,
+      "sources": [
+        "Harry Potter and the Philosopher's Stone"
+      ],
+      "source": "harry_potter",
+      "target": "mirror"
+    },
+    {
+      "relation": "feel",
+      "weight": 1,
+      "sources": [
+        "Harry Potter and the Philosopher's Stone"
+      ],
+      "source": "harry_potter",
+      "target": "drop"
+    },
+    {
+      "relation": "force",
+      "weight": 4,
+      "sources": [
+        "Hogwarts"
+      ],
+      "source": "student",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "reward",
+      "weight": 1,
+      "sources": [
+        "Ron Weasley"
+      ],
+      "source": "headmaster",
+      "target": "bellatrix_lestrange"
+    },
+    {
+      "relation": "reward",
+      "weight": 1,
+      "sources": [
+        "Ron Weasley"
+      ],
+      "source": "headmaster",
+      "target": "dobby"
+    },
+    {
+      "relation": "unleash",
+      "weight": 1,
+      "sources": [
+        "Rubeus Hagrid"
+      ],
+      "source": "basilisk",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "derive",
+      "weight": 6,
+      "sources": [
+        "Bellatrix Lestrange",
+        "Hermione Granger",
+        "Voldemort",
+        "Albus Dumbledore",
+        "Death Eater"
+      ],
+      "source": "voldemort",
+      "target": "from"
+    },
+    {
+      "relation": "murder",
+      "weight": 1,
+      "sources": [
+        "Voldemort"
+      ],
+      "source": "voldemort",
+      "target": "parents"
+    },
+    {
+      "relation": "try",
+      "weight": 7,
+      "sources": [
+        "Bellatrix Lestrange",
+        "Places in Harry Potter",
+        "Voldemort"
+      ],
+      "source": "voldemort",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "use",
+      "weight": 1,
+      "sources": [
+        "Voldemort"
+      ],
+      "source": "voldemort",
+      "target": "aid"
+    },
+    {
+      "relation": "use",
+      "weight": 1,
+      "sources": [
+        "Voldemort"
+      ],
+      "source": "voldemort",
+      "target": "dobby"
+    },
+    {
+      "relation": "regain",
+      "weight": 1,
+      "sources": [
+        "Sirius Black"
+      ],
+      "source": "voldemort",
+      "target": "power"
+    },
+    {
+      "relation": "come",
+      "weight": 5,
+      "sources": [
+        "Bellatrix Lestrange",
+        "Places in Harry Potter"
+      ],
+      "source": "voldemort",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "translate",
+      "weight": 1,
+      "sources": [
+        "Bellatrix Lestrange"
+      ],
+      "source": "voldemort",
+      "target": "into"
+    },
+    {
+      "relation": "state",
+      "weight": 1,
+      "sources": [
+        "Bellatrix Lestrange"
+      ],
+      "source": "voldemort",
+      "target": "during"
+    },
+    {
+      "relation": "give",
+      "weight": 1,
+      "sources": [
+        "Bellatrix Lestrange"
+      ],
+      "source": "voldemort",
+      "target": "chance"
+    },
+    {
+      "relation": "use",
+      "weight": 4,
+      "sources": [
+        "Places in Harry Potter"
+      ],
+      "source": "voldemort",
+      "target": "malfoy_manor"
+    },
+    {
+      "relation": "come",
+      "weight": 4,
+      "sources": [
+        "Magical objects in Harry Potter"
+      ],
+      "source": "voldemort",
+      "target": "through"
+    },
+    {
+      "relation": "use",
+      "weight": 3,
+      "sources": [
+        "Harry Potter and the Deathly Hallows"
+      ],
+      "source": "voldemort",
+      "target": "nagini"
+    },
+    {
+      "relation": "cast",
+      "weight": 3,
+      "sources": [
+        "Harry Potter and the Deathly Hallows"
+      ],
+      "source": "voldemort",
+      "target": "curse"
+    },
+    {
+      "relation": "regain",
+      "weight": 1,
+      "sources": [
+        "Death Eater"
+      ],
+      "source": "voldemort",
+      "target": "strength"
+    },
+    {
+      "relation": "regain",
+      "weight": 1,
+      "sources": [
+        "Death Eater"
+      ],
+      "source": "voldemort",
+      "target": "bellatrix_lestrange"
+    },
+    {
+      "relation": "appear",
+      "weight": 24,
+      "sources": [
+        "Rubeus Hagrid",
+        "Hermione Granger",
+        "Bellatrix Lestrange",
+        "Ginny Weasley",
+        "Quidditch",
+        "Severus Snape",
+        "Luna Lovegood",
+        "List of Harry Potter characters",
+        "Minerva McGonagall"
+      ],
+      "source": "she",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "appear",
+      "weight": 7,
+      "sources": [
+        "Ginny Weasley",
+        "Fictional universe of Harry Potter",
+        "Hermione Granger"
+      ],
+      "source": "she",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "prove",
+      "weight": 1,
+      "sources": [
+        "Hermione Granger"
+      ],
+      "source": "she",
+      "target": "dobby"
+    },
+    {
+      "relation": "state",
+      "weight": 3,
+      "sources": [
+        "Luna Lovegood",
+        "Ginny Weasley",
+        "Albus Dumbledore"
+      ],
+      "source": "she",
+      "target": "hermione_granger"
+    },
+    {
+      "relation": "hint",
+      "weight": 4,
+      "sources": [
+        "Bellatrix Lestrange",
+        "Severus Snape"
+      ],
+      "source": "she",
+      "target": "bellatrix_lestrange"
+    },
+    {
+      "relation": "want",
+      "weight": 2,
+      "sources": [
+        "Neville Longbottom",
+        "Minerva McGonagall"
+      ],
+      "source": "she",
+      "target": "forbidden_forest"
+    },
+    {
+      "relation": "accompany",
+      "weight": 1,
+      "sources": [
+        "Ginny Weasley"
+      ],
+      "source": "she",
+      "target": "neville_longbottom"
+    },
+    {
+      "relation": "accompany",
+      "weight": 1,
+      "sources": [
+        "Ginny Weasley"
+      ],
+      "source": "she",
+      "target": "voldemort"
+    },
+    {
+      "relation": "kiss",
+      "weight": 1,
+      "sources": [
+        "Ginny Weasley"
+      ],
+      "source": "she",
+      "target": "harry_potter"
+    },
+    {
+      "relation": "join",
+      "weight": 1,
+      "sources": [
+        "Minerva McGonagall"
+      ],
+      "source": "she",
+      "target": "albus_dumbledore"
+    },
+    {
+      "relation": "utter",
+      "weight": 4,
+      "sources": [
+        "Philosopher's stone",
+        "List of Harry Potter characters",
+        "Voldemort"
+      ],
+      "source": "hogwarts",
+      "target": "voldemort"
+    },
+    {
+      "relation": "reveal",
+      "weight": 2,
+      "sources": [
+        "Ministry of Magic",
+        "Voldemort"
+      ],
+      "source": "hogwarts",
+      "target": "bellatrix_lestrange"
+    },
+    {
+      "relation": "suggest",
+      "weight": 44,
+      "sources": [
+        "Philosopher's stone",
+        "Bellatrix Lestrange",
+        "Harry Potter and the Deathly Hallows",
+        "Hogwarts",
+        "Harry Potter and the Philosopher's Stone",
+        "Quidditch",
+        "Places in Harry Potter",
+        "List of Harry Potter characters",
+        "Death Eater",
+        "Diagon Alley"
+      ],
+      "source": "hogwarts",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "expose",
+      "weight": 2,
+      "sources": [
+        "List of Harry Potter characters"
+      ],
+      "source": "hogwarts",
+      "target": "army"
+    },
+    {
+      "relation": "kiss",
+      "weight": 2,
+      "sources": [
+        "List of Harry Potter characters"
+      ],
+      "source": "hogwarts",
+      "target": "him"
+    },
+    {
+      "relation": "describe",
+      "weight": 14,
+      "sources": [
+        "Philosopher's stone",
+        "Hogwarts",
+        "Ministry of Magic",
+        "Quidditch",
+        "Places in Harry Potter"
+      ],
+      "source": "hogwarts",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "examine",
+      "weight": 4,
+      "sources": [
+        "Hogwarts"
+      ],
+      "source": "hogwarts",
+      "target": "mind"
+    },
+    {
+      "relation": "have",
+      "weight": 4,
+      "sources": [
+        "Hogwarts"
+      ],
+      "source": "hogwarts",
+      "target": "houses"
+    },
+    {
+      "relation": "sell",
+      "weight": 2,
+      "sources": [
+        "Diagon Alley"
+      ],
+      "source": "hogwarts",
+      "target": "items"
+    },
+    {
+      "relation": "locate",
+      "weight": 8,
+      "sources": [
+        "Places in Harry Potter"
+      ],
+      "source": "hogwarts",
+      "target": "outside"
+    },
+    {
+      "relation": "locate",
+      "weight": 4,
+      "sources": [
+        "Places in Harry Potter"
+      ],
+      "source": "hogwarts",
+      "target": "near"
+    },
+    {
+      "relation": "contain",
+      "weight": 4,
+      "sources": [
+        "Places in Harry Potter"
+      ],
+      "source": "hogwarts",
+      "target": "graveyard"
+    },
+    {
+      "relation": "overlook",
+      "weight": 4,
+      "sources": [
+        "Places in Harry Potter"
+      ],
+      "source": "hogwarts",
+      "target": "beach"
+    },
+    {
+      "relation": "have",
+      "weight": 4,
+      "sources": [
+        "Places in Harry Potter"
+      ],
+      "source": "hogwarts",
+      "target": "preponderance"
+    },
+    {
+      "relation": "depict",
+      "weight": 1,
+      "sources": [
+        "Ministry of Magic"
+      ],
+      "source": "hogwarts",
+      "target": "throughout"
+    },
+    {
+      "relation": "depict",
+      "weight": 4,
+      "sources": [
+        "Ministry of Magic",
+        "Harry Potter and the Deathly Hallows"
+      ],
+      "source": "hogwarts",
+      "target": "with"
+    },
+    {
+      "relation": "reach",
+      "weight": 1,
+      "sources": [
+        "Ministry of Magic"
+      ],
+      "source": "hogwarts",
+      "target": "zenith"
+    },
+    {
+      "relation": "reach",
+      "weight": 1,
+      "sources": [
+        "Ministry of Magic"
+      ],
+      "source": "hogwarts",
+      "target": "before"
+    },
+    {
+      "relation": "locate",
+      "weight": 5,
+      "sources": [
+        "Ministry of Magic",
+        "Death Eater",
+        "Harry Potter and the Deathly Hallows"
+      ],
+      "source": "hogwarts",
+      "target": "hermione_granger"
+    },
+    {
+      "relation": "reason",
+      "weight": 1,
+      "sources": [
+        "Philosopher's stone"
+      ],
+      "source": "hogwarts",
+      "target": "from"
+    },
+    {
+      "relation": "hold",
+      "weight": 3,
+      "sources": [
+        "Harry Potter and the Deathly Hallows"
+      ],
+      "source": "hogwarts",
+      "target": "record"
+    },
+    {
+      "relation": "follow",
+      "weight": 2,
+      "sources": [
+        "Harry Potter and the Goblet of Fire",
+        "Harry Potter and the Philosopher's Stone"
+      ],
+      "source": "hogwarts",
+      "target": "harry_potter"
+    },
+    {
+      "relation": "become",
+      "weight": 1,
+      "sources": [
+        "Death Eater"
+      ],
+      "source": "hogwarts",
+      "target": "death_eaters"
+    },
+    {
+      "relation": "win",
+      "weight": 1,
+      "sources": [
+        "Harry Potter and the Philosopher's Stone"
+      ],
+      "source": "hogwarts",
+      "target": "most"
+    },
+    {
+      "relation": "translate",
+      "weight": 1,
+      "sources": [
+        "Harry Potter and the Philosopher's Stone"
+      ],
+      "source": "hogwarts",
+      "target": "into"
+    },
+    {
+      "relation": "describe",
+      "weight": 9,
+      "sources": [
+        "Hermione Granger",
+        "Bellatrix Lestrange",
+        "Magical objects in Harry Potter",
+        "Luna Lovegood",
+        "Death Eater"
+      ],
+      "source": "rowling",
+      "target": "hermione_granger"
+    },
+    {
+      "relation": "describe",
+      "weight": 14,
+      "sources": [
+        "Hermione Granger",
+        "Bellatrix Lestrange",
+        "Ginny Weasley",
+        "Death Eater",
+        "Severus Snape",
+        "Luna Lovegood",
+        "Albus Dumbledore",
+        "Voldemort"
+      ],
+      "source": "rowling",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "see",
+      "weight": 38,
+      "sources": [
+        "Rubeus Hagrid",
+        "Hermione Granger",
+        "Bellatrix Lestrange",
+        "Harry Potter and the Deathly Hallows",
+        "Hogwarts",
+        "Ginny Weasley",
+        "Death Eater",
+        "Magical objects in Harry Potter",
+        "Quidditch",
+        "Severus Snape",
+        "Ron Weasley",
+        "Luna Lovegood",
+        "Neville Longbottom",
+        "Albus Dumbledore",
+        "Voldemort"
+      ],
+      "source": "rowling",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "describe",
+      "weight": 2,
+      "sources": [
+        "Luna Lovegood",
+        "Hermione Granger"
+      ],
+      "source": "rowling",
+      "target": "luna_lovegood"
+    },
+    {
+      "relation": "describe",
+      "weight": 1,
+      "sources": [
+        "Albus Dumbledore"
+      ],
+      "source": "rowling",
+      "target": "albus_dumbledore"
+    },
+    {
+      "relation": "choose",
+      "weight": 2,
+      "sources": [
+        "Albus Dumbledore",
+        "Voldemort"
+      ],
+      "source": "rowling",
+      "target": "voldemort"
+    },
+    {
+      "relation": "single",
+      "weight": 1,
+      "sources": [
+        "Severus Snape"
+      ],
+      "source": "rowling",
+      "target": "severus_snape"
+    },
+    {
+      "relation": "express",
+      "weight": 1,
+      "sources": [
+        "Severus Snape"
+      ],
+      "source": "rowling",
+      "target": "bellatrix_lestrange"
+    },
+    {
+      "relation": "compel",
+      "weight": 1,
+      "sources": [
+        "Severus Snape"
+      ],
+      "source": "luna_lovegood",
+      "target": "despite"
+    },
+    {
+      "relation": "compel",
+      "weight": 1,
+      "sources": [
+        "Severus Snape"
+      ],
+      "source": "luna_lovegood",
+      "target": "him"
+    },
+    {
+      "relation": "witness",
+      "weight": 1,
+      "sources": [
+        "Luna Lovegood"
+      ],
+      "source": "luna_lovegood",
+      "target": "deathly_hallows"
+    },
+    {
+      "relation": "pursue",
+      "weight": 1,
+      "sources": [
+        "Luna Lovegood"
+      ],
+      "source": "luna_lovegood",
+      "target": "career"
+    },
+    {
+      "relation": "have",
+      "weight": 1,
+      "sources": [
+        "Luna Lovegood"
+      ],
+      "source": "luna_lovegood",
+      "target": "sons"
+    },
+    {
+      "relation": "appear",
+      "weight": 3,
+      "sources": [
+        "Luna Lovegood"
+      ],
+      "source": "luna_lovegood",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "appear",
+      "weight": 2,
+      "sources": [
+        "Luna Lovegood"
+      ],
+      "source": "luna_lovegood",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "practice",
+      "weight": 1,
+      "sources": [
+        "Luna Lovegood"
+      ],
+      "source": "luna_lovegood",
+      "target": "during"
+    },
+    {
+      "relation": "practice",
+      "weight": 1,
+      "sources": [
+        "Luna Lovegood"
+      ],
+      "source": "luna_lovegood",
+      "target": "spellcasting"
+    },
+    {
+      "relation": "attend",
+      "weight": 1,
+      "sources": [
+        "Luna Lovegood"
+      ],
+      "source": "luna_lovegood",
+      "target": "party"
+    },
+    {
+      "relation": "do",
+      "weight": 1,
+      "sources": [
+        "Luna Lovegood"
+      ],
+      "source": "luna_lovegood",
+      "target": "year"
+    },
+    {
+      "relation": "help",
+      "weight": 1,
+      "sources": [
+        "Luna Lovegood"
+      ],
+      "source": "luna_lovegood",
+      "target": "after"
+    },
+    {
+      "relation": "introduce",
+      "weight": 7,
+      "sources": [
+        "Ron Weasley",
+        "Fictional universe of Harry Potter",
+        "Hermione Granger",
+        "Severus Snape"
+      ],
+      "source": "novels",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "give",
+      "weight": 1,
+      "sources": [
+        "Harry Potter and the Goblet of Fire"
+      ],
+      "source": "dobby",
+      "target": "gillyweed"
+    },
+    {
+      "relation": "assign",
+      "weight": 1,
+      "sources": [
+        "Ron Weasley"
+      ],
+      "source": "students",
+      "target": "bellatrix_lestrange"
+    },
+    {
+      "relation": "assign",
+      "weight": 1,
+      "sources": [
+        "Ron Weasley"
+      ],
+      "source": "students",
+      "target": "voldemort"
+    },
+    {
+      "relation": "call",
+      "weight": 1,
+      "sources": [
+        "Luna Lovegood"
+      ],
+      "source": "students",
+      "target": "luna_lovegood"
+    },
+    {
+      "relation": "hold",
+      "weight": 1,
+      "sources": [
+        "Remus Lupin"
+      ],
+      "source": "students",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "select",
+      "weight": 4,
+      "sources": [
+        "Hogwarts"
+      ],
+      "source": "students",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "use",
+      "weight": 4,
+      "sources": [
+        "Fictional universe of Harry Potter"
+      ],
+      "source": "students",
+      "target": "severus_snape"
+    },
+    {
+      "relation": "give",
+      "weight": 1,
+      "sources": [
+        "Hermione Granger"
+      ],
+      "source": "minerva_mcgonagall",
+      "target": "before"
+    },
+    {
+      "relation": "give",
+      "weight": 2,
+      "sources": [
+        "Hermione Granger",
+        "Minerva McGonagall"
+      ],
+      "source": "minerva_mcgonagall",
+      "target": "time_turner"
+    },
+    {
+      "relation": "portray",
+      "weight": 6,
+      "sources": [
+        "Minerva McGonagall"
+      ],
+      "source": "minerva_mcgonagall",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "introduce",
+      "weight": 2,
+      "sources": [
+        "Minerva McGonagall"
+      ],
+      "source": "minerva_mcgonagall",
+      "target": "bellatrix_lestrange"
+    },
+    {
+      "relation": "introduce",
+      "weight": 2,
+      "sources": [
+        "Minerva McGonagall"
+      ],
+      "source": "minerva_mcgonagall",
+      "target": "after"
+    },
+    {
+      "relation": "introduce",
+      "weight": 1,
+      "sources": [
+        "Minerva McGonagall"
+      ],
+      "source": "minerva_mcgonagall",
+      "target": "him"
+    },
+    {
+      "relation": "introduce",
+      "weight": 1,
+      "sources": [
+        "Minerva McGonagall"
+      ],
+      "source": "minerva_mcgonagall",
+      "target": "voldemort"
+    },
+    {
+      "relation": "buy",
+      "weight": 1,
+      "sources": [
+        "Minerva McGonagall"
+      ],
+      "source": "minerva_mcgonagall",
+      "target": "broomstick"
+    },
+    {
+      "relation": "become",
+      "weight": 1,
+      "sources": [
+        "Minerva McGonagall"
+      ],
+      "source": "minerva_mcgonagall",
+      "target": "headmistress"
+    },
+    {
+      "relation": "join",
+      "weight": 1,
+      "sources": [
+        "Minerva McGonagall"
+      ],
+      "source": "minerva_mcgonagall",
+      "target": "order_of_phoenix"
+    },
+    {
+      "relation": "support",
+      "weight": 1,
+      "sources": [
+        "Minerva McGonagall"
+      ],
+      "source": "minerva_mcgonagall",
+      "target": "harry_potter"
+    },
+    {
+      "relation": "duel",
+      "weight": 3,
+      "sources": [
+        "Minerva McGonagall"
+      ],
+      "source": "minerva_mcgonagall",
+      "target": "with"
+    },
+    {
+      "relation": "duel",
+      "weight": 2,
+      "sources": [
+        "Minerva McGonagall"
+      ],
+      "source": "minerva_mcgonagall",
+      "target": "during"
+    },
+    {
+      "relation": "banish",
+      "weight": 1,
+      "sources": [
+        "Minerva McGonagall"
+      ],
+      "source": "minerva_mcgonagall",
+      "target": "severus_snape"
+    },
+    {
+      "relation": "banish",
+      "weight": 1,
+      "sources": [
+        "Minerva McGonagall"
+      ],
+      "source": "minerva_mcgonagall",
+      "target": "from"
+    },
+    {
+      "relation": "duel",
+      "weight": 1,
+      "sources": [
+        "Minerva McGonagall"
+      ],
+      "source": "minerva_mcgonagall",
+      "target": "alongside"
+    },
+    {
+      "relation": "appear",
+      "weight": 2,
+      "sources": [
+        "Ministry of Magic",
+        "Minerva McGonagall"
+      ],
+      "source": "minerva_mcgonagall",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "share",
+      "weight": 1,
+      "sources": [
+        "Minerva McGonagall"
+      ],
+      "source": "minerva_mcgonagall",
+      "target": "traits"
+    },
+    {
+      "relation": "give",
+      "weight": 1,
+      "sources": [
+        "Ministry of Magic"
+      ],
+      "source": "minerva_mcgonagall",
+      "target": "trials"
+    },
+    {
+      "relation": "earn",
+      "weight": 1,
+      "sources": [
+        "Harry Potter and the Philosopher's Stone"
+      ],
+      "source": "skill",
+      "target": "grimmauld_place"
+    },
+    {
+      "relation": "knock",
+      "weight": 1,
+      "sources": [
+        "Ron Weasley"
+      ],
+      "source": "peter_pettigrew",
+      "target": "unconscious"
+    },
+    {
+      "relation": "make",
+      "weight": 1,
+      "sources": [
+        "Quidditch"
+      ],
+      "source": "team",
+      "target": "severus_snape"
+    },
+    {
+      "relation": "include",
+      "weight": 1,
+      "sources": [
+        "Neville Longbottom"
+      ],
+      "source": "death_eaters",
+      "target": "bellatrix_lestrange"
+    },
+    {
+      "relation": "have",
+      "weight": 1,
+      "sources": [
+        "Death Eater"
+      ],
+      "source": "death_eaters",
+      "target": "symbol"
+    },
+    {
+      "relation": "cast",
+      "weight": 1,
+      "sources": [
+        "Death Eater"
+      ],
+      "source": "death_eaters",
+      "target": "mark"
+    },
+    {
+      "relation": "cast",
+      "weight": 1,
+      "sources": [
+        "Death Eater"
+      ],
+      "source": "death_eaters",
+      "target": "into"
+    },
+    {
+      "relation": "wear",
+      "weight": 1,
+      "sources": [
+        "Death Eater"
+      ],
+      "source": "death_eaters",
+      "target": "robes"
+    },
+    {
+      "relation": "form",
+      "weight": 1,
+      "sources": [
+        "Death Eater"
+      ],
+      "source": "death_eaters",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "form",
+      "weight": 2,
+      "sources": [
+        "Death Eater"
+      ],
+      "source": "death_eaters",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "form",
+      "weight": 1,
+      "sources": [
+        "Death Eater"
+      ],
+      "source": "death_eaters",
+      "target": "during"
+    },
+    {
+      "relation": "use",
+      "weight": 1,
+      "sources": [
+        "Death Eater"
+      ],
+      "source": "death_eaters",
+      "target": "advantage"
+    },
+    {
+      "relation": "use",
+      "weight": 1,
+      "sources": [
+        "Death Eater"
+      ],
+      "source": "death_eaters",
+      "target": "throughout"
+    },
+    {
+      "relation": "practise",
+      "weight": 1,
+      "sources": [
+        "Death Eater"
+      ],
+      "source": "death_eaters",
+      "target": "spells"
+    },
+    {
+      "relation": "attack",
+      "weight": 1,
+      "sources": [
+        "Death Eater"
+      ],
+      "source": "death_eaters",
+      "target": "bloods"
+    },
+    {
+      "relation": "seek",
+      "weight": 1,
+      "sources": [
+        "Death Eater"
+      ],
+      "source": "death_eaters",
+      "target": "power"
+    },
+    {
+      "relation": "write",
+      "weight": 2,
+      "sources": [
+        "Diagon Alley"
+      ],
+      "source": "brown",
+      "target": "forbidden_forest"
+    },
+    {
+      "relation": "portray",
+      "weight": 4,
+      "sources": [
+        "Albus Dumbledore",
+        "Severus Snape"
+      ],
+      "source": "albus_dumbledore",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "describe",
+      "weight": 6,
+      "sources": [
+        "Magical objects in Harry Potter",
+        "Albus Dumbledore"
+      ],
+      "source": "albus_dumbledore",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "describe",
+      "weight": 2,
+      "sources": [
+        "Rubeus Hagrid",
+        "Albus Dumbledore"
+      ],
+      "source": "albus_dumbledore",
+      "target": "with"
+    },
+    {
+      "relation": "allow",
+      "weight": 1,
+      "sources": [
+        "Albus Dumbledore"
+      ],
+      "source": "albus_dumbledore",
+      "target": "according"
+    },
+    {
+      "relation": "admit",
+      "weight": 1,
+      "sources": [
+        "Albus Dumbledore"
+      ],
+      "source": "albus_dumbledore",
+      "target": "number"
+    },
+    {
+      "relation": "admit",
+      "weight": 7,
+      "sources": [
+        "Ministry of Magic",
+        "Albus Dumbledore",
+        "Places in Harry Potter"
+      ],
+      "source": "albus_dumbledore",
+      "target": "voldemort"
+    },
+    {
+      "relation": "describe",
+      "weight": 1,
+      "sources": [
+        "Albus Dumbledore"
+      ],
+      "source": "albus_dumbledore",
+      "target": "desire"
+    },
+    {
+      "relation": "tell",
+      "weight": 1,
+      "sources": [
+        "Albus Dumbledore"
+      ],
+      "source": "albus_dumbledore",
+      "target": "him"
+    },
+    {
+      "relation": "tell",
+      "weight": 1,
+      "sources": [
+        "Albus Dumbledore"
+      ],
+      "source": "albus_dumbledore",
+      "target": "about"
+    },
+    {
+      "relation": "advise",
+      "weight": 1,
+      "sources": [
+        "Sirius Black"
+      ],
+      "source": "albus_dumbledore",
+      "target": "them"
+    },
+    {
+      "relation": "promote",
+      "weight": 1,
+      "sources": [
+        "Remus Lupin"
+      ],
+      "source": "albus_dumbledore",
+      "target": "rumour"
+    },
+    {
+      "relation": "entrust",
+      "weight": 1,
+      "sources": [
+        "Rubeus Hagrid"
+      ],
+      "source": "albus_dumbledore",
+      "target": "following"
+    },
+    {
+      "relation": "entrust",
+      "weight": 1,
+      "sources": [
+        "Rubeus Hagrid"
+      ],
+      "source": "albus_dumbledore",
+      "target": "rubeus_hagrid"
+    },
+    {
+      "relation": "give",
+      "weight": 1,
+      "sources": [
+        "Rubeus Hagrid"
+      ],
+      "source": "albus_dumbledore",
+      "target": "task"
+    },
+    {
+      "relation": "give",
+      "weight": 4,
+      "sources": [
+        "Magical objects in Harry Potter"
+      ],
+      "source": "albus_dumbledore",
+      "target": "after"
+    },
+    {
+      "relation": "give",
+      "weight": 4,
+      "sources": [
+        "Magical objects in Harry Potter"
+      ],
+      "source": "albus_dumbledore",
+      "target": "invisibility_cloak"
+    },
+    {
+      "relation": "tell",
+      "weight": 1,
+      "sources": [
+        "Harry Potter and the Goblet of Fire"
+      ],
+      "source": "albus_dumbledore",
+      "target": "during"
+    },
+    {
+      "relation": "tell",
+      "weight": 1,
+      "sources": [
+        "Harry Potter and the Goblet of Fire"
+      ],
+      "source": "albus_dumbledore",
+      "target": "students"
+    },
+    {
+      "relation": "gather",
+      "weight": 1,
+      "sources": [
+        "Death Eater"
+      ],
+      "source": "albus_dumbledore",
+      "target": "bellatrix_lestrange"
+    },
+    {
+      "relation": "cast",
+      "weight": 1,
+      "sources": [
+        "Albus Dumbledore"
+      ],
+      "source": "gambon",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "portray",
+      "weight": 1,
+      "sources": [
+        "Albus Dumbledore"
+      ],
+      "source": "ravenclaw",
+      "target": "version"
+    },
+    {
+      "relation": "correspond",
+      "weight": 4,
+      "sources": [
+        "Hogwarts"
+      ],
+      "source": "ravenclaw",
+      "target": "voldemort"
+    },
+    {
+      "relation": "construct",
+      "weight": 2,
+      "sources": [
+        "Diagon Alley"
+      ],
+      "source": "version",
+      "target": "bellatrix_lestrange"
+    },
+    {
+      "relation": "construct",
+      "weight": 2,
+      "sources": [
+        "Diagon Alley"
+      ],
+      "source": "version",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "state",
+      "weight": 8,
+      "sources": [
+        "Sirius Black",
+        "Fictional universe of Harry Potter",
+        "List of Harry Potter characters",
+        "Albus Dumbledore"
+      ],
+      "source": "character",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "describe",
+      "weight": 1,
+      "sources": [
+        "Albus Dumbledore"
+      ],
+      "source": "hair",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "describe",
+      "weight": 1,
+      "sources": [
+        "Albus Dumbledore"
+      ],
+      "source": "demeanour",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "describe",
+      "weight": 1,
+      "sources": [
+        "Albus Dumbledore"
+      ],
+      "source": "eyes",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "describe",
+      "weight": 1,
+      "sources": [
+        "Albus Dumbledore"
+      ],
+      "source": "look",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "introduce",
+      "weight": 5,
+      "sources": [
+        "Rubeus Hagrid",
+        "Albus Dumbledore",
+        "Remus Lupin",
+        "Diagon Alley"
+      ],
+      "source": "appearances",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "appear",
+      "weight": 2,
+      "sources": [
+        "Bellatrix Lestrange",
+        "Remus Lupin"
+      ],
+      "source": "appearances",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "work",
+      "weight": 1,
+      "sources": [
+        "Voldemort"
+      ],
+      "source": "curse",
+      "target": "forbidden_forest"
+    },
+    {
+      "relation": "work",
+      "weight": 1,
+      "sources": [
+        "Voldemort"
+      ],
+      "source": "curse",
+      "target": "hermione_granger"
+    },
+    {
+      "relation": "shatter",
+      "weight": 3,
+      "sources": [
+        "Harry Potter and the Deathly Hallows"
+      ],
+      "source": "deathly_hallows",
+      "target": "records"
+    },
+    {
+      "relation": "shatter",
+      "weight": 3,
+      "sources": [
+        "Harry Potter and the Deathly Hallows"
+      ],
+      "source": "deathly_hallows",
+      "target": "upon"
+    },
+    {
+      "relation": "refer",
+      "weight": 1,
+      "sources": [
+        "Voldemort"
+      ],
+      "source": "characters",
+      "target": "voldemort"
+    },
+    {
+      "relation": "refer",
+      "weight": 1,
+      "sources": [
+        "Voldemort"
+      ],
+      "source": "characters",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "place",
+      "weight": 1,
+      "sources": [
+        "Voldemort"
+      ],
+      "source": "spell",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "find",
+      "weight": 1,
+      "sources": [
+        "Voldemort"
+      ],
+      "source": "followers",
+      "target": "dobby"
+    },
+    {
+      "relation": "die",
+      "weight": 3,
+      "sources": [
+        "Bellatrix Lestrange",
+        "Severus Snape",
+        "Remus Lupin"
+      ],
+      "source": "severus_snape",
+      "target": "bellatrix_lestrange"
+    },
+    {
+      "relation": "die",
+      "weight": 2,
+      "sources": [
+        "Severus Snape"
+      ],
+      "source": "severus_snape",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "base",
+      "weight": 1,
+      "sources": [
+        "Severus Snape"
+      ],
+      "source": "severus_snape",
+      "target": "hermione_granger"
+    },
+    {
+      "relation": "confirm",
+      "weight": 1,
+      "sources": [
+        "Severus Snape"
+      ],
+      "source": "severus_snape",
+      "target": "rumour"
+    },
+    {
+      "relation": "see",
+      "weight": 1,
+      "sources": [
+        "Remus Lupin"
+      ],
+      "source": "severus_snape",
+      "target": "remus_lupin"
+    },
+    {
+      "relation": "forgave",
+      "weight": 1,
+      "sources": [
+        "Remus Lupin"
+      ],
+      "source": "severus_snape",
+      "target": "sirius_black"
+    },
+    {
+      "relation": "surprise",
+      "weight": 1,
+      "sources": [
+        "Bellatrix Lestrange"
+      ],
+      "source": "severus_snape",
+      "target": "dobby"
+    },
+    {
+      "relation": "pass",
+      "weight": 3,
+      "sources": [
+        "Harry Potter and the Deathly Hallows"
+      ],
+      "source": "severus_snape",
+      "target": "before"
+    },
+    {
+      "relation": "pass",
+      "weight": 3,
+      "sources": [
+        "Harry Potter and the Deathly Hallows"
+      ],
+      "source": "severus_snape",
+      "target": "memories"
+    },
+    {
+      "relation": "pass",
+      "weight": 3,
+      "sources": [
+        "Harry Potter and the Deathly Hallows"
+      ],
+      "source": "severus_snape",
+      "target": "voldemort"
+    },
+    {
+      "relation": "portray",
+      "weight": 1,
+      "sources": [
+        "Severus Snape"
+      ],
+      "source": "rickman",
+      "target": "severus_snape"
+    },
+    {
+      "relation": "portray",
+      "weight": 1,
+      "sources": [
+        "Severus Snape"
+      ],
+      "source": "rickman",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "portray",
+      "weight": 1,
+      "sources": [
+        "Severus Snape"
+      ],
+      "source": "essiedu",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "describe",
+      "weight": 1,
+      "sources": [
+        "Severus Snape"
+      ],
+      "source": "development",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "describe",
+      "weight": 1,
+      "sources": [
+        "Severus Snape"
+      ],
+      "source": "development",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "serve",
+      "weight": 1,
+      "sources": [
+        "Draco Malfoy"
+      ],
+      "source": "draco_malfoy",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "serve",
+      "weight": 2,
+      "sources": [
+        "Draco Malfoy"
+      ],
+      "source": "draco_malfoy",
+      "target": "voldemort"
+    },
+    {
+      "relation": "name",
+      "weight": 7,
+      "sources": [
+        "Hogwarts",
+        "Quidditch",
+        "Draco Malfoy"
+      ],
+      "source": "draco_malfoy",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "engage",
+      "weight": 1,
+      "sources": [
+        "Draco Malfoy"
+      ],
+      "source": "draco_malfoy",
+      "target": "him"
+    },
+    {
+      "relation": "make",
+      "weight": 1,
+      "sources": [
+        "Draco Malfoy"
+      ],
+      "source": "draco_malfoy",
+      "target": "according"
+    },
+    {
+      "relation": "make",
+      "weight": 1,
+      "sources": [
+        "Draco Malfoy"
+      ],
+      "source": "draco_malfoy",
+      "target": "effort"
+    },
+    {
+      "relation": "become",
+      "weight": 1,
+      "sources": [
+        "Draco Malfoy"
+      ],
+      "source": "draco_malfoy",
+      "target": "seeker"
+    },
+    {
+      "relation": "become",
+      "weight": 1,
+      "sources": [
+        "Draco Malfoy"
+      ],
+      "source": "draco_malfoy",
+      "target": "after"
+    },
+    {
+      "relation": "respond",
+      "weight": 1,
+      "sources": [
+        "Draco Malfoy"
+      ],
+      "source": "draco_malfoy",
+      "target": "dobby"
+    },
+    {
+      "relation": "show",
+      "weight": 1,
+      "sources": [
+        "Draco Malfoy"
+      ],
+      "source": "draco_malfoy",
+      "target": "badge"
+    },
+    {
+      "relation": "give",
+      "weight": 1,
+      "sources": [
+        "Draco Malfoy"
+      ],
+      "source": "draco_malfoy",
+      "target": "information"
+    },
+    {
+      "relation": "give",
+      "weight": 1,
+      "sources": [
+        "Draco Malfoy"
+      ],
+      "source": "draco_malfoy",
+      "target": "rita"
+    },
+    {
+      "relation": "use",
+      "weight": 4,
+      "sources": [
+        "Hogwarts"
+      ],
+      "source": "draco_malfoy",
+      "target": "room"
+    },
+    {
+      "relation": "ambush",
+      "weight": 3,
+      "sources": [
+        "Harry Potter and the Deathly Hallows"
+      ],
+      "source": "draco_malfoy",
+      "target": "them"
+    },
+    {
+      "relation": "buy",
+      "weight": 1,
+      "sources": [
+        "Quidditch"
+      ],
+      "source": "draco_malfoy",
+      "target": "full"
+    },
+    {
+      "relation": "appear",
+      "weight": 1,
+      "sources": [
+        "Draco Malfoy"
+      ],
+      "source": "spungen",
+      "target": "hermione_granger"
+    },
+    {
+      "relation": "argue",
+      "weight": 1,
+      "sources": [
+        "Draco Malfoy"
+      ],
+      "source": "nilsen",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "portray",
+      "weight": 1,
+      "sources": [
+        "Neville Longbottom"
+      ],
+      "source": "neville_longbottom",
+      "target": "throughout"
+    },
+    {
+      "relation": "portray",
+      "weight": 2,
+      "sources": [
+        "Neville Longbottom"
+      ],
+      "source": "neville_longbottom",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "become",
+      "weight": 1,
+      "sources": [
+        "Neville Longbottom"
+      ],
+      "source": "neville_longbottom",
+      "target": "leader"
+    },
+    {
+      "relation": "portray",
+      "weight": 4,
+      "sources": [
+        "Neville Longbottom"
+      ],
+      "source": "neville_longbottom",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "raise",
+      "weight": 4,
+      "sources": [
+        "Neville Longbottom",
+        "Harry Potter and the Deathly Hallows"
+      ],
+      "source": "neville_longbottom",
+      "target": "from"
+    },
+    {
+      "relation": "show",
+      "weight": 1,
+      "sources": [
+        "Neville Longbottom"
+      ],
+      "source": "neville_longbottom",
+      "target": "little"
+    },
+    {
+      "relation": "show",
+      "weight": 1,
+      "sources": [
+        "Neville Longbottom"
+      ],
+      "source": "neville_longbottom",
+      "target": "voldemort"
+    },
+    {
+      "relation": "begin",
+      "weight": 1,
+      "sources": [
+        "Neville Longbottom"
+      ],
+      "source": "neville_longbottom",
+      "target": "over"
+    },
+    {
+      "relation": "have",
+      "weight": 1,
+      "sources": [
+        "Neville Longbottom"
+      ],
+      "source": "neville_longbottom",
+      "target": "struggle"
+    },
+    {
+      "relation": "overcome",
+      "weight": 1,
+      "sources": [
+        "Neville Longbottom"
+      ],
+      "source": "neville_longbottom",
+      "target": "backs"
+    },
+    {
+      "relation": "overcome",
+      "weight": 1,
+      "sources": [
+        "Neville Longbottom"
+      ],
+      "source": "neville_longbottom",
+      "target": "with"
+    },
+    {
+      "relation": "have",
+      "weight": 1,
+      "sources": [
+        "Neville Longbottom"
+      ],
+      "source": "neville_longbottom",
+      "target": "act"
+    },
+    {
+      "relation": "go",
+      "weight": 1,
+      "sources": [
+        "Neville Longbottom"
+      ],
+      "source": "neville_longbottom",
+      "target": "after"
+    },
+    {
+      "relation": "play",
+      "weight": 1,
+      "sources": [
+        "Neville Longbottom"
+      ],
+      "source": "neville_longbottom",
+      "target": "department_of_mysteries"
+    },
+    {
+      "relation": "pull",
+      "weight": 3,
+      "sources": [
+        "Harry Potter and the Deathly Hallows"
+      ],
+      "source": "neville_longbottom",
+      "target": "sword"
+    },
+    {
+      "relation": "reflect",
+      "weight": 1,
+      "sources": [
+        "Neville Longbottom"
+      ],
+      "source": "evolution",
+      "target": "hermione_granger"
+    },
+    {
+      "relation": "start",
+      "weight": 1,
+      "sources": [
+        "Neville Longbottom"
+      ],
+      "source": "years",
+      "target": "bellatrix_lestrange"
+    },
+    {
+      "relation": "appear",
+      "weight": 1,
+      "sources": [
+        "Luna Lovegood"
+      ],
+      "source": "herself",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "appear",
+      "weight": 1,
+      "sources": [
+        "Luna Lovegood"
+      ],
+      "source": "herself",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "appear",
+      "weight": 1,
+      "sources": [
+        "Luna Lovegood"
+      ],
+      "source": "adaptations",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "cast",
+      "weight": 1,
+      "sources": [
+        "Luna Lovegood"
+      ],
+      "source": "lynch",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "feature",
+      "weight": 1,
+      "sources": [
+        "Luna Lovegood"
+      ],
+      "source": "earrings",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "develop",
+      "weight": 1,
+      "sources": [
+        "Luna Lovegood"
+      ],
+      "source": "aura",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "list",
+      "weight": 1,
+      "sources": [
+        "Luna Lovegood"
+      ],
+      "source": "magazine",
+      "target": "luna_lovegood"
+    },
+    {
+      "relation": "list",
+      "weight": 1,
+      "sources": [
+        "Luna Lovegood"
+      ],
+      "source": "magazine",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "mention",
+      "weight": 8,
+      "sources": [
+        "Sirius Black",
+        "Remus Lupin"
+      ],
+      "source": "sirius_black",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "mention",
+      "weight": 1,
+      "sources": [
+        "Sirius Black"
+      ],
+      "source": "sirius_black",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "have",
+      "weight": 1,
+      "sources": [
+        "Sirius Black"
+      ],
+      "source": "sirius_black",
+      "target": "brother"
+    },
+    {
+      "relation": "name",
+      "weight": 3,
+      "sources": [
+        "Sirius Black"
+      ],
+      "source": "sirius_black",
+      "target": "after"
+    },
+    {
+      "relation": "enjoy",
+      "weight": 1,
+      "sources": [
+        "Sirius Black"
+      ],
+      "source": "sirius_black",
+      "target": "life"
+    },
+    {
+      "relation": "enjoy",
+      "weight": 2,
+      "sources": [
+        "Sirius Black"
+      ],
+      "source": "sirius_black",
+      "target": "bellatrix_lestrange"
+    },
+    {
+      "relation": "support",
+      "weight": 1,
+      "sources": [
+        "Sirius Black"
+      ],
+      "source": "sirius_black",
+      "target": "james_potter"
+    },
+    {
+      "relation": "go",
+      "weight": 1,
+      "sources": [
+        "Sirius Black"
+      ],
+      "source": "sirius_black",
+      "target": "out"
+    },
+    {
+      "relation": "fight",
+      "weight": 1,
+      "sources": [
+        "Sirius Black"
+      ],
+      "source": "sirius_black",
+      "target": "against"
+    },
+    {
+      "relation": "track",
+      "weight": 1,
+      "sources": [
+        "Sirius Black"
+      ],
+      "source": "sirius_black",
+      "target": "peter_pettigrew"
+    },
+    {
+      "relation": "see",
+      "weight": 1,
+      "sources": [
+        "Sirius Black"
+      ],
+      "source": "sirius_black",
+      "target": "picture"
+    },
+    {
+      "relation": "see",
+      "weight": 2,
+      "sources": [
+        "Sirius Black",
+        "Remus Lupin"
+      ],
+      "source": "sirius_black",
+      "target": "hermione_granger"
+    },
+    {
+      "relation": "take",
+      "weight": 1,
+      "sources": [
+        "Sirius Black"
+      ],
+      "source": "sirius_black",
+      "target": "refuge"
+    },
+    {
+      "relation": "take",
+      "weight": 1,
+      "sources": [
+        "Sirius Black"
+      ],
+      "source": "sirius_black",
+      "target": "intent"
+    },
+    {
+      "relation": "remain",
+      "weight": 1,
+      "sources": [
+        "Sirius Black"
+      ],
+      "source": "sirius_black",
+      "target": "during"
+    },
+    {
+      "relation": "play",
+      "weight": 1,
+      "sources": [
+        "Remus Lupin"
+      ],
+      "source": "sirius_black",
+      "target": "prank"
+    },
+    {
+      "relation": "tell",
+      "weight": 1,
+      "sources": [
+        "Remus Lupin"
+      ],
+      "source": "sirius_black",
+      "target": "severus_snape"
+    },
+    {
+      "relation": "escape",
+      "weight": 2,
+      "sources": [
+        "List of Harry Potter characters"
+      ],
+      "source": "sirius_black",
+      "target": "from"
+    },
+    {
+      "relation": "instill",
+      "weight": 1,
+      "sources": [
+        "Bellatrix Lestrange"
+      ],
+      "source": "elitism",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "burn",
+      "weight": 1,
+      "sources": [
+        "Sirius Black"
+      ],
+      "source": "mother",
+      "target": "voldemort"
+    },
+    {
+      "relation": "nickname",
+      "weight": 1,
+      "sources": [
+        "Remus Lupin"
+      ],
+      "source": "friends",
+      "target": "forbidden_forest"
+    },
+    {
+      "relation": "assist",
+      "weight": 1,
+      "sources": [
+        "Rubeus Hagrid"
+      ],
+      "source": "friends",
+      "target": "rubeus_hagrid"
+    },
+    {
+      "relation": "assist",
+      "weight": 1,
+      "sources": [
+        "Rubeus Hagrid"
+      ],
+      "source": "friends",
+      "target": "dobby"
+    },
+    {
+      "relation": "visit",
+      "weight": 3,
+      "sources": [
+        "Harry Potter and the Deathly Hallows"
+      ],
+      "source": "friends",
+      "target": "luna_lovegood"
+    },
+    {
+      "relation": "name",
+      "weight": 1,
+      "sources": [
+        "Sirius Black"
+      ],
+      "source": "lily_potter",
+      "target": "sirius_black"
+    },
+    {
+      "relation": "name",
+      "weight": 1,
+      "sources": [
+        "Sirius Black"
+      ],
+      "source": "lily_potter",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "serve",
+      "weight": 3,
+      "sources": [
+        "Sirius Black",
+        "Ministry of Magic",
+        "Death Eater"
+      ],
+      "source": "this",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "remain",
+      "weight": 2,
+      "sources": [
+        "Remus Lupin"
+      ],
+      "source": "remus_lupin",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "remain",
+      "weight": 1,
+      "sources": [
+        "Remus Lupin"
+      ],
+      "source": "remus_lupin",
+      "target": "following"
+    },
+    {
+      "relation": "fear",
+      "weight": 1,
+      "sources": [
+        "Remus Lupin"
+      ],
+      "source": "remus_lupin",
+      "target": "provided"
+    },
+    {
+      "relation": "smuggle",
+      "weight": 1,
+      "sources": [
+        "Remus Lupin"
+      ],
+      "source": "remus_lupin",
+      "target": "into"
+    },
+    {
+      "relation": "participate",
+      "weight": 1,
+      "sources": [
+        "Remus Lupin"
+      ],
+      "source": "remus_lupin",
+      "target": "according"
+    },
+    {
+      "relation": "take",
+      "weight": 1,
+      "sources": [
+        "Remus Lupin"
+      ],
+      "source": "remus_lupin",
+      "target": "platform_9_34"
+    },
+    {
+      "relation": "borrow",
+      "weight": 1,
+      "sources": [
+        "Remus Lupin"
+      ],
+      "source": "remus_lupin",
+      "target": "voldemort"
+    },
+    {
+      "relation": "borrow",
+      "weight": 1,
+      "sources": [
+        "Remus Lupin"
+      ],
+      "source": "remus_lupin",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "believe",
+      "weight": 1,
+      "sources": [
+        "Remus Lupin"
+      ],
+      "source": "remus_lupin",
+      "target": "until"
+    },
+    {
+      "relation": "build",
+      "weight": 13,
+      "sources": [
+        "Places in Harry Potter",
+        "Remus Lupin"
+      ],
+      "source": "house",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "become",
+      "weight": 4,
+      "sources": [
+        "Places in Harry Potter"
+      ],
+      "source": "house",
+      "target": "forbidden_forest"
+    },
+    {
+      "relation": "learn",
+      "weight": 1,
+      "sources": [
+        "Remus Lupin"
+      ],
+      "source": "they",
+      "target": "dobby"
+    },
+    {
+      "relation": "take",
+      "weight": 1,
+      "sources": [
+        "Remus Lupin"
+      ],
+      "source": "they",
+      "target": "platform_9_34"
+    },
+    {
+      "relation": "assume",
+      "weight": 1,
+      "sources": [
+        "Ginny Weasley"
+      ],
+      "source": "they",
+      "target": "bellatrix_lestrange"
+    },
+    {
+      "relation": "question",
+      "weight": 1,
+      "sources": [
+        "Ginny Weasley"
+      ],
+      "source": "they",
+      "target": "hermione_granger"
+    },
+    {
+      "relation": "imprison",
+      "weight": 4,
+      "sources": [
+        "Places in Harry Potter"
+      ],
+      "source": "they",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "regulate",
+      "weight": 1,
+      "sources": [
+        "Ministry of Magic"
+      ],
+      "source": "they",
+      "target": "hogwarts"
+    },
+    {
+      "relation": "accompany",
+      "weight": 3,
+      "sources": [
+        "Harry Potter and the Deathly Hallows"
+      ],
+      "source": "they",
+      "target": "harry_potter"
+    },
+    {
+      "relation": "accompany",
+      "weight": 4,
+      "sources": [
+        "Harry Potter and the Goblet of Fire",
+        "Harry Potter and the Deathly Hallows"
+      ],
+      "source": "they",
+      "target": "voldemort"
+    },
+    {
+      "relation": "suggest",
+      "weight": 1,
+      "sources": [
+        "Bellatrix Lestrange"
+      ],
+      "source": "conversation",
+      "target": "severus_snape"
+    },
+    {
+      "relation": "invite",
+      "weight": 2,
+      "sources": [
+        "Ginny Weasley"
+      ],
+      "source": "slughorn",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "assume",
+      "weight": 4,
+      "sources": [
+        "Hogwarts"
+      ],
+      "source": "slughorn",
+      "target": "bellatrix_lestrange"
+    },
+    {
+      "relation": "say",
+      "weight": 1,
+      "sources": [
+        "Ginny Weasley"
+      ],
+      "source": "wright",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "describe",
+      "weight": 2,
+      "sources": [
+        "Diagon Alley"
+      ],
+      "source": "wright",
+      "target": "diagon_alley"
+    },
+    {
+      "relation": "describe",
+      "weight": 2,
+      "sources": [
+        "Diagon Alley"
+      ],
+      "source": "wright",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "help",
+      "weight": 1,
+      "sources": [
+        "Ginny Weasley"
+      ],
+      "source": "adaptions",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "portray",
+      "weight": 2,
+      "sources": [
+        "Ginny Weasley"
+      ],
+      "source": "miller",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "voice",
+      "weight": 1,
+      "sources": [
+        "Ginny Weasley"
+      ],
+      "source": "games",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "portray",
+      "weight": 2,
+      "sources": [
+        "Rubeus Hagrid"
+      ],
+      "source": "rubeus_hagrid",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "bring",
+      "weight": 1,
+      "sources": [
+        "Rubeus Hagrid"
+      ],
+      "source": "rubeus_hagrid",
+      "target": "resurrection_stone"
+    },
+    {
+      "relation": "expel",
+      "weight": 1,
+      "sources": [
+        "Rubeus Hagrid"
+      ],
+      "source": "rubeus_hagrid",
+      "target": "after"
+    },
+    {
+      "relation": "tell",
+      "weight": 1,
+      "sources": [
+        "Rubeus Hagrid"
+      ],
+      "source": "rubeus_hagrid",
+      "target": "before"
+    },
+    {
+      "relation": "tell",
+      "weight": 3,
+      "sources": [
+        "Rubeus Hagrid",
+        "Harry Potter and the Goblet of Fire",
+        "Harry Potter and the Philosopher's Stone"
+      ],
+      "source": "rubeus_hagrid",
+      "target": "harry_potter"
+    },
+    {
+      "relation": "free",
+      "weight": 1,
+      "sources": [
+        "Rubeus Hagrid"
+      ],
+      "source": "rubeus_hagrid",
+      "target": "from"
+    },
+    {
+      "relation": "take",
+      "weight": 1,
+      "sources": [
+        "Harry Potter and the Philosopher's Stone"
+      ],
+      "source": "rubeus_hagrid",
+      "target": "voldemort"
+    },
+    {
+      "relation": "generate",
+      "weight": 4,
+      "sources": [
+        "Magical objects in Harry Potter"
+      ],
+      "source": "resurrection_stone",
+      "target": "platform_9_34"
+    },
+    {
+      "relation": "pass",
+      "weight": 5,
+      "sources": [
+        "Magical objects in Harry Potter",
+        "Philosopher's stone"
+      ],
+      "source": "resurrection_stone",
+      "target": "voldemort"
+    },
+    {
+      "relation": "pass",
+      "weight": 4,
+      "sources": [
+        "Magical objects in Harry Potter"
+      ],
+      "source": "resurrection_stone",
+      "target": "through"
+    },
+    {
+      "relation": "connect",
+      "weight": 1,
+      "sources": [
+        "Philosopher's stone"
+      ],
+      "source": "resurrection_stone",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "give",
+      "weight": 2,
+      "sources": [
+        "Rubeus Hagrid"
+      ],
+      "source": "person",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "buckbeak",
+      "weight": 1,
+      "sources": [
+        "Rubeus Hagrid"
+      ],
+      "source": "sentences",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "buckbeak",
+      "weight": 1,
+      "sources": [
+        "Rubeus Hagrid"
+      ],
+      "source": "sentences",
+      "target": "voldemort"
+    },
+    {
+      "relation": "refer",
+      "weight": 1,
+      "sources": [
+        "Order of the Phoenix"
+      ],
+      "source": "order_of_phoenix",
+      "target": "voldemort"
+    },
+    {
+      "relation": "leave",
+      "weight": 1,
+      "sources": [
+        "Minerva McGonagall"
+      ],
+      "source": "treatment",
+      "target": "hermione_granger"
+    },
+    {
+      "relation": "play",
+      "weight": 1,
+      "sources": [
+        "Minerva McGonagall"
+      ],
+      "source": "adaptation",
+      "target": "harry_potter"
+    },
+    {
+      "relation": "release",
+      "weight": 6,
+      "sources": [
+        "Harry Potter and the Deathly Hallows"
+      ],
+      "source": "adaptation",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "hear",
+      "weight": 1,
+      "sources": [
+        "Minerva McGonagall"
+      ],
+      "source": "many",
+      "target": "severus_snape"
+    },
+    {
+      "relation": "leave",
+      "weight": 2,
+      "sources": [
+        "List of Harry Potter characters"
+      ],
+      "source": "hannah",
+      "target": "hogwarts"
+    },
+    {
+      "relation": "leave",
+      "weight": 2,
+      "sources": [
+        "List of Harry Potter characters"
+      ],
+      "source": "hannah",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "become",
+      "weight": 2,
+      "sources": [
+        "List of Harry Potter characters"
+      ],
+      "source": "hannah",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "portray",
+      "weight": 2,
+      "sources": [
+        "List of Harry Potter characters"
+      ],
+      "source": "bagshot",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "curse",
+      "weight": 4,
+      "sources": [
+        "List of Harry Potter characters"
+      ],
+      "source": "katie",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "portray",
+      "weight": 4,
+      "sources": [
+        "List of Harry Potter characters"
+      ],
+      "source": "susan",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "attack",
+      "weight": 4,
+      "sources": [
+        "List of Harry Potter characters"
+      ],
+      "source": "lavender",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "portray",
+      "weight": 2,
+      "sources": [
+        "List of Harry Potter characters"
+      ],
+      "source": "bryce",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "portray",
+      "weight": 2,
+      "sources": [
+        "List of Harry Potter characters"
+      ],
+      "source": "crabbe",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "portray",
+      "weight": 2,
+      "sources": [
+        "List of Harry Potter characters"
+      ],
+      "source": "colin",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "appear",
+      "weight": 4,
+      "sources": [
+        "Hogwarts"
+      ],
+      "source": "word",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "describe",
+      "weight": 4,
+      "sources": [
+        "Hogwarts"
+      ],
+      "source": "castle",
+      "target": "hogwarts"
+    },
+    {
+      "relation": "describe",
+      "weight": 4,
+      "sources": [
+        "Hogwarts"
+      ],
+      "source": "castle",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "apparate",
+      "weight": 4,
+      "sources": [
+        "Hogwarts"
+      ],
+      "source": "wizards",
+      "target": "hermione_granger"
+    },
+    {
+      "relation": "live",
+      "weight": 8,
+      "sources": [
+        "Fictional universe of Harry Potter"
+      ],
+      "source": "wizards",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "introduce",
+      "weight": 4,
+      "sources": [
+        "Hogwarts"
+      ],
+      "source": "area",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "locate",
+      "weight": 4,
+      "sources": [
+        "Hogwarts"
+      ],
+      "source": "room",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "place",
+      "weight": 4,
+      "sources": [
+        "Hogwarts"
+      ],
+      "source": "houses",
+      "target": "hermione_granger"
+    },
+    {
+      "relation": "compete",
+      "weight": 4,
+      "sources": [
+        "Hogwarts"
+      ],
+      "source": "houses",
+      "target": "forbidden_forest"
+    },
+    {
+      "relation": "place",
+      "weight": 4,
+      "sources": [
+        "Hogwarts"
+      ],
+      "source": "hat",
+      "target": "hermione_granger"
+    },
+    {
+      "relation": "assign",
+      "weight": 1,
+      "sources": [
+        "Harry Potter and the Philosopher's Stone"
+      ],
+      "source": "hat",
+      "target": "bellatrix_lestrange"
+    },
+    {
+      "relation": "assign",
+      "weight": 1,
+      "sources": [
+        "Harry Potter and the Philosopher's Stone"
+      ],
+      "source": "hat",
+      "target": "voldemort"
+    },
+    {
+      "relation": "correspond",
+      "weight": 4,
+      "sources": [
+        "Hogwarts"
+      ],
+      "source": "gryffindor",
+      "target": "according"
+    },
+    {
+      "relation": "correspond",
+      "weight": 4,
+      "sources": [
+        "Hogwarts"
+      ],
+      "source": "gryffindor",
+      "target": "voldemort"
+    },
+    {
+      "relation": "award",
+      "weight": 1,
+      "sources": [
+        "Harry Potter and the Philosopher's Stone"
+      ],
+      "source": "gryffindor",
+      "target": "during"
+    },
+    {
+      "relation": "award",
+      "weight": 1,
+      "sources": [
+        "Harry Potter and the Philosopher's Stone"
+      ],
+      "source": "gryffindor",
+      "target": "cup"
+    },
+    {
+      "relation": "value",
+      "weight": 4,
+      "sources": [
+        "Hogwarts"
+      ],
+      "source": "hufflepuff",
+      "target": "work"
+    },
+    {
+      "relation": "value",
+      "weight": 4,
+      "sources": [
+        "Hogwarts"
+      ],
+      "source": "slytherin",
+      "target": "ambition"
+    },
+    {
+      "relation": "correspond",
+      "weight": 4,
+      "sources": [
+        "Hogwarts"
+      ],
+      "source": "slytherin",
+      "target": "voldemort"
+    },
+    {
+      "relation": "describe",
+      "weight": 4,
+      "sources": [
+        "Hogwarts"
+      ],
+      "source": "express",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "board",
+      "weight": 2,
+      "sources": [
+        "Diagon Alley"
+      ],
+      "source": "parlour",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "close",
+      "weight": 4,
+      "sources": [
+        "Diagon Alley"
+      ],
+      "source": "shop",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "contain",
+      "weight": 2,
+      "sources": [
+        "Diagon Alley"
+      ],
+      "source": "diagon_alley",
+      "target": "variety"
+    },
+    {
+      "relation": "release",
+      "weight": 2,
+      "sources": [
+        "Diagon Alley"
+      ],
+      "source": "group",
+      "target": "diagon_alley"
+    },
+    {
+      "relation": "gather",
+      "weight": 1,
+      "sources": [
+        "Death Eater"
+      ],
+      "source": "group",
+      "target": "bellatrix_lestrange"
+    },
+    {
+      "relation": "release",
+      "weight": 2,
+      "sources": [
+        "Diagon Alley"
+      ],
+      "source": "game",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "unveil",
+      "weight": 2,
+      "sources": [
+        "Diagon Alley"
+      ],
+      "source": "studios",
+      "target": "bellatrix_lestrange"
+    },
+    {
+      "relation": "unveil",
+      "weight": 2,
+      "sources": [
+        "Diagon Alley"
+      ],
+      "source": "studios",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "use",
+      "weight": 2,
+      "sources": [
+        "Diagon Alley"
+      ],
+      "source": "show",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "move",
+      "weight": 2,
+      "sources": [
+        "Diagon Alley"
+      ],
+      "source": "fallon",
+      "target": "voldemort"
+    },
+    {
+      "relation": "bring",
+      "weight": 2,
+      "sources": [
+        "Diagon Alley"
+      ],
+      "source": "fallon",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "achieve",
+      "weight": 2,
+      "sources": [
+        "Diagon Alley"
+      ],
+      "source": "creation",
+      "target": "dobby"
+    },
+    {
+      "relation": "describe",
+      "weight": 2,
+      "sources": [
+        "Diagon Alley"
+      ],
+      "source": "reintgen",
+      "target": "time_turner"
+    },
+    {
+      "relation": "write",
+      "weight": 2,
+      "sources": [
+        "Diagon Alley"
+      ],
+      "source": "lyne",
+      "target": "forbidden_forest"
+    },
+    {
+      "relation": "describe",
+      "weight": 2,
+      "sources": [
+        "Diagon Alley"
+      ],
+      "source": "dragon",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "know",
+      "weight": 4,
+      "sources": [
+        "Places in Harry Potter"
+      ],
+      "source": "residences",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "use",
+      "weight": 4,
+      "sources": [
+        "Places in Harry Potter"
+      ],
+      "source": "burrow",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "shoot",
+      "weight": 4,
+      "sources": [
+        "Places in Harry Potter"
+      ],
+      "source": "some",
+      "target": "bellatrix_lestrange"
+    },
+    {
+      "relation": "shoot",
+      "weight": 4,
+      "sources": [
+        "Places in Harry Potter"
+      ],
+      "source": "some",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "film",
+      "weight": 4,
+      "sources": [
+        "Places in Harry Potter"
+      ],
+      "source": "scenes",
+      "target": "bellatrix_lestrange"
+    },
+    {
+      "relation": "shoot",
+      "weight": 4,
+      "sources": [
+        "Places in Harry Potter"
+      ],
+      "source": "scenes",
+      "target": "hermione_granger"
+    },
+    {
+      "relation": "shoot",
+      "weight": 4,
+      "sources": [
+        "Places in Harry Potter"
+      ],
+      "source": "scenes",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "take",
+      "weight": 4,
+      "sources": [
+        "Places in Harry Potter"
+      ],
+      "source": "filming",
+      "target": "grimmauld_place"
+    },
+    {
+      "relation": "take",
+      "weight": 4,
+      "sources": [
+        "Places in Harry Potter"
+      ],
+      "source": "filming",
+      "target": "hermione_granger"
+    },
+    {
+      "relation": "serve",
+      "weight": 4,
+      "sources": [
+        "Places in Harry Potter"
+      ],
+      "source": "cottage",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "appear",
+      "weight": 4,
+      "sources": [
+        "Places in Harry Potter"
+      ],
+      "source": "town",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "describe",
+      "weight": 8,
+      "sources": [
+        "Places in Harry Potter"
+      ],
+      "source": "beauxbatons",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "describe",
+      "weight": 4,
+      "sources": [
+        "Places in Harry Potter"
+      ],
+      "source": "depiction",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "centre",
+      "weight": 4,
+      "sources": [
+        "Fictional universe of Harry Potter"
+      ],
+      "source": "depiction",
+      "target": "hermione_granger"
+    },
+    {
+      "relation": "place",
+      "weight": 1,
+      "sources": [
+        "Ministry of Magic"
+      ],
+      "source": "umbridge",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "place",
+      "weight": 1,
+      "sources": [
+        "Ministry of Magic"
+      ],
+      "source": "umbridge",
+      "target": "bellatrix_lestrange"
+    },
+    {
+      "relation": "reveal",
+      "weight": 1,
+      "sources": [
+        "Ministry of Magic"
+      ],
+      "source": "shacklebolt",
+      "target": "bellatrix_lestrange"
+    },
+    {
+      "relation": "have",
+      "weight": 1,
+      "sources": [
+        "Ministry of Magic"
+      ],
+      "source": "minister",
+      "target": "forbidden_forest"
+    },
+    {
+      "relation": "obtain",
+      "weight": 1,
+      "sources": [
+        "Ministry of Magic"
+      ],
+      "source": "employment",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "display",
+      "weight": 1,
+      "sources": [
+        "Ministry of Magic"
+      ],
+      "source": "courts",
+      "target": "bellatrix_lestrange"
+    },
+    {
+      "relation": "display",
+      "weight": 1,
+      "sources": [
+        "Ministry of Magic"
+      ],
+      "source": "courts",
+      "target": "sirius_black"
+    },
+    {
+      "relation": "show",
+      "weight": 5,
+      "sources": [
+        "Ministry of Magic",
+        "Fictional universe of Harry Potter"
+      ],
+      "source": "ministry_of_magic",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "seem",
+      "weight": 1,
+      "sources": [
+        "Ministry of Magic"
+      ],
+      "source": "ministry_of_magic",
+      "target": "bellatrix_lestrange"
+    },
+    {
+      "relation": "mount",
+      "weight": 1,
+      "sources": [
+        "Ministry of Magic"
+      ],
+      "source": "ministry_of_magic",
+      "target": "campaign"
+    },
+    {
+      "relation": "perform",
+      "weight": 4,
+      "sources": [
+        "Fictional universe of Harry Potter"
+      ],
+      "source": "ministry_of_magic",
+      "target": "with"
+    },
+    {
+      "relation": "affect",
+      "weight": 3,
+      "sources": [
+        "Harry Potter and the Deathly Hallows"
+      ],
+      "source": "ministry_of_magic",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "take",
+      "weight": 2,
+      "sources": [
+        "Ministry of Magic"
+      ],
+      "source": "fudge",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "take",
+      "weight": 1,
+      "sources": [
+        "Ministry of Magic"
+      ],
+      "source": "fudge",
+      "target": "time_turner"
+    },
+    {
+      "relation": "remove",
+      "weight": 1,
+      "sources": [
+        "Ministry of Magic"
+      ],
+      "source": "fudge",
+      "target": "forbidden_forest"
+    },
+    {
+      "relation": "head",
+      "weight": 1,
+      "sources": [
+        "Ministry of Magic"
+      ],
+      "source": "crouch",
+      "target": "department_of_mysteries"
+    },
+    {
+      "relation": "refer",
+      "weight": 4,
+      "sources": [
+        "Fictional universe of Harry Potter"
+      ],
+      "source": "term",
+      "target": "voldemort"
+    },
+    {
+      "relation": "mention",
+      "weight": 1,
+      "sources": [
+        "Death Eater"
+      ],
+      "source": "term",
+      "target": "forbidden_forest"
+    },
+    {
+      "relation": "refer",
+      "weight": 4,
+      "sources": [
+        "Fictional universe of Harry Potter"
+      ],
+      "source": "world",
+      "target": "voldemort"
+    },
+    {
+      "relation": "come",
+      "weight": 4,
+      "sources": [
+        "Fictional universe of Harry Potter"
+      ],
+      "source": "evidence",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "result",
+      "weight": 4,
+      "sources": [
+        "Fictional universe of Harry Potter"
+      ],
+      "source": "persecution",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "differ",
+      "weight": 4,
+      "sources": [
+        "Fictional universe of Harry Potter"
+      ],
+      "source": "laws",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "reveal",
+      "weight": 4,
+      "sources": [
+        "Fictional universe of Harry Potter"
+      ],
+      "source": "film",
+      "target": "forbidden_forest"
+    },
+    {
+      "relation": "depict",
+      "weight": 5,
+      "sources": [
+        "Fictional universe of Harry Potter",
+        "Quidditch"
+      ],
+      "source": "aspects",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "depict",
+      "weight": 4,
+      "sources": [
+        "Fictional universe of Harry Potter"
+      ],
+      "source": "aspects",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "use",
+      "weight": 4,
+      "sources": [
+        "Fictional universe of Harry Potter"
+      ],
+      "source": "candles",
+      "target": "forbidden_forest"
+    },
+    {
+      "relation": "occur",
+      "weight": 4,
+      "sources": [
+        "Fictional universe of Harry Potter"
+      ],
+      "source": "effects",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "describe",
+      "weight": 4,
+      "sources": [
+        "Fictional universe of Harry Potter"
+      ],
+      "source": "language",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "depict",
+      "weight": 4,
+      "sources": [
+        "Fictional universe of Harry Potter"
+      ],
+      "source": "homes",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "remember",
+      "weight": 4,
+      "sources": [
+        "Magical objects in Harry Potter"
+      ],
+      "source": "objects",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "base",
+      "weight": 4,
+      "sources": [
+        "Magical objects in Harry Potter"
+      ],
+      "source": "tale",
+      "target": "hermione_granger"
+    },
+    {
+      "relation": "describe",
+      "weight": 4,
+      "sources": [
+        "Magical objects in Harry Potter"
+      ],
+      "source": "elder_wand",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "describe",
+      "weight": 4,
+      "sources": [
+        "Magical objects in Harry Potter"
+      ],
+      "source": "elder_wand",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "refuse",
+      "weight": 4,
+      "sources": [
+        "Magical objects in Harry Potter"
+      ],
+      "source": "elder_wand",
+      "target": "with"
+    },
+    {
+      "relation": "lose",
+      "weight": 4,
+      "sources": [
+        "Magical objects in Harry Potter"
+      ],
+      "source": "cloaks",
+      "target": "invisibility_cloak"
+    },
+    {
+      "relation": "wear",
+      "weight": 4,
+      "sources": [
+        "Magical objects in Harry Potter"
+      ],
+      "source": "invisibility_cloak",
+      "target": "unlike"
+    },
+    {
+      "relation": "belong",
+      "weight": 5,
+      "sources": [
+        "Magical objects in Harry Potter",
+        "Invisibility Cloak"
+      ],
+      "source": "invisibility_cloak",
+      "target": "voldemort"
+    },
+    {
+      "relation": "refer",
+      "weight": 1,
+      "sources": [
+        "Invisibility Cloak"
+      ],
+      "source": "invisibility_cloak",
+      "target": "type"
+    },
+    {
+      "relation": "end",
+      "weight": 4,
+      "sources": [
+        "Magical objects in Harry Potter"
+      ],
+      "source": "eyeball",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "know",
+      "weight": 1,
+      "sources": [
+        "Philosopher's stone"
+      ],
+      "source": "efforts",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "trace",
+      "weight": 1,
+      "sources": [
+        "Philosopher's stone"
+      ],
+      "source": "roots",
+      "target": "voldemort"
+    },
+    {
+      "relation": "write",
+      "weight": 1,
+      "sources": [
+        "Philosopher's stone"
+      ],
+      "source": "vaughan",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "romanise",
+      "weight": 1,
+      "sources": [
+        "Philosopher's stone"
+      ],
+      "source": "alchemist",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "believe",
+      "weight": 1,
+      "sources": [
+        "Philosopher's stone"
+      ],
+      "source": "alchemist",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "romanise",
+      "weight": 1,
+      "sources": [
+        "Philosopher's stone"
+      ],
+      "source": "jabir",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "believe",
+      "weight": 1,
+      "sources": [
+        "Philosopher's stone"
+      ],
+      "source": "renaissance",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "identify",
+      "weight": 1,
+      "sources": [
+        "Philosopher's stone"
+      ],
+      "source": "philosophers_stone",
+      "target": "aspect"
+    },
+    {
+      "relation": "hold",
+      "weight": 2,
+      "sources": [
+        "Philosopher's stone"
+      ],
+      "source": "chintamani",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "depict",
+      "weight": 1,
+      "sources": [
+        "Philosopher's stone"
+      ],
+      "source": "chintamani",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "maintain",
+      "weight": 1,
+      "sources": [
+        "Philosopher's stone"
+      ],
+      "source": "tradition",
+      "target": "dobby"
+    },
+    {
+      "relation": "attack",
+      "weight": 3,
+      "sources": [
+        "Harry Potter and the Deathly Hallows"
+      ],
+      "source": "godrics_hollow",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "destroy",
+      "weight": 3,
+      "sources": [
+        "Harry Potter and the Deathly Hallows"
+      ],
+      "source": "returns",
+      "target": "horcrux"
+    },
+    {
+      "relation": "alert",
+      "weight": 3,
+      "sources": [
+        "Harry Potter and the Deathly Hallows"
+      ],
+      "source": "xenophilius",
+      "target": "ministry_of_magic"
+    },
+    {
+      "relation": "alert",
+      "weight": 3,
+      "sources": [
+        "Harry Potter and the Deathly Hallows"
+      ],
+      "source": "xenophilius",
+      "target": "voldemort"
+    },
+    {
+      "relation": "refer",
+      "weight": 3,
+      "sources": [
+        "Harry Potter and the Deathly Hallows"
+      ],
+      "source": "title",
+      "target": "voldemort"
+    },
+    {
+      "relation": "publish",
+      "weight": 3,
+      "sources": [
+        "Harry Potter and the Goblet of Fire",
+        "Harry Potter and the Philosopher's Stone"
+      ],
+      "source": "book",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "publish",
+      "weight": 1,
+      "sources": [
+        "Harry Potter and the Philosopher's Stone"
+      ],
+      "source": "book",
+      "target": "hermione_granger"
+    },
+    {
+      "relation": "win",
+      "weight": 2,
+      "sources": [
+        "Harry Potter and the Goblet of Fire",
+        "Harry Potter and the Philosopher's Stone"
+      ],
+      "source": "novel",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "resemble",
+      "weight": 1,
+      "sources": [
+        "Harry Potter and the Goblet of Fire"
+      ],
+      "source": "assailants",
+      "target": "death_eaters"
+    },
+    {
+      "relation": "introduce",
+      "weight": 1,
+      "sources": [
+        "Harry Potter and the Goblet of Fire"
+      ],
+      "source": "moody",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "publish",
+      "weight": 1,
+      "sources": [
+        "Harry Potter and the Goblet of Fire"
+      ],
+      "source": "second",
+      "target": "hermione_granger"
+    },
+    {
+      "relation": "follow",
+      "weight": 1,
+      "sources": [
+        "Harry Potter and the Goblet of Fire"
+      ],
+      "source": "third",
+      "target": "hermione_granger"
+    },
+    {
+      "relation": "list",
+      "weight": 1,
+      "sources": [
+        "Harry Potter and the Goblet of Fire"
+      ],
+      "source": "publisher",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "list",
+      "weight": 1,
+      "sources": [
+        "Harry Potter and the Goblet of Fire"
+      ],
+      "source": "publisher",
+      "target": "hogwarts"
+    },
+    {
+      "relation": "list",
+      "weight": 1,
+      "sources": [
+        "Harry Potter and the Goblet of Fire"
+      ],
+      "source": "publisher",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "place",
+      "weight": 1,
+      "sources": [
+        "Death Eater"
+      ],
+      "source": "mark",
+      "target": "hermione_granger"
+    },
+    {
+      "relation": "focus",
+      "weight": 1,
+      "sources": [
+        "Death Eater"
+      ],
+      "source": "activities",
+      "target": "hermione_granger"
+    },
+    {
+      "relation": "appear",
+      "weight": 1,
+      "sources": [
+        "Death Eater"
+      ],
+      "source": "members",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "portray",
+      "weight": 2,
+      "sources": [
+        "Quidditch"
+      ],
+      "source": "quidditch",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "portray",
+      "weight": 1,
+      "sources": [
+        "Quidditch"
+      ],
+      "source": "quidditch",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "play",
+      "weight": 1,
+      "sources": [
+        "Quidditch"
+      ],
+      "source": "matches",
+      "target": "hermione_granger"
+    },
+    {
+      "relation": "appear",
+      "weight": 1,
+      "sources": [
+        "Quidditch"
+      ],
+      "source": "scene",
+      "target": "ginny_weasley"
+    },
+    {
+      "relation": "introduce",
+      "weight": 1,
+      "sources": [
+        "Quidditch"
+      ],
+      "source": "nimbus",
+      "target": "ron_weasley"
+    },
+    {
+      "relation": "compare",
+      "weight": 1,
+      "sources": [
+        "Harry Potter and the Philosopher's Stone"
+      ],
+      "source": "writing",
+      "target": "voldemort"
+    },
+    {
+      "relation": "save",
+      "weight": 1,
+      "sources": [
+        "Harry Potter and the Philosopher's Stone"
+      ],
+      "source": "boys",
+      "target": "hermione_granger"
+    },
+    {
+      "relation": "warn",
+      "weight": 1,
+      "sources": [
+        "Harry Potter and the Philosopher's Stone"
+      ],
+      "source": "centaur",
+      "target": "harry_potter"
+    },
+    {
+      "relation": "take",
+      "weight": 1,
+      "sources": [
+        "Harry Potter and the Philosopher's Stone"
+      ],
+      "source": "events",
+      "target": "harry_potter"
+    }
+  ]
+}
