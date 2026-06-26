@@ -10,8 +10,6 @@ I built this because I've been obsessed with Harry Potter since I was a kid, and
 
 No hardcoded data. Everything you see in the graph was extracted by the models.
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Wizarding_World_of_Harry_Potter_Castle.jpg" width="720" alt="Hogwarts Castle"/>
-
 ![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=flat&logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.x-EE4C2C?style=flat&logo=pytorch&logoColor=white)
 ![HuggingFace](https://img.shields.io/badge/HuggingFace-Transformers-FFD21E?style=flat&logo=huggingface&logoColor=black)
