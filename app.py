@@ -10,11 +10,16 @@ import streamlit.components.v1 as components
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from src.data_loader    import load_corpus, corpus_to_sentences
-from src.ner_pipeline   import batch_extract, extract_entities
-from src.relation_extractor import extract_triplets_rebel, extract_from_corpus
 from src.graph_builder  import build_from_triplets, save_graph, load_graph, graph_stats, get_subgraph, GRAPH_CACHE
 from src.visualizer     import cytoscape_html, ENTITY_COLORS
-from data.entity_aliases import ENTITY_COLORS as _EC
+
+# ML models loaded lazily — app works from cache without them
+try:
+    from src.ner_pipeline       import batch_extract, extract_entities
+    from src.relation_extractor import extract_triplets_rebel, extract_from_corpus
+    ML_AVAILABLE = True
+except Exception:
+    ML_AVAILABLE = False
 
 NER_CACHE = os.path.join("data", "ner_cache.json")
 RE_CACHE  = os.path.join("data", "re_cache.json")
@@ -245,7 +250,9 @@ with st.expander("⚙️  Run / Refresh ML Pipeline", expanded=not os.path.exist
     with col_r:
         run_btn = st.button("🚀 Run Pipeline", type="primary", use_container_width=True)
 
-    if run_btn or not os.path.exists(GRAPH_CACHE):
+    if not ML_AVAILABLE:
+        st.info("ML models not available in this environment — graph loads from pre-built cache below.")
+    if (run_btn or not os.path.exists(GRAPH_CACHE)) and ML_AVAILABLE:
         if force_fresh:
             for p in [NER_CACHE, RE_CACHE, GRAPH_CACHE, os.path.join("data","wiki_cache.json")]:
                 if os.path.exists(p): os.remove(p)
@@ -351,7 +358,9 @@ with tabs[1]:
         height=120,
     )
 
-    if st.button("Extract Entities", key="ner_btn"):
+    if not ML_AVAILABLE:
+        st.info("Live NER demo requires torch — not available in this deployment. Browse the corpus-wide results below.")
+    if st.button("Extract Entities", key="ner_btn", disabled=not ML_AVAILABLE):
         with st.spinner("Running BERT NER…"):
             ents = extract_entities(demo_text)
 
@@ -466,7 +475,9 @@ with tabs[2]:
         height=110,
         key="re_area",
     )
-    if st.button("Extract Triplets", key="re_btn"):
+    if not ML_AVAILABLE:
+        st.info("Live REBEL demo requires torch — not available in this deployment. Browse the pre-extracted triplets below.")
+    if st.button("Extract Triplets", key="re_btn", disabled=not ML_AVAILABLE):
         with st.spinner("Running REBEL — downloads ~1.5 GB on first run…"):
             try:
                 triplets = extract_triplets_rebel(re_demo)
