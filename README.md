@@ -74,13 +74,13 @@ The pre-built caches (Wikipedia text, NER results, graph) are committed to the r
 
 ## Dashboard tabs
 
-**Knowledge Graph** — Obsidian-style Cytoscape.js graph. Hover a node to see its name, click to illuminate its connections, filter by entity type, or focus on a single character.
+**Knowledge Graph:** Obsidian-style Cytoscape.js graph. Hover a node to see its name, click to illuminate its connections, filter by entity type, or focus on a single character.
 
-**BERT NER** — paste any Harry Potter text, watch the model extract characters and locations in real time with confidence scores.
+**BERT NER:** paste any Harry Potter text, watch the model extract characters and locations in real time with confidence scores.
 
-**REBEL Triplets** — test the relation extractor on custom sentences. See exactly what (head, relation, tail) triplets the model pulls out.
+**REBEL Triplets:** test the relation extractor on custom sentences. See exactly what (head, relation, tail) triplets the model pulls out.
 
-**Analytics** — PageRank centrality, degree distribution, entity type breakdown, top relation frequencies.
+**Analytics:** PageRank centrality, degree distribution, entity type breakdown, top relation frequencies.
 
 ## What the models actually find
 
