@@ -122,4 +122,4 @@ wizarding-knowledge-graph/
 
 ---
 
-Built by [Aneela Veldi](https://github.com/aneelaveldi09)
+**Built by [Aneela Veldi](https://github.com/aneelaveldi09)**
